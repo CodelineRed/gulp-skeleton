@@ -6,7 +6,6 @@ var concat      = require('gulp-concat');
 var uglify      = require('gulp-uglify');
 var imagemin    = require('gulp-imagemin');
 var browserSync = require('browser-sync').create();
-var series      = require('stream-series');
 
 var localServer = "http://localhost/project/public";
 var sourcePath  = "src/";
@@ -26,10 +25,12 @@ gulp.task('scss', function() {
 
 // concatinate and uglify all js
 gulp.task('js', function() {
-    return series(gulp.src(sourcePath + 'js/lib/**/*.js'),
-                  gulp.src(sourcePath + 'js/plugin/**/*.js'),
-                  gulp.src(sourcePath + 'js/module/**/*.js'),
-                  gulp.src(sourcePath + 'js/scripts.js'))
+    gulp.src([
+            sourcePath + 'js/lib/**/*.js',
+            sourcePath + 'js/plugin/**/*.js',
+            sourcePath + 'js/module/**/*.js',
+            sourcePath + 'js/scripts.js'
+        ])
         .pipe(sourcemaps.init())
         .pipe(concat('scripts.js'))
         .pipe(uglify())
@@ -62,7 +63,7 @@ gulp.task('svg', function() {
 
 // add the watcher
 gulp.task('watch', function() {
-    // watch less files
+    // watch scss files
     gulp.watch(sourcePath + 'scss/**', ['scss']);
     // watch js files
     gulp.watch(sourcePath + 'js/**', ['js']);
