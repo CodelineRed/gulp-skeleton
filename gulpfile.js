@@ -26,6 +26,8 @@ gulp.task('scss', function() {
 // concatinate and uglify all js
 gulp.task('js', function() {
     gulp.src([
+            'node_modules/jquery/dist/jquery.js',
+            'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
             sourcePath + 'js/lib/**/*.js',
             sourcePath + 'js/plugin/**/*.js',
             sourcePath + 'js/module/**/*.js',
@@ -49,14 +51,20 @@ gulp.task('img', function() {
 
 // copy all fonts
 gulp.task('font', function() {
-    gulp.src(sourcePath + 'font/**')
+    gulp.src([
+            'node_modules/@fortawesome/fontawesome-free/webfonts/**',
+            sourcePath + 'font/**'
+        ])
 //        .pipe(gulp.dest(systemPath + 'font/'))
         .pipe(gulp.dest(publicPath + 'font/'));
 });
 
 // copy all svg images
 gulp.task('svg', function() {
-    gulp.src(sourcePath + 'svg/**')
+    gulp.src([
+            'node_modules/@fortawesome/fontawesome-free/svgs/**',
+            sourcePath + 'svg/**'
+        ])
 //        .pipe(gulp.dest(systemPath + 'svg/'))
         .pipe(gulp.dest(publicPath + 'svg/'));
 });
