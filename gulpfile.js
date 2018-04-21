@@ -28,6 +28,7 @@ gulp.task('js', function() {
     gulp.src([
             'node_modules/jquery/dist/jquery.js',
             'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
+            'node_modules/@fortawesome/fontawesome-free/js/all.js',
             sourcePath + 'js/lib/**/*.js',
             sourcePath + 'js/plugin/**/*.js',
             sourcePath + 'js/module/**/*.js',
@@ -63,6 +64,7 @@ gulp.task('font', function() {
 gulp.task('svg', function() {
     gulp.src([
             'node_modules/@fortawesome/fontawesome-free/svgs/**',
+            'node_modules/@fortawesome/fontawesome-free/sprites/**',
             sourcePath + 'svg/**'
         ])
 //        .pipe(gulp.dest(systemPath + 'svg/'))

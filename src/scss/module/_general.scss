@@ -14,6 +14,10 @@ a {
     &:hover {
         text-decoration: none;
     }
+    
+    &.label {
+        margin-top: -30px;
+    }
 }
 
 h1 {

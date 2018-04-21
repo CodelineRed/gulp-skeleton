@@ -1,11 +1,14 @@
 {
     "name": "gulp-templating",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "description": "Gulp Templating",
     "keywords": [
         "gulp",
         "templating",
-        "skeleton"
+        "skeleton",
+        "bootstrap",
+        "fontawesome",
+        "jquery"
     ],
     "author": {
         "name": "InsanityMeetsHH",
