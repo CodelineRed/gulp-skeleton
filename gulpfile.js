@@ -6,11 +6,12 @@ var concat      = require('gulp-concat');
 var uglify      = require('gulp-uglify');
 var imagemin    = require('gulp-imagemin');
 var browserSync = require('browser-sync').create();
+var del         = require('del');
 
-var localServer = "http://localhost/project/public";
+var localServer = "http://localhost/imhh-gulp/public";
 var sourcePath  = "src/";
 var publicPath  = "public/";
-var systemPath  = 'path/to/system/'; // e.g. TYPO3, WordPress, ...
+var systemPath  = 'path/to/system/'; // e.g. TYPO3, WordPress, Drupal, Slim FW ...
 
 // processing scss to css and minify result
 gulp.task('scss', function() {
@@ -30,6 +31,7 @@ gulp.task('js', function() {
             'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
             'node_modules/@fortawesome/fontawesome-free/js/all.js',
             sourcePath + 'js/lib/**/*.js',
+            'node_modules/slick-carousel/slick/slick.js',
             sourcePath + 'js/plugin/**/*.js',
             sourcePath + 'js/module/**/*.js',
             sourcePath + 'js/scripts.js'
@@ -54,6 +56,7 @@ gulp.task('img', function() {
 gulp.task('font', function() {
     gulp.src([
             'node_modules/@fortawesome/fontawesome-free/webfonts/**',
+            'node_modules/slick-carousel/slick/fonts/**',
             sourcePath + 'font/**'
         ])
 //        .pipe(gulp.dest(systemPath + 'font/'))
@@ -71,6 +74,25 @@ gulp.task('svg', function() {
         .pipe(gulp.dest(publicPath + 'svg/'));
 });
 
+// clean up folders
+gulp.task('cleanup', function() {
+//    del([
+//            systemPath + 'css/**/*',
+//            systemPath + 'js/**/*',
+//            systemPath + 'img/**/*',
+//            systemPath + 'font/**/*',
+//            systemPath + 'svg/**/*'
+//        ], {force: true});
+        
+    del([
+            publicPath + 'css/**/*',
+            publicPath + 'js/**/*',
+            publicPath + 'img/**/*',
+            publicPath + 'font/**/*',
+            publicPath + 'svg/**/*'
+        ]);
+});
+
 // add the watcher
 gulp.task('watch', function() {
     // watch scss files
@@ -86,10 +108,10 @@ gulp.task('watch', function() {
 });
 
 // production
-gulp.task('prod', ['scss', 'js', 'img', 'font', 'svg']);
+gulp.task('prod', ['cleanup', 'scss', 'js', 'img', 'font', 'svg']);
 
 // default task if just called gulp (incl. Watch)
-gulp.task('default', ['scss', 'js', 'img', 'font', 'svg', 'watch'], function() {
+gulp.task('default', ['cleanup', 'scss', 'js', 'img', 'font', 'svg', 'watch'], function() {
     // start browsersync
     browserSync.init({
         proxy: localServer
