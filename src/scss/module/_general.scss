@@ -55,3 +55,8 @@ h1 {
 .slick-prev {
     left: 0;
 }
+
+.slick-next,
+.slick-prev {
+    z-index: 5;
+}
