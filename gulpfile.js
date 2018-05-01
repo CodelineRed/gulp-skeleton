@@ -111,7 +111,7 @@ gulp.task('watch', function() {
 gulp.task('prod', ['cleanup', 'scss', 'js', 'img', 'font', 'svg']);
 
 // default task if just called gulp (incl. Watch)
-gulp.task('default', ['cleanup', 'scss', 'js', 'img', 'font', 'svg', 'watch'], function() {
+gulp.task('default', ['scss', 'js', 'img', 'font', 'svg', 'watch'], function() {
     // start browsersync
     browserSync.init({
         proxy: localServer
