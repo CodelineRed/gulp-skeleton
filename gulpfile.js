@@ -108,7 +108,7 @@ gulp.task('watch', function() {
 });
 
 // production
-gulp.task('prod', ['cleanup', 'scss', 'js', 'img', 'font', 'svg']);
+gulp.task('prod', ['scss', 'js', 'img', 'font', 'svg']);
 
 // default task if just called gulp (incl. Watch)
 gulp.task('default', ['scss', 'js', 'img', 'font', 'svg', 'watch'], function() {
