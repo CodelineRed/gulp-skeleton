@@ -1,0 +1,37 @@
+.slider {
+    .slider-item {
+        display: none;
+        
+        &:first-child {
+            display: block;
+        }
+    }
+    
+    &.slick-initialized {
+        .slider-item {
+            display: block;
+        }
+    }
+    
+    &.slider-brands {
+        a {
+            &.label {
+                margin-top: -30px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next,
+.slick-prev {
+    z-index: 5;
+}

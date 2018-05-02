@@ -1,6 +1,6 @@
 {
     "name": "gulp-templating",
-    "version": "2.3.1",
+    "version": "2.4.0-dev",
     "description": "Gulp Templating",
     "keywords": [
         "gulp",
@@ -39,7 +39,9 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.1.0-4",
         "bootstrap": "^4.1.1",
+        "cssuseragent": "^2.1.31",
         "jquery": "^3.3.1",
-        "slick-carousel": "^1.8.1"
+        "slick-carousel": "^1.8.1",
+        "vanilla-lazyload": "^8.7.1"
     }
 }

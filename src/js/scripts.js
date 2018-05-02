@@ -8,5 +8,8 @@
             autoplay: true,
             autoplaySpeed: 2000
         });
+        new LazyLoad({
+            elements_selector: ".lazyload"
+        });
     });
 })(jQuery);

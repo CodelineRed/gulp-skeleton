@@ -7,6 +7,8 @@
 * [Bootstrap 4.1.1](https://getbootstrap.com)
 * [Font Awesome 5.1.0-4](https://fontawesome.com)
 * [Slick Carousel 1.8.1](http://kenwheeler.github.io/slick/)
+* [LazyLoad 8.7.1](https://www.andreaverlicchi.eu/lazyload/)
+* [CSS User Agent 2.1.31](https://www.npmjs.com/package/cssuseragent)
 
 ## Required
 * [Node.js](http://nodejs.org/en/download/)

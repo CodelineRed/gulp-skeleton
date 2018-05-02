@@ -1,0 +1,17 @@
+body {
+    background-color: $darkgrey;
+    color: $grey;
+}
+
+a {
+    color: $lightblue;
+}
+
+h1 {
+    color: $lightblue;
+    
+    @include media-breakpoint-down(md) {
+        font-size: 2rem;
+    }
+}
+

@@ -32,6 +32,8 @@ gulp.task('js', function() {
             'node_modules/@fortawesome/fontawesome-free/js/all.js',
             sourcePath + 'js/lib/**/*.js',
             'node_modules/slick-carousel/slick/slick.js',
+            'node_modules/cssuseragent/cssua.js',
+            'node_modules/vanilla-lazyload/dist/lazyload.js',
             sourcePath + 'js/plugin/**/*.js',
             sourcePath + 'js/module/**/*.js',
             sourcePath + 'js/scripts.js'

@@ -2,30 +2,11 @@
    outline: 0;
 }
 
-body {
-    background-color: $darkgrey;
-    color: $grey;
-}
-
 a {
-    color: $lightblue;
     @extend .transition-all;
     
     &:hover {
         text-decoration: none;
-    }
-    
-    &.label {
-        margin-top: -30px;
-        margin-bottom: 15px;
-    }
-}
-
-h1 {
-    color: $lightblue;
-    
-    @include media-breakpoint-down(md) {
-        font-size: 2rem;
     }
 }
 
@@ -46,17 +27,4 @@ h1 {
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     hyphens: auto;
-}
-
-.slick-next {
-    right: 0;
-}
-
-.slick-prev {
-    left: 0;
-}
-
-.slick-next,
-.slick-prev {
-    z-index: 5;
 }
