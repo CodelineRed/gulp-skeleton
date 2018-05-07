@@ -19,7 +19,8 @@
 ```bash
 $ git clone https://github.com/InsanityMeetsHH/gulp-templating.git [project-name]
 $ cd [project-name]
-$ npm install
+$ rm -rf .git
+$ npm i
 ```
 
 ## Project Commands

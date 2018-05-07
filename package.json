@@ -1,15 +1,19 @@
 {
     "name": "gulp-templating",
-    "version": "2.4.0",
+    "version": "2.5.0-dev",
     "description": "Gulp Templating",
     "keywords": [
         "gulp",
         "templating",
         "skeleton",
+        "boilerplate",
         "bootstrap",
         "fontawesome",
         "slick",
         "carousel",
+        "lazyload",
+        "css user agent",
+        "cssua",
         "jquery"
     ],
     "author": {
