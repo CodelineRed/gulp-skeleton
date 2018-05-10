@@ -48,7 +48,7 @@ gulp.task('js', function() {
 
 // minify images
 gulp.task('img', function() {
-    gulp.src(sourcePath + '{img,icon}/**/*.{png,gif,jpg,jpeg,ico,xml}')
+    gulp.src(sourcePath + '{img,icon}/**/*.{png,gif,jpg,jpeg,ico,xml,json}')
         .pipe(imagemin())
 //        .pipe(gulp.dest(systemPath))
         .pipe(gulp.dest(publicPath));

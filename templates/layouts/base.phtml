@@ -3,63 +3,65 @@
     <head>
         <?php
         // default setting (home page)
-        $title = 'Gulp Templating - InsanityMeetsHH';
-        $baseUrl = 'http://localhost/imhh-gulp/public/';
-        $currentUrl = ($_SERVER['SERVER_PORT'] == '80' ? 'http' : 'https') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-        $keywords = '';
-        $description = '';
-        $robots = 'index,follow';
-        $author = 'InsanityMeetsHH';
-        $appId = '';
-        $publisher = '';
-        $ogType = 'website';
-        $socialMediaImage = '';
-        $siteName = 'Gulp Templating';
-        $twitterSite = 'InsanityMeetsHH';
-        $twitterUrl = 'https://twitter.com/InsanityMeetsHH';
-        $rssUrl = '';
-        $locale = 'de_DE';
+        $meta = array(
+            'title' => 'Gulp Templating - InsanityMeetsHH',
+            'baseUrl' => 'http://localhost/imhh-gulp/public/',
+            'currentUrl' => ($_SERVER['SERVER_PORT'] == '80' ? 'http' : 'https') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'],
+            'keywords' => '',
+            'description' => '',
+            'robots' => 'index,follow',
+            'author' => 'InsanityMeetsHH',
+            'fbAppId' => '',
+            'fbAdmins' => '',
+            'publisher' => '',
+            'type' => 'website',
+            'socialMediaImage' => '',
+            'siteName' => 'Gulp Templating',
+            'twitterSite' => 'InsanityMeetsHH',
+            'twitterUrl' => 'https://twitter.com/InsanityMeetsHH',
+            'rssUrl' => '',
+            'locale' => 'de_DE',
+            'themeColor' => '#212121',
+        );
         ?>
         
-        <title>Gulp Templating - InsanityMeetsHH</title>
-        <base href="<?php echo $baseUrl; ?>">
+        <title><?php echo $meta['title']; ?></title>
+        <base href="<?php echo $meta['baseUrl']; ?>">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <meta name="keywords" content="<?php echo $keywords; ?>"/>
-        <meta name="description" content="<?php echo $description; ?>">
-        <meta name='robots' content="<?php echo $robots; ?>">
-        <meta name="author" content="<?php echo $author; ?>">
-        <meta property="fb:admins" content=""/>
-        <meta property="fb:app_id" content="<?php echo $appId; ?>"/>
-        <meta property="og:type" content="<?php echo $ogType; ?>"/>
-        <meta property="og:title" content="<?php echo $title; ?>"/>
-        <meta property="og:description" content="<?php echo $description; ?>"/>
-        <meta property="og:title" content="<?php echo $title; ?>"/>
-        <meta property="og:description" content="<?php echo $description; ?>"/>
-        <meta property="og:image" content="<?php echo $socialMediaImage; ?>"/>
-        <meta property="og:site_name" content="<?php echo $siteName; ?>"/>
-        <meta property="og:url" content="<?php echo $currentUrl; ?>"/>
-        <meta property="og:locale" content="<?php echo $locale; ?>"/>
-        <meta property="article:publisher" content="<?php echo $publisher; ?>"/>
+        <meta name="keywords" content="<?php echo $meta['keywords']; ?>"/>
+        <meta name="description" content="<?php echo $meta['description']; ?>">
+        <meta name='robots' content="<?php echo $meta['robots']; ?>">
+        <meta name="author" content="<?php echo $meta['author']; ?>">
+        <meta property="fb:admins" content="<?php echo $meta['fbAdmins']; ?>"/>
+        <meta property="fb:app_id" content="<?php echo $meta['fbAppId']; ?>"/>
+        <meta property="og:type" content="<?php echo $meta['type']; ?>"/>
+        <meta property="og:title" content="<?php echo $meta['title']; ?>"/>
+        <meta property="og:description" content="<?php echo $meta['description']; ?>"/>
+        <meta property="og:image" content="<?php echo $meta['socialMediaImage']; ?>"/>
+        <meta property="og:site_name" content="<?php echo $meta['siteName']; ?>"/>
+        <meta property="og:url" content="<?php echo $meta['currentUrl']; ?>"/>
+        <meta property="og:locale" content="<?php echo $meta['locale']; ?>"/>
+        <meta property="article:publisher" content="<?php echo $meta['publisher']; ?>"/>
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="<?php echo $twitterSite; ?>">
-        <meta name="twitter:title" content="<?php echo $title; ?>">
-        <meta name="twitter:description" content="<?php echo $description; ?>">
-        <meta name="twitter:image" content="<?php echo $socialMediaImage; ?>">
-        <link rel="me" href="<?php echo $twitterUrl; ?>">
-        <link rel="canonical" href="<?php echo $currentUrl; ?>"/>
-        <link rel="alternate" hreflang="x-default" href="<?php echo $currentUrl; ?>"/>
-        <link rel="alternate" type="application/rss+xml" title="" href="<?php echo $rssUrl; ?>"/>
+        <meta name="twitter:site" content="<?php echo $meta['twitterSite']; ?>">
+        <meta name="twitter:title" content="<?php echo $meta['title']; ?>">
+        <meta name="twitter:description" content="<?php echo $meta['description']; ?>">
+        <meta name="twitter:image" content="<?php echo $meta['socialMediaImage']; ?>">
+        <link rel="me" href="<?php echo $meta['twitterUrl']; ?>">
+        <link rel="canonical" href="<?php echo $meta['currentUrl']; ?>"/>
+        <link rel="alternate" hreflang="x-default" href="<?php echo $meta['currentUrl']; ?>"/>
+        <link rel="alternate" type="application/rss+xml" title="" href="<?php echo $meta['rssUrl']; ?>"/>
         <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
         <link rel="icon" type="image/png" href="img/favicons/android-chrome-192x192.png" sizes="192x192">
         <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
         <link rel="manifest" href="img/favicons/manifest.json">
-        <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#575755">
-        <meta name="msapplication-TileColor" content="#212121">
+        <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="<?php echo $meta['themeColor']; ?>">
+        <meta name="msapplication-TileColor" content="<?php echo $meta['themeColor']; ?>">
         <meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
         <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
-        <meta name="theme-color" content="#212121">
+        <meta name="theme-color" content="<?php echo $meta['themeColor']; ?>">
         <link rel="shortcut icon" href="img/favicons/favicon.ico">
         
         <link rel="stylesheet" href="css/styles.css">
