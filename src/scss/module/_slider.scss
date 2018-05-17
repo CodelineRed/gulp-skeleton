@@ -1,5 +1,6 @@
 .slider {
     .slider-item {
+        position: relative;
         display: none;
         
         &:first-child {
