@@ -24,11 +24,11 @@ window.addEventListener("load", function(){
         theme: "classic",
         type: "opt-out",
         content: {
-            message: "Diese Website verwendet Cookies, um sicherzustellen, dass Sie die beste Erfahrung auf unserer Website erhalten.",
-            dismiss: "Einverstanden",
-            deny: "Ablehnen",
-            link: "Mehr erfahren",
-            href: "#datenschutz"
+            message: "This website uses cookies to ensure you get the best experience on our website.",
+            dismiss: "Got it!",
+            deny: "Deny",
+            link: "Learn more",
+            href: "#privacypolicy"
         },
         onInitialise: function (status) {
             var type = this.options.type;
