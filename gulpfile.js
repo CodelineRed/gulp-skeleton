@@ -37,6 +37,7 @@ gulp.task('js', function() {
             'node_modules/slick-carousel/slick/slick.js',
             'node_modules/cssuseragent/cssua.js',
             'node_modules/vanilla-lazyload/dist/lazyload.js',
+            'node_modules/cookieconsent/src/cookieconsent.js',
             sourcePath + 'js/plugin/**/*.js',
             sourcePath + 'js/module/**/*.js',
             sourcePath + 'js/scripts.js'

@@ -9,6 +9,7 @@
 * [Slick Carousel 1.8.1](http://kenwheeler.github.io/slick/)
 * [LazyLoad 8.7.1](https://www.andreaverlicchi.eu/lazyload/)
 * [CSS User Agent 2.1.31](https://www.npmjs.com/package/cssuseragent)
+* [Cookieconsent 3.0.6](https://github.com/insites/cookieconsent)
 
 ## Required
 * [Node.js](http://nodejs.org/en/download/)
