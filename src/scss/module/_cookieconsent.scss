@@ -1,26 +1,4 @@
 .cc-window {
-    .cc-btn {
-        &:last-child {
-            min-width: 100px;
-        }
-    }
-    
-    .cc-highlight {
-        .cc-btn {
-            &:first-child {
-                border: 1px solid transparent;
-                border-radius: 5px;
-
-                &:hover {
-                    border: 1px solid $white;
-                    background-color: transparent;
-                    color: $white;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-    
     &.cc-floating {
         padding: 0;
         max-width: none;
@@ -43,6 +21,37 @@
     
     &~ .container {
         margin-bottom: 40px;
+    }
+    
+    .cc-btn {
+        &:last-child {
+            min-width: 100px;
+        }
+    }
+    
+    .cc-highlight {
+        .cc-btn {
+            &:first-child {
+                border: 1px solid transparent;
+                border-radius: 5px;
+
+                &:hover {
+                    border: 1px solid $white;
+                    background-color: transparent;
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    
+    .cc-btn {
+        padding: .4em .4em;
+        white-space: normal;
+    }
+    
+    .cc-link {
+        padding: 0;
     }
     
     .container {
