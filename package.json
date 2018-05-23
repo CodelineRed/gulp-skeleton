@@ -1,6 +1,6 @@
 {
     "name": "gulp-templating",
-    "version": "2.6.0",
+    "version": "2.6.1-dev",
     "description": "Gulp Templating",
     "keywords": [
         "gulp",
@@ -14,6 +14,8 @@
         "lazyload",
         "css user agent",
         "cssua",
+        "cookieconsent",
+        "cookie",
         "jquery"
     ],
     "author": {

@@ -1,0 +1,52 @@
+.cc-window {
+    .cc-btn {
+        &:last-child {
+            min-width: 100px;
+        }
+    }
+    
+    .cc-highlight {
+        .cc-btn {
+            &:first-child {
+                border: 1px solid transparent;
+                border-radius: 5px;
+
+                &:hover {
+                    border: 1px solid $white;
+                    background-color: transparent;
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    
+    &.cc-floating {
+        padding: 0;
+        max-width: none;
+        flex-direction: row;
+        
+        >.cc-link,
+        .cc-message {
+          margin-bottom: 0;
+        }
+        
+        &.cc-theme-classic {
+            padding-bottom: 0;
+            border-radius: 0;
+        }
+    }
+    
+    &.cc-bottom {
+        bottom: 0;
+    }
+    
+    &~ .container {
+        margin-bottom: 40px;
+    }
+    
+    .container {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}

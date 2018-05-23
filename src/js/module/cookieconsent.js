@@ -1,6 +1,6 @@
 window.addEventListener("load", function(){
     window.cookieconsent.initialise({
-        window: '<div role="dialog" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window {{classes}}">'
+        window: '<div role="dialog" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window w-100 {{classes}}">'
                 + '<div class="container"><div class="row align-items-center">{{children}}</div></div></div>',
         elements: {
             messagelink: '<div class="col-12 col-sm-6 col-lg-8 pb-3 pb-sm-0"><span id="cookieconsent:desc" class="cc-message">{{message}} ' 
