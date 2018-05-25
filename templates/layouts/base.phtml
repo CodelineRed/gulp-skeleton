@@ -3,6 +3,7 @@
     <head>
         <?php
         // default setting (home page)
+        $renderTracking = isset($_COOKIE['cookieconsent_status']) && $_COOKIE['cookieconsent_status'] === 'dismiss' ? TRUE : FALSE;
         $meta = array(
             'title' => 'Gulp Templating - InsanityMeetsHH',
             'baseUrl' => 'http://localhost/imhh-gulp/public/',
@@ -52,6 +53,7 @@
         <link rel="canonical" href="<?php echo $meta['currentUrl']; ?>"/>
         <link rel="alternate" hreflang="x-default" href="<?php echo $meta['currentUrl']; ?>"/>
         <link rel="alternate" type="application/rss+xml" title="" href="<?php echo $meta['rssUrl']; ?>"/>
+        <?php /** Favicon sizes 16, 32, 36, 48, 70, 72, 96, 144, 150, 180, 192, 256, 310, 310x150, 384, 512, SVG, ICO */ ?>
         <link rel="apple-touch-icon" href="img/favicons/favicon-180x180.png" sizes="180x180">
         <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
         <link rel="icon" type="image/png" href="img/favicons/favicon-192x192.png" sizes="192x192">

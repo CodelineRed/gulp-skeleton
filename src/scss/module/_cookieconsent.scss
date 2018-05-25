@@ -20,7 +20,19 @@
     }
     
     &~ .container {
-        margin-bottom: 40px;
+        margin-bottom: 200px;
+        
+        @include media-breakpoint-up('sm') {
+            margin-bottom: 160px;
+        }
+        
+        @include media-breakpoint-up('md') {
+            margin-bottom: 120px;
+        }
+        
+        @include media-breakpoint-up('lg') {
+            margin-bottom: 100px;
+        }
     }
     
     .cc-btn {

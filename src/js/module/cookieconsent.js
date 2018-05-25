@@ -22,7 +22,7 @@ window.addEventListener("load", function(){
             }
         },
         theme: "classic",
-        type: "opt-out",
+        type: "info",
         content: {
             message: "This website uses cookies to ensure you get the best experience on our website.",
             dismiss: "Got it!",
@@ -40,6 +40,12 @@ window.addEventListener("load", function(){
               // disable cookies
             }
         },
+        onPopupOpen: function () {
+            
+        },
+        onPopupClose: function() {
+
+        },
         onStatusChange: function(status, chosenBefore) {
             var type = this.options.type;
             var didConsent = this.hasConsented();
@@ -49,6 +55,8 @@ window.addEventListener("load", function(){
             if (type == 'opt-out' && !didConsent) {
               // disable cookies
             }
+            // user changed status - reload page
+            window.location.href = window.location.href;
         },
         onRevokeChoice: function() {
             var type = this.options.type;
