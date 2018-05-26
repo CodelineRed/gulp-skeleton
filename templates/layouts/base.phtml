@@ -2,8 +2,10 @@
 <html class="no-js">
     <head>
         <?php
-        // default setting (home page)
-        $renderTracking = isset($_COOKIE['cookieconsent_status']) && $_COOKIE['cookieconsent_status'] === 'dismiss' ? TRUE : FALSE;
+        // if user clicked not deny
+        $cookiesAllowed = isset($_COOKIE['cookieconsent_status']) && in_array($_COOKIE['cookieconsent_status'], array('allow', 'dismiss')) ? TRUE : FALSE;
+        
+        // default setting (home page)        
         $meta = array(
             'title' => 'Gulp Templating - InsanityMeetsHH',
             'baseUrl' => 'http://localhost/imhh-gulp/public/',
@@ -67,6 +69,9 @@
         <link rel="shortcut icon" href="img/favicons/favicon.ico">
         
         <link rel="stylesheet" href="css/styles.css">
+        <?php if ($cookiesAllowed) { ?>
+            <!-- Google Analaytics, Google Tag Manager, ... -->
+        <?php } ?>
     </head>
     <body>
         <div class="container">
