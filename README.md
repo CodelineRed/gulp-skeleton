@@ -5,7 +5,8 @@
 ## Included
 * [jQuery 3.3.1](http://jquery.com)
 * [Bootstrap 4.1.1](https://getbootstrap.com)
-* [Font Awesome 5.1.0-4](https://fontawesome.com)
+* [Font Awesome 5.0.13](https://fontawesome.com) (Activated)
+* [Font Awesome 5.1.0-4](https://fontawesome.com) (Deactivated)
 * [Slick Carousel 1.8.1](http://kenwheeler.github.io/slick/)
 * [LazyLoad 8.7.1](https://www.andreaverlicchi.eu/lazyload/)
 * [CSS User Agent 2.1.31](https://www.npmjs.com/package/cssuseragent)
