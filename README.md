@@ -28,13 +28,11 @@ $ npm i
 ## How to enable Font Awesome 5.1
 comment out
 * [styles.scss](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/scss/styles.scss#L4)
-* [gulpfile.js](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js#L32)
-* [gulpfile.js](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js#L65)
+* gulpfile.js [section 1](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js#L32) [section 2](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js#L65)
 
 comment in
 * [styles.scss](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/scss/styles.scss#L5)
-* [gulpfile.js](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js#L33-L36)
-* [gulpfile.js](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js#L66)
+* gulpfile.js [section 1](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js#L33-L36) [section 2](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js#L66)
 
 ## Project Commands
 See gulpfile.js for further information.
