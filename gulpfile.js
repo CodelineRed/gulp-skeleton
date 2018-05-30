@@ -74,8 +74,8 @@ gulp.task('font', function() {
 // copy all svg images
 gulp.task('svg', function() {
     gulp.src([
-            'node_modules/@fortawesome/fontawesome-free/svgs/**',
-            'node_modules/@fortawesome/fontawesome-free/sprites/**',
+//            'node_modules/@fortawesome/fontawesome-free/svgs/**',
+//            'node_modules/@fortawesome/fontawesome-free/sprites/**',
             sourcePath + 'svg/**'
         ])
 //        .pipe(gulp.dest(systemPath + 'svg/'))
