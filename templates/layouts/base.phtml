@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html class="no-js">
     <head>
+        <script>
+            function setCookie(e,t,n){var o=new Date;o.setTime(o.getTime()+24*n*60*60*1e3);var i="expires="+o.toUTCString();document.cookie=e+"="+t+";"+i+";path=/"}function getCookie(e){for(var t=e+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(t))return i.substring(t.length,i.length)}return""}
+            var cookiesAllowed = getCookie('cookieconsent_status') !== 'deny';
+        </script>
         <?php
         // if user clicked not deny
         $cookiesAllowed = isset($_COOKIE['cookieconsent_status']) && in_array($_COOKIE['cookieconsent_status'], array('allow', 'dismiss')) ? TRUE : FALSE;
@@ -69,7 +73,15 @@
         <link rel="shortcut icon" href="img/favicons/favicon.ico">
         
         <link rel="stylesheet" href="css/styles.css">
-        <?php if ($cookiesAllowed) { ?>
+        <script>
+            // use javascript condition if your pages cached
+            if (cookiesAllowed) {
+                // Google Analaytics, Google Tag Manager, ...
+            }
+        </script>
+        <?php # use php condition if your pages NOT cached
+        if ($cookiesAllowed) {
+        ?>
             <!-- Google Analaytics, Google Tag Manager, ... -->
         <?php } ?>
     </head>
