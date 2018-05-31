@@ -27,7 +27,7 @@ $ npm i
 
 ## How to enable Font Awesome 5.1
 comment out
-* styles.scss ([line](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/scss/styles.scss#L4))
+* styles.scss ([line 4](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/scss/styles.scss#L4))
 * gulpfile.js ([line 32](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js#L32), [line 65](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js#L65))
 
 comment in
