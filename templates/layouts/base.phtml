@@ -74,16 +74,22 @@
         
         <link rel="stylesheet" href="css/styles.css">
         <script>
-            // use javascript condition if your pages cached
+            // if cookies allowed - load tracking code
             if (cookiesAllowed) {
                 // Google Analaytics, Google Tag Manager, ...
+//                var s = document.createElement('script');
+//                s.type = 'text/javascript';
+//                s.async = true;
+//                s.src = 'https://www.googletagmanager.com/gtag/js?id=UA-NUMBER-X';
+//                var h = document.getElementsByTagName('head')[0];
+//                h.appendChild(s, h);
+//            
+//                window.dataLayer = window.dataLayer || [];
+//                function gtag(){dataLayer.push(arguments);}
+//                gtag('js', new Date());
+//                gtag('config', 'UA-NUMBER-X', {'anonymize_ip': true});
             }
         </script>
-        <?php # use php condition if your pages NOT cached
-        if ($cookiesAllowed) {
-        ?>
-            <!-- Google Analaytics, Google Tag Manager, ... -->
-        <?php } ?>
     </head>
     <body>
         <div class="container">
