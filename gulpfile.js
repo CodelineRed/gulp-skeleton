@@ -30,10 +30,6 @@ gulp.task('js', function() {
             'node_modules/jquery/dist/jquery.js',
             'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
             'node_modules/@fortawesome/fontawesome-free/js/all.js',
-//            'node_modules/@fortawesome/fontawesome/index.js',
-//            'node_modules/@fortawesome/fontawesome-free-brands/index.js',
-//            'node_modules/@fortawesome/fontawesome-free-regular/index.js',
-//            'node_modules/@fortawesome/fontawesome-free-solid/index.js',
             sourcePath + 'js/lib/**/*.js',
             'node_modules/slick-carousel/slick/slick.js',
             'node_modules/cssuseragent/cssua.js',
@@ -63,7 +59,6 @@ gulp.task('img', function() {
 gulp.task('font', function() {
     gulp.src([
             'node_modules/@fortawesome/fontawesome-free/webfonts/**',
-//            'node_modules/@fortawesome/fontawesome-free-webfonts/webfonts/**',
             'node_modules/slick-carousel/slick/fonts/**',
             sourcePath + 'font/**'
         ])

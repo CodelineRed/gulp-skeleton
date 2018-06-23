@@ -25,7 +25,7 @@ $ npm i
 ```
 
 ## Project Commands
-See gulpfile.js for further information.
+See [gulpfile.js](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js) for further information.
 ```bash
 $ gulp
 $ gulp dev

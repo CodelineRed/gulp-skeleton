@@ -1,6 +1,6 @@
 {
     "name": "gulp-templating",
-    "version": "2.7.0",
+    "version": "3.0.0-1",
     "description": "Gulp Templating",
     "keywords": [
         "gulp",
@@ -43,12 +43,7 @@
         "gulp-uglify": "^3.0.0"
     },
     "dependencies": {
-        "@fortawesome/fontawesome": "^1.1.8",
         "@fortawesome/fontawesome-free": "^5.1.0",
-        "@fortawesome/fontawesome-free-brands": "^5.0.13",
-        "@fortawesome/fontawesome-free-regular": "^5.0.13",
-        "@fortawesome/fontawesome-free-solid": "^5.0.13",
-        "@fortawesome/fontawesome-free-webfonts": "^1.0",
         "@fortawesome/free-brands-svg-icons": "^5.1.0",
         "@fortawesome/free-regular-svg-icons": "^5.1.0",
         "@fortawesome/free-solid-svg-icons": "^5.1.0",
