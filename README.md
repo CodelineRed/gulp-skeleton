@@ -28,7 +28,6 @@ $ npm i
 See [gulpfile.js](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js) for further information.
 ```bash
 $ gulp
-$ gulp dev
 $ gulp prod
 $ gulp watch
 ```
