@@ -1,10 +1,5 @@
-/public/svg/
-/public/img/
-/public/css/styles.css
 /public/css/styles.css.map
-/public/js/scripts.js
 /public/js/scripts.js.map
-/public/font/
 /package-lock.json
 
 ### Node ###
