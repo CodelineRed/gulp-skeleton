@@ -1,6 +1,6 @@
 {
     "name": "gulp-templating",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "description": "Gulp Templating",
     "keywords": [
         "gulp",
@@ -32,7 +32,7 @@
         "url": "git://github.com/InsanityMeetsHH/gulp-templating.git"
     },
     "devDependencies": {
-        "browser-sync": "^2.24.4",
+        "browser-sync": "^2.24.6",
         "del": "^3.0.0",
         "gulp": "^3.9.1",
         "gulp-clean-css": "^3.9.4",
@@ -40,19 +40,19 @@
         "gulp-imagemin": "^4.1.0",
         "gulp-sass": "^4.0.1",
         "gulp-sourcemaps": "^2.6.4",
-        "gulp-uglify": "^3.0.0"
+        "gulp-uglify": "^3.0.1"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "^5.1.0",
-        "@fortawesome/free-brands-svg-icons": "^5.1.0",
-        "@fortawesome/free-regular-svg-icons": "^5.1.0",
-        "@fortawesome/free-solid-svg-icons": "^5.1.0",
-        "bootstrap": "^4.1.1",
-        "cookieconsent": "^3.0.6",
+        "@fortawesome/fontawesome-free": "^5.2.0",
+        "@fortawesome/free-brands-svg-icons": "^5.2.0",
+        "@fortawesome/free-regular-svg-icons": "^5.2.0",
+        "@fortawesome/free-solid-svg-icons": "^5.2.0",
+        "bootstrap": "^4.1.3",
+        "cookieconsent": "^3.1.0",
         "cookieconsent-scss-less": "^3.0.6",
         "cssuseragent": "^2.1.31",
         "jquery": "^3.3.1",
         "slick-carousel": "^1.8.1",
-        "vanilla-lazyload": "^8.7.1"
+        "vanilla-lazyload": "^8.11.0"
     }
 }

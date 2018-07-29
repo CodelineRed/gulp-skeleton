@@ -58,7 +58,7 @@ gulp.task('img', function() {
 // copy all fonts
 gulp.task('font', function() {
     gulp.src([
-            'node_modules/@fortawesome/fontawesome-free/webfonts/**',
+//            'node_modules/@fortawesome/fontawesome-free/webfonts/**',
             'node_modules/slick-carousel/slick/fonts/**',
             sourcePath + 'font/**'
         ])
