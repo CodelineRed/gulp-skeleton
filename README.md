@@ -4,12 +4,12 @@
 
 ## Included
 * [jQuery 3.3.1](http://jquery.com)
-* [Bootstrap 4.1.1](https://getbootstrap.com)
-* [Font Awesome 5.1.0](https://fontawesome.com)
+* [Bootstrap 4.1.3](https://getbootstrap.com)
+* [Font Awesome 5.2.0](https://fontawesome.com)
 * [Slick Carousel 1.8.1](http://kenwheeler.github.io/slick/)
-* [LazyLoad 8.7.1](https://www.andreaverlicchi.eu/lazyload/)
+* [LazyLoad 8.11.0](https://www.andreaverlicchi.eu/lazyload/)
 * [CSS User Agent 2.1.31](https://www.npmjs.com/package/cssuseragent)
-* [Cookieconsent 3.0.6](https://github.com/insites/cookieconsent)
+* [Cookieconsent 3.1.0](https://github.com/insites/cookieconsent)
 
 ## Required
 * [Node.js](http://nodejs.org/en/download/)
