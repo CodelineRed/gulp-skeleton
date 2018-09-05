@@ -13,7 +13,8 @@
 
 ## Required
 * [Node.js](http://nodejs.org/en/download/)
-* [npm](http://www.npmjs.com/get-npm)
+* [npm](http://www.npmjs.com/get-npm) `npm i npm@latest -g`
+* [gulp-cli](https://www.npmjs.com/package/gulp-cli) `npm i gulp-cli@latest -g`
 * PHP => 5.3
 
 ## Install

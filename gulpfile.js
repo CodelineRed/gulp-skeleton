@@ -1,4 +1,5 @@
 var gulp        = require('gulp');
+var prefixer    = require('gulp-autoprefixer');
 var sourcemaps  = require('gulp-sourcemaps');
 var sass        = require('gulp-sass');
 var minifyCss   = require('gulp-clean-css');
@@ -18,6 +19,10 @@ gulp.task('scss', function() {
     gulp.src(sourcePath + 'scss/styles.scss')
         .pipe(sourcemaps.init())
         .pipe(sass())
+        .pipe(prefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(minifyCss({compatibility: 'ie8'}))
         .pipe(sourcemaps.write('./'))
 //        .pipe(gulp.dest(systemPath + 'css/'))
@@ -49,8 +54,18 @@ gulp.task('js', function() {
 
 // minify images
 gulp.task('img', function() {
-    gulp.src(sourcePath + '{img,icon}/**/*.{png,gif,jpg,jpeg,ico,xml,json}')
-        .pipe(imagemin())
+    gulp.src(sourcePath + 'img/**/*.{png,gif,jpg,jpeg,ico,xml,json,svg}')
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+            imagemin.svgo({
+                plugins: [
+                    {removeViewBox: true},
+                    {cleanupIDs: false}
+                ]
+            })
+        ]))
 //        .pipe(gulp.dest(systemPath))
         .pipe(gulp.dest(publicPath));
 });
@@ -71,8 +86,16 @@ gulp.task('svg', function() {
     gulp.src([
 //            'node_modules/@fortawesome/fontawesome-free/svgs/**',
 //            'node_modules/@fortawesome/fontawesome-free/sprites/**',
-            sourcePath + 'svg/**'
+            sourcePath + 'svg/**/*.{svg}'
         ])
+        .pipe(imagemin([
+            imagemin.svgo({
+                plugins: [
+                    {removeViewBox: true},
+                    {cleanupIDs: false}
+                ]
+            })
+        ]))
 //        .pipe(gulp.dest(systemPath + 'svg/'))
         .pipe(gulp.dest(publicPath + 'svg/'));
 });
@@ -103,7 +126,7 @@ gulp.task('watch', function() {
     // watch js files
     gulp.watch(sourcePath + 'js/**', ['js']);
     // watch images
-    gulp.watch(sourcePath + '{img,icon}/**', ['img']);
+    gulp.watch(sourcePath + 'img/**', ['img']);
     // watch fonts
     gulp.watch(sourcePath + 'font/**', ['font']);
     // watch svg
