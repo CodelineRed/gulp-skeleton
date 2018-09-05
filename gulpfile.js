@@ -67,7 +67,7 @@ gulp.task('img', function() {
             })
         ]))
 //        .pipe(gulp.dest(systemPath))
-        .pipe(gulp.dest(publicPath));
+        .pipe(gulp.dest(publicPath + 'img/'));
 });
 
 // copy all fonts
