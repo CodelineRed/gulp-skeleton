@@ -56,7 +56,7 @@ window.addEventListener("load", function(){
               // disable cookies
             }
             // user changed status - reload page
-            window.location.href = window.location.href;
+//            window.location.href = window.location.href;
         },
         onRevokeChoice: function() {
             var type = this.options.type;
