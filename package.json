@@ -1,6 +1,6 @@
 {
     "name": "gulp-templating",
-    "version": "3.0.5-dev",
+    "version": "3.0.5",
     "description": "Gulp Templating",
     "keywords": [
         "gulp",
