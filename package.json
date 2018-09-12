@@ -1,6 +1,6 @@
 {
     "name": "gulp-templating",
-    "version": "3.0.5",
+    "version": "3.0.6-dev",
     "description": "Gulp Templating",
     "keywords": [
         "gulp",
@@ -38,8 +38,10 @@
         "gulp-autoprefixer": "^6.0.0",
         "gulp-clean-css": "^3.10.0",
         "gulp-concat": "^2.6.1",
+        "gulp-eslint": "^5.0.0",
         "gulp-imagemin": "^4.1.0",
         "gulp-sass": "^4.0.1",
+        "gulp-sass-lint": "^1.4.0",
         "gulp-sourcemaps": "^2.6.4",
         "gulp-uglify": "^3.0.1"
     },

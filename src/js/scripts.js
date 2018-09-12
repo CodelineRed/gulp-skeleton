@@ -1,6 +1,8 @@
+'use strict';
+
 // jQuery.noConflict();
 (function($) {
-    $(document).ready(function(){
+    $(document).ready(function() {
         $('html').removeClass('no-js');
         $('[data-toggle="tooltip"]').tooltip();
         
@@ -10,8 +12,8 @@
             autoplaySpeed: 2000
         });
         
-        new LazyLoad({
-//            elements_selector: ".lazyload"
+        var lazyLoad = new LazyLoad({
+            //elements_selector: ".lazyload"
         });
         
         $.each(cssua.ua, function(key, value) {

@@ -1,7 +1,7 @@
 .slider {
     .slider-item {
-        position: relative;
         display: none;
+        position: relative;
         
         &:first-child {
             display: block;
@@ -17,8 +17,8 @@
     &.slider-brands {
         a {
             &.label {
-                margin-top: -30px;
                 margin-bottom: 15px;
+                margin-top: -30px;
             }
         }
     }
