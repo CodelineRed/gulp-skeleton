@@ -35,4 +35,4 @@ $ gulp watch
 
 ## Links
 * [ESLint Rules](https://eslint.org/docs/rules/)
-* [Sass Lint Rules](https://eslint.org/docs/rules/)
+* [Sass Lint Rules](https://github.com/sasstools/sass-lint/tree/develop/docs/rules)
