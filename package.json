@@ -25,7 +25,7 @@
     "bugs": {
         "url": "https://github.com/InsanityMeetsHH/gulp-templating/issues"
     },
-    "license": "ISC",
+    "license": "MIT",
     "homepage": "http://gulp.insanitymeetshh.net",
     "repository": {
         "type": "git",

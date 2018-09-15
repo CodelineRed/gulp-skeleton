@@ -1,5 +1,4 @@
 <?php
-$baseUrl = $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['SERVER_NAME'] . str_replace('index.php', '', $_SERVER['PHP_SELF']);
 // available templates
 $templates = array(
     'index' => 'base',
