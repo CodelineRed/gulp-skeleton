@@ -1,6 +1,6 @@
 {
     "name": "gulp-templating",
-    "version": "3.0.6",
+    "version": "3.0.7-dev",
     "description": "Gulp Templating",
     "keywords": [
         "gulp",
@@ -16,6 +16,7 @@
         "cssua",
         "cookieconsent",
         "cookie",
+        "docker",
         "jquery"
     ],
     "author": {
