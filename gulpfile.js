@@ -109,7 +109,7 @@ gulp.task('svg', function() {
     gulp.src([
 //            'node_modules/@fortawesome/fontawesome-free/svgs/**',
 //            'node_modules/@fortawesome/fontawesome-free/sprites/**',
-            sourcePath + 'svg/**/*.{svg}'
+            sourcePath + 'svg/**/*.svg'
         ])
         .pipe(imagemin([
             imagemin.svgo({
