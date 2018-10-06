@@ -6,7 +6,37 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [3.0.4] - 2018-09-06
+## [3.1.0]
+### Added
+- [`CHANGELOG.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/CHANGELOG.md)
+- [`docker-compose.yml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/develop/docker-compose.yml)
+- Slick Carousel [`ajax-loader.gif`](https://github.com/InsanityMeetsHH/gulp-templating/blob/develop/src/img/slick/ajax-loader.gif)
+- [Docker installation documentation](https://github.com/InsanityMeetsHH/gulp-templating#installation-with-docker)
+
+### Changed
+- [`README.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/README.md)
+- [`$baseUrl`](https://github.com/InsanityMeetsHH/gulp-templating/blob/develop/templates/layouts/base.phtml#L11) logic with docker condition
+
+### Removed
+- Fontawesome SVG npm packages
+
+### Fixed
+- SVG [gulp task](https://github.com/InsanityMeetsHH/gulp-templating/blob/develop/gulpfile.js#L108)
+
+## [3.0.6] - 2018-09-15
+### Added
+- [ESLint](https://www.npmjs.com/package/gulp-eslint)
+- [SASS Lint](https://www.npmjs.com/package/gulp-sass-lint)
+- Lint documentation links
+
+### Changed
+- SCSS and JaveScript files after lint has some warnings
+- [License](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/package.json#L28)
+
+### Removed
+- `$baseUrl` from [`index.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/public/index.php) and added to layout meta
+
+## [3.0.5] - 2018-09-06
 ### Added
 - Dynamic [`baseUrl`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/layouts/base.phtml#L15)
 

@@ -13,11 +13,12 @@
 
 ## Required
 * [Node.js](http://nodejs.org/en/download/)
-* [npm](http://www.npmjs.com/get-npm) `npm i npm@latest -g`
-* [gulp-cli](https://www.npmjs.com/package/gulp-cli) `npm i gulp-cli@latest -g`
+* [npm](http://www.npmjs.com/get-npm) `$ npm i npm@latest -g`
+* [gulp-cli](https://www.npmjs.com/package/gulp-cli) `$ npm i gulp-cli@latest -g`
 * PHP => 5.3
+* [Docker](https://www.docker.com/) ([for installation with Docker](https://github.com/InsanityMeetsHH/gulp-templating#installation-with-docker))
 
-## Install
+## Installation (Recommended)
 ```bash
 $ git clone https://github.com/InsanityMeetsHH/gulp-templating.git [project-name]
 $ cd [project-name]
@@ -32,6 +33,18 @@ $ gulp
 $ gulp prod
 $ gulp watch
 ```
+
+## Installation with [Docker](https://www.docker.com/)
+* Get this project via `$ git clone` or zip download
+* Open a command prompt on your OS (if not already open) and navigate to the project folder
+* `$ npm i`
+* `$ gulp prod`
+* `$ docker-compose up -d`
+* Open [localhost:8080](http://localhost:8080) for website
+* If you want to remove a container `$ docker rm [container-name] -f` e.g. `$ docker rm gulp-templating -f`
+* If you want to remove a volume `$ docker volume rm [volume-name]` e.g. `$ docker volume rm imhh-gulp_logs` (first remove matching container)
+* If you want to remove all container `$ docker rm $(docker ps -a -q) -f`
+* If you want to remove all volumes `$ docker volume prune` (first remove all container)
 
 ## Links
 * [ESLint Rules](https://eslint.org/docs/rules/)

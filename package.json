@@ -1,6 +1,6 @@
 {
     "name": "gulp-templating",
-    "version": "3.0.7-dev",
+    "version": "3.1.0-dev",
     "description": "Gulp Templating",
     "keywords": [
         "gulp",
@@ -54,6 +54,6 @@
         "cssuseragent": "^2.1.31",
         "jquery": "^3.3.1",
         "slick-carousel": "^1.8.1",
-        "vanilla-lazyload": "^8.11.0"
+        "vanilla-lazyload": "^8.17.0"
     }
 }
