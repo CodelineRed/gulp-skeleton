@@ -6,7 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [3.1.0]
+## [3.1.1]
+### Addded
+- W3C validator update
+- `lang` attribute to html tag
+- `src` attribute to img tag
+
+## [3.1.0] - 2018-10-06
 ### Added
 - [`CHANGELOG.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/CHANGELOG.md)
 - [`docker-compose.yml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/develop/docker-compose.yml)

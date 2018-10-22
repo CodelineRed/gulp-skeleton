@@ -89,7 +89,7 @@ gulp.task('img', function() {
                 ]
             })
         ]))
-//        .pipe(gulp.dest(systemPath))
+//        .pipe(gulp.dest(systemPath + 'img/'))
         .pipe(gulp.dest(publicPath + 'img/'));
 });
 

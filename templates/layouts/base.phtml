@@ -1,41 +1,43 @@
+<?php
+// if user clicked not deny
+$cookiesAllowed = isset($_COOKIE['cookieconsent_status']) && in_array($_COOKIE['cookieconsent_status'], array('allow', 'dismiss')) ? TRUE : FALSE;
+$baseUrl = $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['SERVER_NAME'] . str_replace('index.php', '', $_SERVER['PHP_SELF']);
+
+if (isset($_ENV['docker']) && $_ENV['docker']) {
+    $baseUrl = 'http://localhost:8080/';
+}
+
+// default setting (home page)        
+$meta = array(
+    'lang' => 'en',
+    'title' => 'Gulp Templating - InsanityMeetsHH',
+    'baseUrl' => $baseUrl,
+    'currentUrl' => ($_SERVER['SERVER_PORT'] == '80' ? 'http' : 'https') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'],
+    'keywords' => '',
+    'description' => '',
+    'robots' => 'index,follow',
+    'author' => 'InsanityMeetsHH',
+    'fbAppId' => '',
+    'fbAdmins' => '',
+    'publisher' => '',
+    'type' => 'website',
+    'socialMediaImage' => '',
+    'siteName' => 'Gulp Templating',
+    'twitterSite' => 'InsanityMeetsHH',
+    'twitterUrl' => 'https://twitter.com/InsanityMeetsHH',
+    'rssUrl' => '',
+    'locale' => 'en_US',
+    'themeColor' => '#212121',
+);
+?>
+
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="<?php echo $meta['lang']; ?>" class="no-js">
     <head>
         <script>
             function setCookie(e,t,n){var o=new Date;o.setTime(o.getTime()+24*n*60*60*1e3);var i="expires="+o.toUTCString();document.cookie=e+"="+t+";"+i+";path=/"}function getCookie(e){for(var t=e+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(t))return i.substring(t.length,i.length)}return""}
             var cookiesAllowed = getCookie('cookieconsent_status') !== 'deny';
         </script>
-        <?php
-        // if user clicked not deny
-        $cookiesAllowed = isset($_COOKIE['cookieconsent_status']) && in_array($_COOKIE['cookieconsent_status'], array('allow', 'dismiss')) ? TRUE : FALSE;
-        $baseUrl = $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['SERVER_NAME'] . str_replace('index.php', '', $_SERVER['PHP_SELF']);
-        
-        if (isset($_ENV['docker']) && $_ENV['docker']) {
-            $baseUrl = 'http://localhost:8080/';
-        }
-        
-        // default setting (home page)        
-        $meta = array(
-            'title' => 'Gulp Templating - InsanityMeetsHH',
-            'baseUrl' => $baseUrl,
-            'currentUrl' => ($_SERVER['SERVER_PORT'] == '80' ? 'http' : 'https') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'],
-            'keywords' => '',
-            'description' => '',
-            'robots' => 'index,follow',
-            'author' => 'InsanityMeetsHH',
-            'fbAppId' => '',
-            'fbAdmins' => '',
-            'publisher' => '',
-            'type' => 'website',
-            'socialMediaImage' => '',
-            'siteName' => 'Gulp Templating',
-            'twitterSite' => 'InsanityMeetsHH',
-            'twitterUrl' => 'https://twitter.com/InsanityMeetsHH',
-            'rssUrl' => '',
-            'locale' => 'de_DE',
-            'themeColor' => '#212121',
-        );
-        ?>
         
         <title><?php echo $meta['title']; ?></title>
         <base href="<?php echo $meta['baseUrl']; ?>">
@@ -63,7 +65,7 @@
         <link rel="me" href="<?php echo $meta['twitterUrl']; ?>">
         <link rel="canonical" href="<?php echo $meta['currentUrl']; ?>"/>
         <link rel="alternate" hreflang="x-default" href="<?php echo $meta['currentUrl']; ?>"/>
-        <link rel="alternate" type="application/rss+xml" title="" href="<?php echo $meta['rssUrl']; ?>"/>
+        <!--<link rel="alternate" type="application/rss+xml" title="" href="<?php echo $meta['rssUrl']; ?>"/>-->
         <?php /** Favicon sizes 16, 32, 36, 48, 70, 72, 96, 144, 150, 180, 192, 256, 310, 310x150, 384, 512, SVG, ICO */ ?>
         <link rel="apple-touch-icon" href="img/favicons/favicon-180x180.png" sizes="180x180">
         <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
@@ -100,6 +102,6 @@
         <div class="container">
             <?php include __DIR__ . '/../' . $template . '.phtml'; ?>
         </div>
-        <script type="text/javascript" src="js/scripts.js?v=3.0.4"></script>
+        <script src="js/scripts.js?v=3.1.1"></script>
     </body>
 </html>
