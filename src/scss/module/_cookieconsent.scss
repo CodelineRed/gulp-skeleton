@@ -1,8 +1,8 @@
 .cc-window {
     &.cc-floating {
-        padding: 0;
-        max-width: none;
         flex-direction: row;
+        max-width: none;
+        padding: 0;
         
         >.cc-link,
         .cc-message {
@@ -10,8 +10,8 @@
         }
         
         &.cc-theme-classic {
-            padding-bottom: 0;
             border-radius: 0;
+            padding-bottom: 0;
         }
     }
     
@@ -36,6 +36,9 @@
     }
     
     .cc-btn {
+        padding: .4em;
+        white-space: normal;
+        
         &:last-child {
             min-width: 100px;
         }
@@ -48,8 +51,8 @@
                 border-radius: 5px;
 
                 &:hover {
-                    border: 1px solid $white;
                     background-color: transparent;
+                    border: 1px solid $white;
                     color: $white;
                     text-decoration: none;
                 }
@@ -57,17 +60,12 @@
         }
     }
     
-    .cc-btn {
-        padding: .4em .4em;
-        white-space: normal;
-    }
-    
     .cc-link {
         padding: 0;
     }
     
     .container {
-        padding-top: 1em;
         padding-bottom: 1em;
+        padding-top: 1em;
     }
 }

@@ -1,12 +1,12 @@
-@import "variables";
+@import 'variables';
 
-@import "lib/bootstrap";
-/*@import "lib/fontawesome";*/
+@import 'lib/bootstrap';
+//@import 'lib/fontawesome';
 
-@import "plugin/cookieconsent";
-@import "plugin/slick";
+@import 'plugin/cookieconsent';
+@import 'plugin/slick';
 
-@import "module/general";
-@import "module/cookieconsent";
-@import "module/page";
-@import "module/slider";
+@import 'module/general';
+@import 'module/cookieconsent';
+@import 'module/page';
+@import 'module/slider';

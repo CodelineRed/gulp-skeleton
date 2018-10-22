@@ -1,5 +1,5 @@
 * {
-   outline: 0;
+    outline: 0;
 }
 
 a {
@@ -11,15 +11,15 @@ a {
 }
 
 .transition-all {
-    transition: all 0.5s ease;
+    transition: .5s ease;
 }
 
 .hyphenate {
-    /*-ms-word-break: break-all;*/
-    /*word-break: break-all;*/
+    //-ms-word-break: break-all;
+    //word-break: break-all;
 
     // Non standard for webkit
-    /*word-break: break-word;*/
+    //word-break: break-word;
     
     hyphens: auto;
 }
