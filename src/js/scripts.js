@@ -9,7 +9,27 @@
         $('.slider-brands').slick({
             dots: true,
             autoplay: true,
-            autoplaySpeed: 2000
+            autoplaySpeed: 2000,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    // window < 992
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    // window < 576
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
         });
         
         var lazyLoad = new LazyLoad({

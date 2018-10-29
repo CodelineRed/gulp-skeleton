@@ -6,7 +6,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [3.1.1]
+## [3.1.2]
+### Added
+- Logic to remove hidden cookie consent layer (to remove bottom margin)
+- HTML5 tag "main"
+- Author url
+
+### Changed
+- Cookie consent background and button color.
+- Brand slider config
+
+## [3.1.1] - 2018-10-22
 ### Addded
 - W3C validator update
 - `lang` attribute to html tag
