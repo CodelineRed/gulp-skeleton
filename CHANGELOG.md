@@ -6,7 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [3.1.2]
+## [3.1.3]
+### Fixed
+- bug with `$baseUrl` scheme
+
+## [3.1.2] - 2018-10-29
 ### Added
 - Logic to remove hidden cookie consent layer (to remove bottom margin)
 - HTML5 tag "main"
