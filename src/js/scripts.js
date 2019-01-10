@@ -9,23 +9,24 @@
         $('.slider-brands').slick({
             dots: true,
             autoplay: true,
+            mobileFirst: true,
             autoplaySpeed: 2000,
-            slidesToShow: 3,
+            slidesToShow: 1,
             slidesToScroll: 1,
             responsive: [
                 {
-                    // window < 992
-                    breakpoint: 992,
+                    // window > 575
+                    breakpoint: 575,
                     settings: {
                         slidesToShow: 2,
                         slidesToScroll: 1
                     }
                 },
                 {
-                    // window < 576
-                    breakpoint: 576,
+                    // window > 991
+                    breakpoint: 991,
                     settings: {
-                        slidesToShow: 1,
+                        slidesToShow: 3,
                         slidesToScroll: 1
                     }
                 }

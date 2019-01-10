@@ -11,7 +11,7 @@ var sassLint    = require('gulp-sass-lint');
 var sourcemaps  = require('gulp-sourcemaps');
 var uglify      = require('gulp-uglify');
 
-var localServer = 'http://localhost/imhh-gulp/public';
+var localServer = 'http://localhost/imhh-gulp/public/';
 var sourcePath  = 'src/';
 var publicPath  = 'public/';
 var systemPath  = 'path/to/system/'; // e.g. TYPO3, WordPress, Drupal, Slim FW ...
@@ -42,7 +42,7 @@ function scssLint() {
         .pipe(sassLint.failOnError());
 }
 
-// concatinate and uglify all js
+// concatinate and uglify js files
 function js() {
     return gulp.src([
             'node_modules/jquery/dist/jquery.js',
@@ -75,7 +75,7 @@ function jsLint() {
         .pipe(eslint.failAfterError());
 }
 
-// minify images
+// compress images
 function img() {
     return gulp.src(sourcePath + 'img/**/*.{png,gif,jpg,jpeg,ico,xml,json,svg}')
         .pipe(imagemin([
@@ -93,7 +93,7 @@ function img() {
         .pipe(gulp.dest(publicPath + 'img/'));
 }
 
-// copy all fonts
+// copy font files
 function font() {
     return gulp.src([
 //            'node_modules/@fortawesome/fontawesome-free/webfonts/**',
@@ -104,7 +104,7 @@ function font() {
         .pipe(gulp.dest(publicPath + 'font/'));
 }
 
-// copy all svg images
+// compress and copy svg files
 function svg() {
     return gulp.src([
 //            'node_modules/@fortawesome/fontawesome-free/svgs/**',
@@ -124,7 +124,7 @@ function svg() {
 }
 
 // clean up folders
-function cleanup() {
+function cleanUp() {
 //    del([
 //            systemPath + 'css/**/*',
 //            systemPath + 'js/**/*',
@@ -142,55 +142,50 @@ function cleanup() {
         ]);
 }
 
-function serve() {
+// initialize BrowserSync
+function browserSyncInit(done) {
     // start browsersync
-    return browserSync.init({
+    browserSync.init({
         proxy: localServer
     });
+    done();
 }
 
-function reload(done) {
+// reload browser
+function browserSyncReload(done) {
     browserSync.reload();
+    done();
 }
 
-// add the watcher
+// watch files
 function watch() {
     // watch scss files
     gulp.watch(sourcePath + 'scss/**', gulp.series(scss, scssLint));
     // watch js files
     gulp.watch(sourcePath + 'js/**', gulp.series(js, jsLint));
     // watch images
-    gulp.watch(sourcePath + 'img/**', gulp.series(img));
+    gulp.watch(sourcePath + 'img/**', img);
     // watch fonts
-    gulp.watch(sourcePath + 'font/**', gulp.series(font));
+    gulp.watch(sourcePath + 'font/**', font);
     // watch svg
-    gulp.watch(sourcePath + 'svg/**', gulp.series(svg));
+    gulp.watch(sourcePath + 'svg/**', svg);
 }
 
-function watchReload() {
+// watch files and reload browser on file change
+function watchFiles() {
     // watch scss files
-    gulp.watch(sourcePath + 'scss/**', gulp.series(scss, scssLint), reload);
+    gulp.watch(sourcePath + 'scss/**', gulp.series(scss, scssLint));
     // watch js files
-    gulp.watch(sourcePath + 'js/**', gulp.series(js, jsLint), reload);
+    gulp.watch(sourcePath + 'js/**', gulp.series(js, jsLint));
     // watch images
-    gulp.watch(sourcePath + 'img/**', gulp.series(img), reload);
+    gulp.watch(sourcePath + 'img/**', img);
     // watch fonts
-    gulp.watch(sourcePath + 'font/**', gulp.series(font), reload);
+    gulp.watch(sourcePath + 'font/**', font);
     // watch svg
-    gulp.watch(sourcePath + 'svg/**', gulp.series(svg), reload);
-}
-
-function browserSyncReload() {
-    watch();
+    gulp.watch(sourcePath + 'svg/**', svg);
     
-    // start browsersync
-    browserSync.init({
-        proxy: localServer
-    });
-
-    gulp.watch(publicPath + '**/*.{css,js,jpg,png,svg,ico}').on('change', browserSync.reload);
-    gulp.watch('templates/**/*.{php,html,phtml}').on('change', browserSync.reload);
-//    gulp.watch(systemPath + '**/*.{php,html,phtml}').on('change', browserSync.reload);
+    gulp.watch(publicPath + '**/*.{css,js,jpg,png,svg,ico}', browserSyncReload);
+    gulp.watch('templates/**/*.{php,html,phtml}', browserSyncReload);
 }
 
 exports.scss = scss;
@@ -200,23 +195,14 @@ exports.jsLint = jsLint;
 exports.img = img;
 exports.font = font;
 exports.svg = svg;
-exports.cleanup = cleanup;
+exports.cleanUp = cleanUp;
 exports.watch = watch;
-exports.watchReload = watchReload;
+exports.watchFiles = watchFiles;
+exports.browserSyncInit = browserSyncInit;
 exports.browserSyncReload = browserSyncReload;
 
-gulp.task('scss', scss);
-gulp.task('scss-lint', scssLint);
-gulp.task('js', js);
-gulp.task('js-lint', jsLint);
-gulp.task('img', img);
-gulp.task('font', font);
-gulp.task('svg', svg);
-gulp.task('cleanup', cleanup);
-gulp.task('watch', watch);
+// build task
+gulp.task('build', gulp.series(cleanUp, scss, js, scssLint, jsLint, img, font, svg));
 
-// production
-gulp.task('prod', gulp.series(cleanup, gulp.parallel(scss, js), gulp.parallel(scssLint, jsLint), img, font, svg));
-
-// default task if just called gulp (incl. Watch)
-gulp.task('default', gulp.series(cleanup, scss, scssLint, js, jsLint, img, font, svg, browserSyncReload));
+// default task if just called gulp
+gulp.task('default', gulp.parallel(watchFiles, browserSyncInit));
