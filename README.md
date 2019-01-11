@@ -24,21 +24,32 @@ $ git clone https://github.com/InsanityMeetsHH/gulp-templating.git [project-name
 $ cd [project-name]
 $ rm -rf .git
 $ npm i
+$ gulp build
 ```
+Change `localServer` in [gulpfile.js](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js#L14) to your local server.
+
+Possible local servers (examples): http://imhh-gulp.localhost/ or http://localhost/imhh-gulp/public/.
 
 ## Project Commands
-See [gulpfile.js](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js) for further information.
-```bash
-$ gulp
-$ gulp prod
-$ gulp watch
-```
+|               | Description                                                                                                     |
+|---------------|-----------------------------------------------------------------------------------------------------------------|
+| gulp          | watch files and start [BrowserSync](https://www.npmjs.com/package/browser-sync)                                 |
+| gulp build    | executes following tasks: cleanUp, scss, js, scssLint, jsLint, img, font, svg                                   |
+| gulp cleanUp  | clean up public folder                                                                                          |
+| gulp font     | copy font                                                                                                       |
+| gulp img      | compress/copy img                                                                                               |
+| gulp js       | uglify/minify/concat js                                                                                         |
+| gulp jsLint   | checks js follows [lint rules](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/js-lint.json)     |
+| gulp scss     | compile/minify/concat scss                                                                                      |
+| gulp scssLint | checks scss follows [lint rules](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/scss-lint.json) |
+| gulp svg      | compress/copy svg                                                                                               |
+| gulp watch    | watch scss, js, img, font and svg files                                                                         |
 
 ## Installation with [Docker](https://www.docker.com/)
 * Get this project via `$ git clone` or zip download
 * Open a command prompt on your OS (if not already open) and navigate to the project folder
 * `$ npm i`
-* `$ gulp prod`
+* `$ gulp build`
 * `$ docker-compose up -d`
 * Open [localhost:8080](http://localhost:8080) for website
 * If you want to remove a container `$ docker rm [container-name] -f` e.g. `$ docker rm gulp-templating -f`
