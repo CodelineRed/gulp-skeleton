@@ -24,6 +24,7 @@ $ git clone https://github.com/InsanityMeetsHH/gulp-templating.git [project-name
 $ cd [project-name]
 $ rm -rf .git
 $ npm i
+$ gulp build
 ```
 Change `localServer` in [gulpfile.js](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js#L14) to your local server.
 
@@ -48,7 +49,7 @@ Possible local servers (examples): http://imhh-gulp.localhost/ or http://localho
 * Get this project via `$ git clone` or zip download
 * Open a command prompt on your OS (if not already open) and navigate to the project folder
 * `$ npm i`
-* `$ gulp prod`
+* `$ gulp build`
 * `$ docker-compose up -d`
 * Open [localhost:8080](http://localhost:8080) for website
 * If you want to remove a container `$ docker rm [container-name] -f` e.g. `$ docker rm gulp-templating -f`
