@@ -6,7 +6,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [3.1.3]
+## [4.0.0]
+### Added
+- Gulp 4 task syntax
+- [toasts](https://getbootstrap.com/docs/4.2/components/toasts/) and [spinners](https://getbootstrap.com/docs/4.2/components/spinners/) component to bootstrap.scss
+- mobileFirst to brand slider config
+
+### Changed
+- Bootstrap dependency to 4.2.1
+- gulpfile.js inline comments
+- README.md
+
+### Removed
+- `$ gulp prod` replaced by `$ gulp build`
+
+## [3.1.3] - 2019-01-11
 ### Fixed
 - bug with `$baseUrl` scheme
 
