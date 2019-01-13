@@ -13,22 +13,12 @@
                     + '<div class="container"><div class="row align-items-center">{{children}}</div></div></div>',
             elements: {
                 messagelink: '<div class="col-12 col-sm-6 col-lg-8 pb-3 pb-sm-0"><span id="cookieconsent:desc" class="cc-message">{{message}} ' 
-                        + '<a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="{{href}}" target="_blank">{{link}}</a></span></div>'
+                        + '<a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="{{href}}" data-toggle="modal" data-target="#privacy-policy">{{link}}</a></span></div>'
             },
             compliance: {
                 info: '<div class="cc-compliance col-12 col-sm-6 col-lg-4">{{dismiss}}</div>',
-                'opt-in':'<div class="cc-compliance cc-highlight col-12 col-sm-6 col-lg-4">{{dismiss}}{{allow}}</div>',
-                'opt-out': '<div class="cc-compliance cc-highlight col-12 col-sm-6 col-lg-4">{{deny}}{{dismiss}}</div>'
-            },
-            palette: {
-                popup: {
-                    background: '#333333',
-                    text: '#ffffff'
-                },
-                button: {
-                    background: '#2e97bf',
-                    text: '#ffffff'
-                }
+                'opt-in':'<div class="cc-compliance col-12 col-sm-6 col-lg-4">{{dismiss}}{{allow}}</div>',
+                'opt-out': '<div class="cc-compliance col-12 col-sm-6 col-lg-4">{{deny}}{{dismiss}}</div>'
             },
             theme: 'classic',
             type: 'info',
@@ -37,7 +27,7 @@
                 dismiss: 'Got it!',
                 deny: 'Deny',
                 link: 'Learn more',
-                href: '#privacypolicy'
+                href: '#privacy-policy'
             },
             onInitialise: function(status) {
                 var type = this.options.type;
@@ -52,9 +42,7 @@
                 }
                 
                 // remove hidden cc-window
-                setTimeout(function() {
-                    $('.cc-window').remove();
-                }, 250);
+                $('.cc-window').remove();
             },
             onPopupOpen: function(){
                 // do something
@@ -75,9 +63,7 @@
                 }
 
                 // remove cc-window on status change
-                setTimeout(function() {
-                    $('.cc-window').remove();
-                }, 1000); // wait 1 second for fade out transition
+                $('.cc-window').remove();
             },
             onRevokeChoice: function() {
                 var type = this.options.type;

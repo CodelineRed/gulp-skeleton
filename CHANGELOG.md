@@ -6,7 +6,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [4.0.0]
+## 4.1.0
+### Added
+- Privacy Policy Modal
+- Bootstrap variables to `_variables.scss`
+- `_slick.scss` file
+- `_modal.scss` file
+
+### Changed
+- Styling of cookie layer 
+
+### Removed
+- Styles in `_page.scss` replaced by Bootstrap variables
+- SCSS variable `$lightblue` and replaced by `$theme-color-1`
+- SCSS variable `$darkgrey` and replaced by `$theme-color-2`
+- SCSS variable `$lightgrey` and replaced by `$theme-color-3`
+- SCSS variable `$grey` and replaced by `$theme-color-4`
+- `palette` from `cookieconsent.js` and replaced by CSS in `_cookieconsent.scss`
+
+## [4.0.0] - 2019-01-11
 ### Added
 - Gulp 4 task syntax
 - [toasts](https://getbootstrap.com/docs/4.2/components/toasts/) and [spinners](https://getbootstrap.com/docs/4.2/components/spinners/) component to bootstrap.scss

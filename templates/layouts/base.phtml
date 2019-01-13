@@ -79,7 +79,7 @@ $meta = array(
         <meta name="theme-color" content="<?php echo $meta['themeColor']; ?>">
         <link rel="shortcut icon" href="img/favicons/favicon.ico">
         
-        <link rel="stylesheet" href="css/styles.css?v=4.0.0">
+        <link rel="stylesheet" href="css/styles.css?v=4.1.0">
         <script>
             // if cookies allowed - load tracking code
             if (cookiesAllowed) {
@@ -102,6 +102,7 @@ $meta = array(
         <main class="container">
             <?php include __DIR__ . '/../' . $template . '.phtml'; ?>
         </main>
-        <script src="js/scripts.js?v=4.0.0"></script>
+        <?php include __DIR__ . '/../partials/modal.phtml'; ?>
+        <script src="js/scripts.js?v=4.1.0"></script>
     </body>
 </html>
