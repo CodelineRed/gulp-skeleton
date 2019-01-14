@@ -41,8 +41,10 @@
                     // disable cookies
                 }
                 
-                // remove hidden cc-window
-                $('.cc-window').remove();
+                // set .cc-window at the end of body to disable bottom margin on .container
+                setTimeout(function() {
+                    $('body').append($('.cc-window'));
+                }, 1000);
             },
             onPopupOpen: function(){
                 // do something
@@ -62,8 +64,10 @@
                     // disable cookies
                 }
 
-                // remove cc-window on status change
-                $('.cc-window').remove();
+                // set .cc-window at the end of body to disable bottom margin on .container
+                setTimeout(function() {
+                    $('body').append($('.cc-window'));
+                }, 1000);
             },
             onRevokeChoice: function() {
                 var type = this.options.type;
@@ -75,6 +79,9 @@
                 if (type === 'opt-out') {
                     // enable cookies
                 }
+                
+                // set .cc-window at the top of body to enable bottom margin on .container
+                $('body').prepend($('.cc-window'));
             }
         });
     });
