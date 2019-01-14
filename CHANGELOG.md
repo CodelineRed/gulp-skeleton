@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Styling of cookie layer
 - Behavior of remove bottom margin from `.container` without remove `.cc-window`
+- Placeholder image url from http to https
 
 ### Removed
 - Styles in `_page.scss` replaced by Bootstrap variables
