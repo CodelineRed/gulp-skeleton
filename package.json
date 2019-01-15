@@ -1,7 +1,7 @@
 {
-    "name": "gulp-templating",
+    "name": "gulp-skeleton",
     "version": "4.1.0-dev",
-    "description": "Gulp Templating",
+    "description": "Gulp Skeleton",
     "keywords": [
         "gulp",
         "templating",

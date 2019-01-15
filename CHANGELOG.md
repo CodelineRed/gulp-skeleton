@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Placeholder image url from http to https
 - `.gitignore`
 - Gulp clean css dependency from v3 to v4
+- Package name from gulp-templating to gulp-skeleton
 
 ### Removed
 - Styles in `_page.scss` replaced by Bootstrap variables
