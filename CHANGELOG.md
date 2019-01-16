@@ -6,7 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## 4.1.0
+## 4.2.0
+### Added
+- Speaking URL handling
+- Localization
+
+### Removed
+- Get parameter `?t=` handling
+
+## 4.1.0 - 2019-01-15
 ### Added
 - Privacy Policy Modal
 - Bootstrap variables to `_variables.scss`

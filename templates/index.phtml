@@ -1,14 +1,14 @@
 <div class="row">
     <div class="col-12 py-5 text-center">
         <h1>
-            Gulp Templating - InsanityMeetsHH
+            Gulp Skeleton - InsanityMeetsHH
             <a href="https://github.com/InsanityMeetsHH/gulp-templating" target="_blank"><i class="fab fa-inverse fa-github" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" title="GitHub"></i></a>
         </h1>
     </div>
 </div>
-<div class="row text-center align-items-center justify-content-center">
+<div class="row text-center justify-content-center">
     <div class="col-12">
-        <span style="font-size: 1.75rem;">included</span>
+        <span style="font-size: 1.75rem;"><?php echo $lang['included']; ?></span>
     </div>
     <div class="col-12 col-md-8 pb-5">
         <div class="slider slider-brands">
@@ -26,7 +26,7 @@
                         <i class="fas fa-bold fa-inverse" data-fa-transform="shrink-6"></i>
                     </span>
                 </div>
-                <a href="https://getbootstrap.com/" target="_blank" class="d-block label">Bootstrap 4</a>
+                <a href="https://getbootstrap.com/" target="_blank" class="d-block label"><?php echo $lang['bootstrap']; ?></a>
             </div>
             <div class="slider-item">
                 <!-- Fonts with CSS Example (use only without Fontawesome JavaScript) -->
@@ -42,7 +42,7 @@
                         <i class="fab fa-font-awesome-flag fa-inverse" data-fa-transform="shrink-6"></i>
                     </span>
                 </div>
-                <a href="https://fontawesome.com/" target="_blank" class="d-block label">Fontawesome 5</a>
+                <a href="https://fontawesome.com/" target="_blank" class="d-block label"><?php echo $lang['fontawesome']; ?></a>
             </div>
             <div class="slider-item">
                 <!-- Fonts with CSS Example (use only without Fontawesome JavaScript) -->
@@ -60,7 +60,7 @@
                         <i class="fas fa-chevron-right fa-inverse" data-fa-transform="shrink-13 right-6"></i>
                     </span>
                 </div>
-                <a href="http://kenwheeler.github.io/slick/" target="_blank" class="d-block label">Slick Carousel</a>
+                <a href="http://kenwheeler.github.io/slick/" target="_blank" class="d-block label"><?php echo $lang['slick']; ?></a>
             </div>
             <div class="slider-item">
                 <!-- Fonts with CSS Example (use only without Fontawesome JavaScript) -->
@@ -77,7 +77,7 @@
                         <i class="fas fa-sync" data-fa-transform="shrink-14 up-2.5 right-4"></i>
                     </span>
                 </div>
-                <a href="https://www.andreaverlicchi.eu/lazyload/" target="_blank" class="d-block label">LazyLoad Image</a>
+                <a href="https://www.andreaverlicchi.eu/lazyload/" target="_blank" class="d-block label"><?php echo $lang['lazyload']; ?></a>
             </div>
             <div class="slider-item">
                 <!-- Fonts with CSS Example (use only without Fontawesome JavaScript) -->
@@ -95,7 +95,7 @@
                         <i class="fab fa-html5" data-fa-transform="shrink-14 down-4 left-3.5"></i>
                     </span>
                 </div>
-                <a href="https://www.npmjs.com/package/cssuseragent" target="_blank" class="d-block label">CSS User Agent</a>
+                <a href="https://www.npmjs.com/package/cssuseragent" target="_blank" class="d-block label"><?php echo $lang['cssua']; ?></a>
             </div>
             <div class="slider-item">
                 <!-- SVG with JavaScript Example -->
@@ -111,19 +111,30 @@
                         <i class="fas fa-circle fa-inverse" data-fa-transform="shrink-14 up-5"></i>
                     </span>
                 </div>
-                <a href="https://github.com/insites/cookieconsent" target="_blank" class="d-block label">Cookieconsent 3</a>
+                <a href="https://github.com/insites/cookieconsent" target="_blank" class="d-block label"><?php echo $lang['cookieconsent']; ?></a>
             </div>
         </div>
     </div>
     <div class="col-12 pb-5">
         <div class="row">
             <div class="col-12 col-md-6 pb-5 pb-md-0">
-                <h3 class="pb-2">LazyLoad Example</h3>
+                <h3 class="pb-2"><?php echo $lang['lazyload-example']; ?></h3>
                 <img src="img/slick/ajax-loader.gif" data-src="https://via.placeholder.com/266x140/2E97BF/212121?text=LazyLoad%20Image" alt="image" class="img-fluid"/>
             </div>
             <div class="col-12 col-md-6">
-                <h3 class="pb-2">CSS User Agent Monitor</h3>
+                <h3 class="pb-2"><?php echo $lang['cssua-monitor']; ?></h3>
                 <div class="cssua-monitor"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 pb-5 text-right">
+        <div class="btn-group dropup">
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-language"></i>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="de/">Deutsch</a>
+                <a class="dropdown-item" href="<?php echo $baseUrl; ?>">English</a>
             </div>
         </div>
     </div>
