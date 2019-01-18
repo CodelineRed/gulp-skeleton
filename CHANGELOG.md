@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Speaking URL handling
 - Localization
+- Header and Footer partials
 
 ### Removed
 - Get parameter `?t=` handling

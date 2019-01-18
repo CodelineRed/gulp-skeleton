@@ -26,7 +26,7 @@
         }
     }
     
-    &~ .container {
+    &~ footer {
         margin-bottom: 200px;
         
         @include media-breakpoint-up('sm') {

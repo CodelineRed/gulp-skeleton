@@ -184,7 +184,7 @@ function watchFiles() {
     // watch svg
     gulp.watch(sourcePath + 'svg/**', svg);
     
-    gulp.watch(publicPath + '**/*.{css,js,jpg,png,svg,ico}', browserSyncReload);
+    gulp.watch(publicPath + '**/*.{css,eot,ico,js,jpg,otf,png,svg,ttf,woff,woff2}', browserSyncReload);
     gulp.watch('templates/**/*.{php,html,phtml}', browserSyncReload);
 }
 

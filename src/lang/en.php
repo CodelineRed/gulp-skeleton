@@ -2,7 +2,7 @@
 return [
     'included' => 'included',
     'bootstrap' => 'Bootstrap 4',
-    'fontawesome' => 'Fontawesome 5',
+    'fontawesome' => 'Font Awesome 5',
     'slick' => 'Slick Carousel',
     'lazyload' => 'LazyLoad Image',
     'cssua' => 'CSS User Agent',
