@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Localization
 - Header and Footer partials
 
-### Removed
+### Deprecated
 - Get parameter `?t=` handling
 
 ## 4.1.0 - 2019-01-15
