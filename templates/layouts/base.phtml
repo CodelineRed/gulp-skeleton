@@ -80,7 +80,7 @@ $meta = array(
         <link rel="shortcut icon" href="img/favicons/favicon.ico">
         
         <link rel="stylesheet" href="css/styles.css?v=4.2.0">
-        <script>
+        <script type="application/javascript">
             // if cookies allowed - load tracking code
             if (cookiesAllowed) {
                 // Google Analaytics, Google Tag Manager, ...
@@ -96,17 +96,37 @@ $meta = array(
 //                gtag('js', new Date());
 //                gtag('config', 'UA-NUMBER-X', {'anonymize_ip': true});
             }
+            
+            var cookieLayer = {
+                header: '<?php echo $lang['cl-header']; ?>',
+                message: '<?php echo $lang['cl-message']; ?>',
+                allow: '<?php echo $lang['cl-allow']; ?>',
+                dismiss: '<?php echo $lang['cl-dismiss']; ?>',
+                deny: '<?php echo $lang['cl-deny']; ?>',
+                link: '<?php echo $lang['cl-link']; ?>',
+                messageLink: '<?php echo $lang['cl-message-link']; ?>',
+                dismissLink: '<?php echo $lang['cl-dismiss-link']; ?>',
+                allowLink: '<?php echo $lang['cl-allow-link']; ?>',
+                policy: '<?php echo $lang['cl-policy']; ?>',
+                href: '<?php echo $lang['cl-href']; ?>'
+            };
         </script>
     </head>
     <body>
-        <header class="container">
-            <?php include __DIR__ . '/../partials/header.phtml'; ?>
+        <header>
+            <div class="container">
+                <?php include __DIR__ . '/../partials/header.phtml'; ?>
+            </div>
         </header>
-        <main class="container">
-            <?php include __DIR__ . '/../' . $template . '.phtml'; ?>
+        <main>
+            <div class="container">
+                <?php include __DIR__ . '/../' . $template . '.phtml'; ?>
+            </div>
         </main>
-        <footer class="container">
-            <?php include __DIR__ . '/../partials/footer.phtml'; ?>
+        <footer>
+            <div class="container">
+                <?php include __DIR__ . '/../partials/footer.phtml'; ?>
+            </div>
         </footer>
         <?php include __DIR__ . '/../partials/modal.phtml'; ?>
         <script src="js/scripts.js?v=4.2.0"></script>

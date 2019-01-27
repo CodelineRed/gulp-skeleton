@@ -23,11 +23,14 @@
             theme: 'classic',
             type: 'info',
             content: {
-                message: 'This website uses cookies to ensure you get the best experience on our website.',
-                dismiss: 'Got it!',
-                deny: 'Deny',
-                link: 'Learn more',
-                href: '#privacy-policy'
+                header: cookieLayer.header,
+                message: cookieLayer.message,
+                dismiss: cookieLayer.dismiss,
+                allow: cookieLayer.allow,
+                deny: cookieLayer.deny,
+                link: cookieLayer.link,
+                policy: cookieLayer.policy,
+                href: cookieLayer.href
             },
             onInitialise: function(status) {
                 var type = this.options.type;

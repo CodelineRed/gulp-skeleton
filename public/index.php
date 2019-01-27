@@ -1,8 +1,7 @@
 <?php
-//error_reporting(E_ALL);
-//ini_set('display_errors', TRUE);
+//error_reporting(E_ALL ^ E_NOTICE);
+//ini_set('display_errors', FALSE);
 //ini_set('display_startup_errors', TRUE);
-trigger_error('Get parameter `?t=` handling is deprecated', E_USER_DEPRECATED);
 
 // available url paths
 $paths = [
