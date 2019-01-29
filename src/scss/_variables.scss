@@ -6,6 +6,11 @@ $theme-color-4: lighten($theme-color-2, 5%); // grey
 // Font Awesome
 $fa-font-path: '../font';
 
+// Slick Carousel
+$slick-dot-color: #fff;
+$slick-font-path: '../font/';
+$slick-loader-path: '../img/slick/';
+
 // Bootstrap
 $body-bg: $theme-color-2;
 $body-color: $theme-color-3;
@@ -21,8 +26,3 @@ $link-color: $theme-color-1;
 
 $modal-content-bg: $theme-color-4;
 $modal-header-border-color: $theme-color-3;
-
-// Slick Carousel
-$slick-dot-color: #fff;
-$slick-font-path: '../font/';
-$slick-loader-path: '../img/slick/';

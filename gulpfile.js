@@ -34,8 +34,7 @@ function scss() {
 // lint scss files
 function scssLint() {
     return gulp.src([
-            sourcePath + 'scss/**/*.scss',
-            '!' + sourcePath + 'scss/plugin/slick.scss' // exclude because of trailing ".scss" in path
+            sourcePath + 'scss/**/*.scss'
         ])
         .pipe(sassLint(require('./scss-lint.json')))
         .pipe(sassLint.format())

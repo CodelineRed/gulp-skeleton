@@ -6,7 +6,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## 4.2.0
+## 4.2.1
+### Added
+- Wrap around cookie consent
+- `initSlider` js function
+- `initImageLazyLoad` js function
+- `forceImageLoad` js function
+- sass-lint and eslint disable rules where it has to be
+- all Bootstrap utilities
+
+### Changed
+- Insert `a` tag styling to `page.scss`
+- `gulpfile.js`
+
+## 4.2.0 - 2019-01-27
 ### Added
 - Speaking URL handling
 - Localization

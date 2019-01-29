@@ -1,13 +1,13 @@
+/*global cookieLayer*/
 'use strict';
 
 /**
- * Handled cookie consent look and behavior
+ * Init cookie consent look and behavior
  * 
- * @param {object} $ jQuery object
  * @returns {undefined}
  */
-(function($) {
-    window.addEventListener('load', function() {
+function initCookieConsent() {
+    (function($) {
         window.cookieconsent.initialise({
             window: '<div role="dialog" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window w-100 {{classes}}">'
                     + '<div class="container"><div class="row align-items-center">{{children}}</div></div></div>',
@@ -35,21 +35,21 @@
             onInitialise: function(status) {
                 var type = this.options.type;
                 var didConsent = this.hasConsented();
-                
+
                 if (type === 'opt-in' && didConsent) {
                     // enable cookies
                 }
-                
+
                 if (type === 'opt-out' && !didConsent) {
                     // disable cookies
                 }
-                
+
                 // set .cc-window at the end of body to disable bottom margin on .container
                 setTimeout(function() {
                     $('body').append($('.cc-window'));
                 }, 1000);
             },
-            onPopupOpen: function(){
+            onPopupOpen: function() {
                 // do something
             },
             onPopupClose: function() {
@@ -58,11 +58,11 @@
             onStatusChange: function(status, chosenBefore) {
                 var type = this.options.type;
                 var didConsent = this.hasConsented();
-                
+
                 if (type === 'opt-in' && didConsent) {
                     // enable cookies
                 }
-                
+
                 if (type ==='opt-out' && !didConsent) {
                     // disable cookies
                 }
@@ -74,18 +74,18 @@
             },
             onRevokeChoice: function() {
                 var type = this.options.type;
-                
+
                 if (type === 'opt-in') {
                     // disable cookies
                 }
-                
+
                 if (type === 'opt-out') {
                     // enable cookies
                 }
-                
+
                 // set .cc-window at the top of body to enable bottom margin on .container
                 $('body').prepend($('.cc-window'));
             }
         });
-    });
-})(jQuery);
+    })(jQuery);
+}

@@ -1,17 +1,12 @@
-* {
-    outline: 0;
-}
-
-a {
-    @extend .transition-all;
-    
-    &:hover {
-        text-decoration: none;
-    }
+*, 
+*:hover, 
+*:focus, 
+*:active {
+    outline: 0 !important; // sass-lint:disable-line no-important
 }
 
 .transition-all {
-    transition: .5s ease;
+    @include transition(.5s ease)
 }
 
 .hyphenate {
