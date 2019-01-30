@@ -14,10 +14,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `forceImageLoad` js function
 - sass-lint and eslint disable rules where it has to be
 - all Bootstrap utilities
+- Website urls as comments in scss files
 
 ### Changed
 - Insert `a` tag styling to `page.scss`
 - `gulpfile.js`
+- from FA 5.6.3 to FA 5.7
 
 ## 4.2.0 - 2019-01-27
 ### Added
