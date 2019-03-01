@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## 4.2.1
+## 4.3.0
 ### Added
 - Wrap around cookie consent
 - `initSlider` js function
@@ -15,11 +15,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - sass-lint and eslint disable rules where it has to be
 - all Bootstrap utilities
 - Website urls as comments in scss files
+- routes as php file
 
 ### Changed
 - Insert `a` tag styling to `page.scss`
 - `gulpfile.js`
 - from FA 5.6.3 to FA 5.7
+- from BS 4.2 to BS 4.3
+- `$paths` to `$routes`
 
 ## 4.2.0 - 2019-01-27
 ### Added
