@@ -1,0 +1,6 @@
+{
+    "localServer": "http://localhost/imhh-gulp/public/",
+    "sourcePath": "srcppp/",
+    "publicPath": "public/",
+    "systemPath": "path/to/system/"
+}

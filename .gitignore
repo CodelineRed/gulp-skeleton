@@ -5,6 +5,7 @@
 /public/js/scripts.js
 /public/js/scripts.js.map
 /public/font/
+gulpfile-config.json
 
 # Created by https://www.gitignore.io/api/node
 # Edit at https://www.gitignore.io/?templates=node

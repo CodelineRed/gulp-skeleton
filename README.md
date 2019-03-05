@@ -26,7 +26,7 @@ $ rm -rf .git
 $ npm i
 $ gulp build
 ```
-Change `localServer` in [gulpfile.js](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js#L14) to your local server.
+Change `localServer` in [`gulpfile-config.json`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile-config.json) to your local server.
 
 Possible local servers (examples): http://imhh-gulp.localhost/ or http://localhost/imhh-gulp/public/.
 

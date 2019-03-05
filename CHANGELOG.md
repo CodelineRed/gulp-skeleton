@@ -13,16 +13,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `initImageLazyLoad` js function
 - `forceImageLoad` js function
 - sass-lint and eslint disable rules where it has to be
-- all Bootstrap utilities
+- all Bootstrap utilities line by line
 - Website urls as comments in scss files
 - routes as php file
+- [`gulpfile-config.dist.json`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile-config.dist.json)
+- post install script
 
 ### Changed
 - Insert `a` tag styling to `page.scss`
 - `gulpfile.js`
-- from FA 5.6.3 to FA 5.7
-- from BS 4.2 to BS 4.3
 - `$paths` to `$routes`
+- [`README.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/README.md)
+- Font Awesome 5.6 to Font Awesome 5.7
+- Boostrap 4.2 to Boostrap 4.3
+- del 3.0 to del 4.0
+- gitignore
 
 ## 4.2.0 - 2019-01-27
 ### Added
