@@ -28,6 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Boostrap 4.2 to Boostrap 4.3
 - del 3.0 to del 4.0
 - gitignore
+- h1 font size to mobile first
 
 ## 4.2.0 - 2019-01-27
 ### Added
