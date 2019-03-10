@@ -9,26 +9,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## 4.3.0
 ### Added
 - Wrap around cookie consent
-- `initSlider` js function
-- `initImageLazyLoad` js function
-- `forceImageLoad` js function
+- [`slider.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/js/module/slider.js)
+- [`image-lazyLoad.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/js/module/image-lazyLoad.js)
 - sass-lint and eslint disable rules where it has to be
 - all Bootstrap utilities line by line
 - Website urls as comments in scss files
-- routes as php file
+- [`routes.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/php/routes.php)
 - [`gulpfile-config.dist.json`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile-config.dist.json)
-- post install script
+- `postinstall` script in [`npm-postinstall.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/php/npm-postinstall.php)
 
 ### Changed
-- Insert `a` tag styling to `page.scss`
-- `gulpfile.js`
+- Insert `a` tag styling to [`page.scss`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/scss/module/page.scss)
+- [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js)
 - `$paths` to `$routes`
 - [`README.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/README.md)
 - Font Awesome 5.6 to Font Awesome 5.7
-- Boostrap 4.2 to Boostrap 4.3
+- Bootstrap 4.2 to Bootstrap 4.3
 - del 3.0 to del 4.0
 - gitignore
 - h1 font size to mobile first
+- [`modal.phtml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/partials/modal.phtml)
 
 ## 4.2.0 - 2019-01-27
 ### Added

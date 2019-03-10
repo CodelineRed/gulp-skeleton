@@ -13,7 +13,7 @@ function initCookieConsent() {
                     + '<div class="container"><div class="row align-items-center">{{children}}</div></div></div>',
             elements: {
                 messagelink: '<div class="col-12 col-sm-6 col-lg-8 pb-3 pb-sm-0"><span id="cookieconsent:desc" class="cc-message">{{message}} ' 
-                        + '<a aria-label="learn more about cookies" tabindex="0" class="cc-link" href="{{href}}" data-toggle="modal" data-target="#privacy-policy">{{link}}</a></span></div>'
+                        + '<a aria-label="' + cookieLayer.messageLink + '" tabindex="0" class="cc-link" href="{{href}}" data-toggle="modal" data-target="#cookie-policy">{{link}}</a></span></div>'
             },
             compliance: {
                 info: '<div class="cc-compliance col-12 col-sm-6 col-lg-4">{{dismiss}}</div>',
