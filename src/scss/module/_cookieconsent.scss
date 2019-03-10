@@ -1,4 +1,15 @@
 .cc-window {
+    background-color: $theme-color-4;
+    z-index: 1000;
+    
+    &.cc-banner {
+        padding: 0;
+    }
+    
+    &.cc-bottom {
+        bottom: 0;
+    }
+    
     &.cc-floating {
         flex-direction: row;
         max-width: none;
@@ -15,11 +26,7 @@
         }
     }
     
-    &.cc-bottom {
-        bottom: 0;
-    }
-    
-    &~ .container {
+    &~ footer {
         margin-bottom: 200px;
         
         @include media-breakpoint-up('sm') {
@@ -36,36 +43,50 @@
     }
     
     .cc-btn {
+        border-width: 1px;
         padding: .4em;
         white-space: normal;
         
-        &:last-child {
-            min-width: 100px;
+        &.cc-dismiss {
+            background-color: $theme-color-1;
+            border-color: $theme-color-1;
+            color: $white;
         }
-    }
-    
-    .cc-highlight {
-        .cc-btn {
-            &:first-child {
-                border: 1px solid transparent;
-                border-radius: 5px;
-
-                &:hover {
-                    background-color: transparent;
-                    border: 1px solid $white;
-                    color: $white;
-                    text-decoration: none;
-                }
+        
+        &.cc-allow,
+        &.cc-deny {
+            border-color: $theme-color-1;
+            color: $white;
+        }
+        
+        &.cc-allow,
+        &.cc-deny,
+        &.cc-dismiss {
+            &:hover {
+                background-color: transparent;
+                border-color: $white;
             }
         }
     }
     
     .cc-link {
+        color: $white;
         padding: 0;
     }
     
     .container {
+        background-color: $theme-color-4;
+        color: $white;
         padding-bottom: 1em;
         padding-top: 1em;
+    }
+}
+
+.cc-revoke {
+    background-color: $theme-color-4;
+    color: $white;
+    
+    &:hover {
+        text-decoration: none;
     }
 }

@@ -6,16 +6,71 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [4.0.0]
+## 4.3.0
+### Added
+- Wrap around cookie consent
+- [`slider.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/js/module/slider.js)
+- [`image-lazyLoad.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/js/module/image-lazyLoad.js)
+- sass-lint and eslint disable rules where it has to be
+- all Bootstrap utilities line by line
+- Website urls as comments in scss files
+- [`routes.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/php/routes.php)
+- [`gulpfile-config.dist.json`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile-config.dist.json)
+- `postinstall` script in [`npm-postinstall.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/php/npm-postinstall.php)
+
+### Changed
+- Insert `a` tag styling to [`page.scss`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/scss/module/page.scss)
+- [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js)
+- `$paths` to `$routes`
+- [`README.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/README.md)
+- Font Awesome 5.6 to Font Awesome 5.7
+- Bootstrap 4.2 to Bootstrap 4.3
+- del 3.0 to del 4.0
+- gitignore
+- h1 font size to mobile first
+- [`modal.phtml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/partials/modal.phtml)
+
+## 4.2.0 - 2019-01-27
+### Added
+- Speaking URL handling
+- Localization
+- Header and Footer partials
+
+## 4.1.0 - 2019-01-15
+### Added
+- Privacy Policy Modal
+- Bootstrap variables to `_variables.scss`
+- Styling for Cookie Consent revoke button
+- `_slick.scss` file
+- `_modal.scss` file
+- `package-lock.json`
+
+### Changed
+- Styling of cookie layer
+- Behavior of remove bottom margin from `.container` without remove `.cc-window`
+- Placeholder image url from http to https
+- `.gitignore`
+- Gulp clean css dependency from v3 to v4
+- Package name from gulp-templating to gulp-skeleton
+
+### Removed
+- Styles in `_page.scss` replaced by Bootstrap variables
+- SCSS variable `$lightblue` and replaced by `$theme-color-1`
+- SCSS variable `$darkgrey` and replaced by `$theme-color-2`
+- SCSS variable `$lightgrey` and replaced by `$theme-color-3`
+- SCSS variable `$grey` and replaced by `$theme-color-4`
+- `palette` from `cookieconsent.js` and replaced by CSS in `_cookieconsent.scss`
+
+## [4.0.0] - 2019-01-11
 ### Added
 - Gulp 4 task syntax
-- [toasts](https://getbootstrap.com/docs/4.2/components/toasts/) and [spinners](https://getbootstrap.com/docs/4.2/components/spinners/) component to bootstrap.scss
+- [toasts](https://getbootstrap.com/docs/4.2/components/toasts/) and [spinners](https://getbootstrap.com/docs/4.2/components/spinners/) component to `bootstrap.scss`
 - mobileFirst to brand slider config
 
 ### Changed
 - Bootstrap dependency to 4.2.1
-- gulpfile.js inline comments
-- README.md
+- [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js) inline comments
+- [`README.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/README.md)
 
 ### Removed
 - `$ gulp prod` replaced by `$ gulp build`
@@ -43,19 +98,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [3.1.0] - 2018-10-06
 ### Added
 - [`CHANGELOG.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/CHANGELOG.md)
-- [`docker-compose.yml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/develop/docker-compose.yml)
-- Slick Carousel [`ajax-loader.gif`](https://github.com/InsanityMeetsHH/gulp-templating/blob/develop/src/img/slick/ajax-loader.gif)
+- [`docker-compose.yml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/docker-compose.yml)
+- Slick Carousel [`ajax-loader.gif`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/img/slick/ajax-loader.gif)
 - [Docker installation documentation](https://github.com/InsanityMeetsHH/gulp-templating#installation-with-docker)
 
 ### Changed
 - [`README.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/README.md)
-- [`$baseUrl`](https://github.com/InsanityMeetsHH/gulp-templating/blob/develop/templates/layouts/base.phtml#L11) logic with docker condition
+- [`$baseUrl`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/layouts/base.phtml#L11) logic with docker condition
 
 ### Removed
 - Fontawesome SVG npm packages
 
 ### Fixed
-- SVG [gulp task](https://github.com/InsanityMeetsHH/gulp-templating/blob/develop/gulpfile.js#L108)
+- SVG [gulp task](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js#L108)
 
 ## [3.0.6] - 2018-09-15
 ### Added
