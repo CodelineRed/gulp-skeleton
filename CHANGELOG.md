@@ -6,7 +6,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## 4.3.0
+## 4.3.1
+### Added
+- `RewriteBase /` to [`.htaccess`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/public/.htaccess)
+- `is_writable` condition to [`npm-postinstall.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/php/npm-postinstall.php)
+
+### Changed
+- word `templating` to `skeleton` in some places
+- [`README.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/README.md)
+- Font Awesome 5.7 to Font Awesome 5.8
+- jQuery 3.3 to jQuery 3.4
+- del 4.0 to del 4.1
+
+## 4.3.0 - 2019-03-10
 ### Added
 - Wrap around cookie consent
 - [`slider.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/js/module/slider.js)
