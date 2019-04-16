@@ -18,6 +18,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - jQuery 3.3 to jQuery 3.4
 - del 4.0 to del 4.1
 
+### Fixed
+- override existing `gulpfile-config.json`
+
 ## 4.3.0 - 2019-03-10
 ### Added
 - Wrap around cookie consent
