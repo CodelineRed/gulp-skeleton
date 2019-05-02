@@ -16,7 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [`README.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/README.md)
 - Font Awesome 5.7 to Font Awesome 5.8
 - browser-sync 2.26.3 to browser-sync 2.26.5
-- del 4.0 to del 4.1
+- del 4.0 to del 4.1.1
 - gulp 4.0.0 to gulp 4.0.1
 - gulp-autoprefixer 6.0 to gulp-autoprefixer 6.1
 - gulp-clean-css 4.0 to gulp-clean-css 4.2
