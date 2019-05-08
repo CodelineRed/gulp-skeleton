@@ -6,7 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## 4.3.1
+## 4.3.2
+### Added
+- `:not(.slick-initialized)` to `initSlider()`
+- [`cssua-monitor.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/js/module/cssua-monitor.js)
+
+### Changed
+- Font Awesome 5.8.1 to Font Awesome 5.8.2
+- gulp 4.0.1 to gulp 4.0.2
+
+## 4.3.1 - 2019-05-02
 ### Added
 - `RewriteBase /` to [`.htaccess`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/public/.htaccess)
 - `is_writable` condition to [`npm-postinstall.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/php/npm-postinstall.php)

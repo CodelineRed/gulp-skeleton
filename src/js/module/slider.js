@@ -9,7 +9,7 @@
  */
 function initSlider() {
     (function($) {
-        $('.slider').slick({
+        $('.slider:not(.slick-initialized)').slick({
             arrows: true,
             autoplay: true,
             dots: true,
