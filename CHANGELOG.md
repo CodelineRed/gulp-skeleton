@@ -6,13 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## 4.3.2
+## 4.4.0
 ### Added
 - `:not(.slick-initialized)` to `initSlider()`
 - [`cssua-monitor.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/js/module/cssua-monitor.js)
 
 ### Changed
-- Font Awesome 5.8.1 to Font Awesome 5.8.2
+- Font Awesome 5.8.1 to Font Awesome 5.9.0
+- cookieconsent 3.1.0 to cookieconsent 3.1.1
+- jquery 3.3.1 to jquery 3.4.1
+- gulp-imagemin 5.0.3 to gulp-imagemin 6.0.0
 - gulp 4.0.1 to gulp 4.0.2
 
 ## 4.3.1 - 2019-05-02

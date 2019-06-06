@@ -1,6 +1,6 @@
 {
     "name": "gulp-skeleton",
-    "version": "4.3.2-dev",
+    "version": "4.4.0-dev",
     "description": "Gulp Skeleton",
     "keywords": [
         "gulp",
@@ -41,19 +41,19 @@
         "gulp-clean-css": "^4.2.0",
         "gulp-concat": "^2.6.1",
         "gulp-eslint": "^5.0.0",
-        "gulp-imagemin": "^5.0.3",
+        "gulp-imagemin": "^6.0.0",
         "gulp-sass": "^4.0.2",
         "gulp-sass-lint": "^1.4.0",
         "gulp-sourcemaps": "^2.6.5",
         "gulp-uglify": "^3.0.2"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "~5.8.2",
+        "@fortawesome/fontawesome-free": "~5.9.0",
         "bootstrap": "~4.3.1",
-        "cookieconsent": "^3.1.0",
+        "cookieconsent": "^3.1.1",
         "cookieconsent-scss-less": "^3.0.6",
         "cssuseragent": "^2.1.31",
-        "jquery": "~3.3.1",
+        "jquery": "^3.4.1",
         "slick-carousel": "^1.8.1",
         "vanilla-lazyload": "^8.17.0"
     },
