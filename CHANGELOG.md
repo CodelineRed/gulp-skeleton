@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - jquery 3.3.1 to jquery 3.4.1
 - gulp-imagemin 5.0.3 to gulp-imagemin 6.0.0
 - gulp 4.0.1 to gulp 4.0.2
+- browser-sync 2.26.5 to browser-sync 2.26.7
 
 ## 4.3.1 - 2019-05-02
 ### Added
