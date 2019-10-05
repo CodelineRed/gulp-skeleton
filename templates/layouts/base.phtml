@@ -9,7 +9,6 @@ if (isset($_ENV['docker']) && $_ENV['docker']) {
 
 // default setting (home page)        
 $meta = array(
-    'lang' => 'en',
     'title' => 'Gulp Skeleton - InsanityMeetsHH',
     'baseUrl' => $baseUrl,
     'currentUrl' => ($_SERVER['SERVER_PORT'] == '80' ? 'http' : 'https') . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'],
@@ -21,18 +20,17 @@ $meta = array(
     'fbAdmins' => '',
     'publisher' => '',
     'type' => 'website',
-    'socialMediaImage' => '',
+    'socialMediaImage' => $baseUrl . 'img/general-ci.jpg',
     'siteName' => 'Gulp Skeleton',
     'twitterSite' => 'InsanityMeetsHH',
     'twitterUrl' => 'https://twitter.com/InsanityMeetsHH',
     'rssUrl' => '',
-    'locale' => 'en_US',
     'themeColor' => '#212121',
 );
 ?>
 
 <!DOCTYPE html>
-<html lang="<?php echo $meta['lang']; ?>" class="no-js">
+<html lang="<?php echo $lang['lang']; ?>" class="no-js">
     <head>
         <script>
             function setCookie(e,t,n){var o=new Date;o.setTime(o.getTime()+24*n*60*60*1e3);var i="expires="+o.toUTCString();document.cookie=e+"="+t+";"+i+";path=/"}function getCookie(e){for(var t=e+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(t))return i.substring(t.length,i.length)}return""}
@@ -55,7 +53,7 @@ $meta = array(
         <meta property="og:image" content="<?php echo $meta['socialMediaImage']; ?>"/>
         <meta property="og:site_name" content="<?php echo $meta['siteName']; ?>"/>
         <meta property="og:url" content="<?php echo $meta['currentUrl']; ?>"/>
-        <meta property="og:locale" content="<?php echo $meta['locale']; ?>"/>
+        <meta property="og:locale" content="<?php echo $lang['locale']; ?>"/>
         <meta property="article:publisher" content="<?php echo $meta['publisher']; ?>"/>
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="<?php echo $meta['twitterSite']; ?>">
@@ -67,17 +65,17 @@ $meta = array(
         <link rel="alternate" hreflang="x-default" href="<?php echo $meta['currentUrl']; ?>"/>
         <!--<link rel="alternate" type="application/rss+xml" title="" href="<?php echo $meta['rssUrl']; ?>"/>-->
         <?php /** Favicon sizes 16, 32, 36, 48, 70, 72, 96, 144, 150, 180, 192, 256, 310, 310x150, 384, 512, SVG, ICO */ ?>
-        <link rel="apple-touch-icon" href="img/favicons/favicon-180x180.png" sizes="180x180">
-        <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="img/favicons/favicon-192x192.png" sizes="192x192">
-        <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
-        <link rel="manifest" href="img/favicons/manifest.json">
-        <link rel="mask-icon" href="img/favicons/favicon.svg" color="<?php echo $meta['themeColor']; ?>">
+        <link rel="apple-touch-icon" href="<?php echo $meta['baseUrl']; ?>img/favicons/favicon-180x180.png" sizes="180x180">
+        <link rel="icon" type="image/png" href="<?php echo $meta['baseUrl']; ?>img/favicons/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="<?php echo $meta['baseUrl']; ?>img/favicons/favicon-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="<?php echo $meta['baseUrl']; ?>img/favicons/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="<?php echo $meta['baseUrl']; ?>img/favicons/manifest.json">
+        <link rel="mask-icon" href="<?php echo $meta['baseUrl']; ?>img/favicons/favicon.svg" color="<?php echo $meta['themeColor']; ?>">
         <meta name="msapplication-TileColor" content="<?php echo $meta['themeColor']; ?>">
-        <meta name="msapplication-TileImage" content="img/favicons/favicon-144x144.png">
-        <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+        <meta name="msapplication-TileImage" content="<?php echo $meta['baseUrl']; ?>img/favicons/favicon-144x144.png">
+        <meta name="msapplication-config" content="<?php echo $meta['baseUrl']; ?>img/favicons/browserconfig.xml">
         <meta name="theme-color" content="<?php echo $meta['themeColor']; ?>">
-        <link rel="shortcut icon" href="img/favicons/favicon.ico">
+        <link rel="shortcut icon" href="<?php echo $meta['baseUrl']; ?>img/favicons/favicon.ico">
         
         <link rel="stylesheet" href="css/styles.css?v=4.3.1">
         <script type="application/javascript">

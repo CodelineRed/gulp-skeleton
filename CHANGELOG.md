@@ -6,7 +6,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## 4.4.0
+## 4.5.0
+### Added
+- [`404.phtml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/404.phtml)
+- Social media image
+
+### Changed
+- [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js)
+- Font Awesome 5.9.0 to Font Awesome 5.11.2
+- del 4.1.1 to del 5.1.0
+- gulp-autoprefixer 6.1.0 to gulp-autoprefixer 7.0.1
+- gulp-eslint 5.0.0 to gulp-eslint 6.0.0
+- gulp-imagemin 6.0.0 to gulp-imagemin 6.1.1
+
+## 4.4.0 - 2019-06-13
 ### Added
 - `:not(.slick-initialized)` to `initSlider()`
 - [`cssua-monitor.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/js/module/cssua-monitor.js)
