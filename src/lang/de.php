@@ -15,6 +15,8 @@ return [
     'expires' => 'Ablauf',
     'type' => 'Typ %1$s',
     'cookie-policy-title' => 'Cookie-Richtlinie',
+    'page-not-found' => 'Seite nicht gefunden',
+    'back-to-hp' => 'Zurück zur Startseite',
     
     // cookie layer
     'cl-header' => 'Cookies auf der Website verwendet!',
@@ -51,4 +53,7 @@ return [
     'months' => '%1$s Monate',
     'year' => '%1$s Jahr',
     'years' => '%1$s Jahre',
+    
+    'lang' => 'de',
+    'locale' => 'de_DE',
 ];

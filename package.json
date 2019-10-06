@@ -1,6 +1,6 @@
 {
     "name": "gulp-skeleton",
-    "version": "4.3.0",
+    "version": "4.5.0",
     "description": "Gulp Skeleton",
     "keywords": [
         "gulp",
@@ -34,26 +34,26 @@
         "url": "git://github.com/InsanityMeetsHH/gulp-templating.git"
     },
     "devDependencies": {
-        "browser-sync": "^2.26.3",
-        "del": "^4.0.0",
-        "gulp": "^4.0.0",
-        "gulp-autoprefixer": "^6.0.0",
-        "gulp-clean-css": "^4.0.0",
+        "browser-sync": "^2.26.7",
+        "del": "^5.1.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-clean-css": "^4.2.0",
         "gulp-concat": "^2.6.1",
-        "gulp-eslint": "^5.0.0",
-        "gulp-imagemin": "^5.0.3",
+        "gulp-eslint": "^6.0.0",
+        "gulp-imagemin": "^6.1.1",
         "gulp-sass": "^4.0.2",
         "gulp-sass-lint": "^1.4.0",
         "gulp-sourcemaps": "^2.6.5",
         "gulp-uglify": "^3.0.2"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "~5.7.2",
+        "@fortawesome/fontawesome-free": "^5.11.2",
         "bootstrap": "~4.3.1",
-        "cookieconsent": "^3.1.0",
+        "cookieconsent": "^3.1.1",
         "cookieconsent-scss-less": "^3.0.6",
         "cssuseragent": "^2.1.31",
-        "jquery": "^3.3.1",
+        "jquery": "^3.4.1",
         "slick-carousel": "^1.8.1",
         "vanilla-lazyload": "^8.17.0"
     },

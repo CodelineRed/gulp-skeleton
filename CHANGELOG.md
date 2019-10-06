@@ -6,7 +6,51 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## 4.3.0
+## 4.5.0
+### Added
+- [`404.phtml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/404.phtml)
+- Social media image
+
+### Changed
+- [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js)
+- Font Awesome 5.9.0 to Font Awesome 5.11.2
+- del 4.1.1 to del 5.1.0
+- gulp-autoprefixer 6.1.0 to gulp-autoprefixer 7.0.1
+- gulp-eslint 5.0.0 to gulp-eslint 6.0.0
+- gulp-imagemin 6.0.0 to gulp-imagemin 6.1.1
+
+## 4.4.0 - 2019-06-13
+### Added
+- `:not(.slick-initialized)` to `initSlider()`
+- [`cssua-monitor.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/js/module/cssua-monitor.js)
+
+### Changed
+- Font Awesome 5.8.1 to Font Awesome 5.9.0
+- cookieconsent 3.1.0 to cookieconsent 3.1.1
+- jquery 3.3.1 to jquery 3.4.1
+- gulp-imagemin 5.0.3 to gulp-imagemin 6.0.0
+- gulp 4.0.1 to gulp 4.0.2
+- browser-sync 2.26.5 to browser-sync 2.26.7
+
+## 4.3.1 - 2019-05-02
+### Added
+- `RewriteBase /` to [`.htaccess`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/public/.htaccess)
+- `is_writable` condition to [`npm-postinstall.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/php/npm-postinstall.php)
+
+### Changed
+- word `templating` to `skeleton` in some places
+- [`README.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/README.md)
+- Font Awesome 5.7 to Font Awesome 5.8
+- browser-sync 2.26.3 to browser-sync 2.26.5
+- del 4.0 to del 4.1.1
+- gulp 4.0.0 to gulp 4.0.1
+- gulp-autoprefixer 6.0 to gulp-autoprefixer 6.1
+- gulp-clean-css 4.0 to gulp-clean-css 4.2
+
+### Fixed
+- override existing `gulpfile-config.json`
+
+## 4.3.0 - 2019-03-10
 ### Added
 - Wrap around cookie consent
 - [`slider.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/js/module/slider.js)

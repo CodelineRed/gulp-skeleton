@@ -19,7 +19,7 @@ function scss() {
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(prefixer({
-            browsers: ['last 2 versions'],
+            overrideBrowserslist: ['last 2 versions'],
             cascade: false
         }))
         .pipe(minifyCss({compatibility: 'ie8'}))

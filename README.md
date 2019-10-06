@@ -1,4 +1,4 @@
-# Gulp Templating - InsanityMeetsHH
+# Gulp Skeleton - InsanityMeetsHH
 
 [**Demo page**](http://gulp.insanitymeetshh.net)
 
@@ -26,7 +26,7 @@ $ rm -rf .git
 $ npm i
 $ gulp build
 ```
-Change `localServer` in [`gulpfile-config.json`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile-config.json) to your local server.
+Change `localServer` in [`gulpfile-config.json`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile-config.dist.json) to your local server.
 
 Possible local servers (examples): http://imhh-gulp.localhost/ or http://localhost/imhh-gulp/public/.
 
@@ -52,7 +52,7 @@ Possible local servers (examples): http://imhh-gulp.localhost/ or http://localho
 * `$ gulp build`
 * `$ docker-compose up -d`
 * Open [localhost:8080](http://localhost:8080) for website
-* If you want to remove a container `$ docker rm [container-name] -f` e.g. `$ docker rm gulp-templating -f`
+* If you want to remove a container `$ docker rm [container-name] -f` e.g. `$ docker rm gulp-skeleton -f`
 * If you want to remove a volume `$ docker volume rm [volume-name]` e.g. `$ docker volume rm imhh-gulp_logs` (first remove matching container)
 * If you want to remove all container `$ docker rm $(docker ps -a -q) -f`
 * If you want to remove all volumes `$ docker volume prune` (first remove all container)
