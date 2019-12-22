@@ -1,23 +1,29 @@
 <?php
 return [
-    '/' => [
+    'index-en_us' => [
+        'path' => '/',
         'layout' => 'base',
         'template' => 'index',
-        'lang' => 'en',
+        'locale' => 'en_us',
     ],
-    '/404/' => [
+    '404-en_us' => [
+        'path' => '/404/',
         'layout' => 'base',
         'template' => '404',
-        'lang' => 'en',
+        'locale' => 'en_us',
+        'response-code' => 404,
     ],
-    '/de/' => [
+    'index-de_de' => [
+        'path' => '/de/',
         'layout' => 'base',
         'template' => 'index',
-        'lang' => 'de',
+        'locale' => 'de_de',
     ],
-    '/de/404/' => [
+    '404-de_de' => [
+        'path' => '/de/404/',
         'layout' => 'base',
         'template' => '404',
-        'lang' => 'de',
+        'locale' => 'de_de',
+        'response-code' => 404,
     ],
 ];

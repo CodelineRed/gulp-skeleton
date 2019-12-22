@@ -5,8 +5,8 @@
                 <i class="fas fa-globe"></i>
             </button>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="de/">Deutsch</a>
-                <a class="dropdown-item" href="<?php echo $baseUrl; ?>">English</a>
+                <a class="dropdown-item" href="<?php getPathFor($routeName, 'de_de', $baseUrl); ?>">Deutsch</a>
+                <a class="dropdown-item" href="<?php getPathFor($routeName, 'en_us', $baseUrl); ?>">English</a>
             </div>
         </div>
     </div>
