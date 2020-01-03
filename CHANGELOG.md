@@ -8,12 +8,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 5.0.0
 ### Added
-- [`functions.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/php/functions.php)
+- [`class.GulpSkeleton.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/php/class.GulpSkeleton.php)
 - path names in `routes.php`
 
 ### Changed
 - [`footer.phtml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/partials/footer.phtml)
 - [`base.phtml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/layouts/base.phtml)
+- [`404.phtml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/404.phtml)
 - [`index.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/public/index.php)
 - [`routes.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/php/routes.php)
 - Font Awesome 5.11.2 to Font Awesome 5.12.0

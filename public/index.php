@@ -6,15 +6,10 @@ ini_set('display_startup_errors', TRUE);
 
 // available routes
 $routes = require __DIR__ . '/../src/php/routes.php';
-require __DIR__ . '/../src/php/functions.php';
-$defaultLang = 'en_us';
-$cookieLocale = isset($_COOKIE['current_locale']) && in_array(isset($_COOKIE['current_locale']), ['de_de', 'en_us']) ? $_COOKIE['current_locale'] : $defaultLang;
+require __DIR__ . '/../src/php/class.GulpSkeleton.php';
+$gs = new GulpSkeleton('en_us', $routes);
 
 http_response_code(404);
-$template = $routes['404-' . $cookieLocale]['template'];
-$layout = $routes['404-' . $cookieLocale]['layout'];
-$locale = $routes['404-' . $cookieLocale]['locale'];
-$routeName = '404';
 $lang = [];
 
 // handle speaking url
@@ -25,18 +20,19 @@ foreach ($routes as $routeName => $route) {
     // if requested path is available
     if ($requestUri === $route['path']) {
         http_response_code(isset($route['response-code']) ? $route['response-code'] : 200);
-        $template = $route['template'];
-        $layout = $route['layout'];
-        $locale = $route['locale'];
-        $routeName = substr($routeName, 0, strrpos($routeName, '-'));
-        setcookie('current_locale', $locale, time()+60*60*24*365, '/');
+        $gs->setTemplate($route['template'])
+            ->setLayout($route['layout'])
+            ->setLocale($route['locale'])
+            ->setRouteName($routeName);
+        
+        setcookie('current_locale', $gs->getLocale(), time()+60*60*24*365, '/');
         break;
     }
 }
 
 // if lang file is readable
-if (is_readable(__DIR__ . '/../src/locale/' . $locale . '.php')) {
-    $lang = require __DIR__ . '/../src/locale/' . $locale . '.php';
+if (is_readable(__DIR__ . '/../src/locale/' . $gs->getLocale() . '.php')) {
+    $lang = require __DIR__ . '/../src/locale/' . $gs->getLocale() . '.php';
 }
 
-include __DIR__ . '/../templates/layouts/' . $layout . '.phtml';
+include __DIR__ . '/../templates/layouts/' . $gs->getLayout() . '.phtml';
