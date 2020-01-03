@@ -17,6 +17,7 @@ return [
     'cookie-policy-title' => 'Cookie Policy',
     'page-not-found' => 'Page not found',
     'back-to-hp' => 'Back to Homepage',
+    'session' => 'Session',
     
     // cookie layer
     'cl-header' => 'Cookies used on the website!',
@@ -33,11 +34,30 @@ return [
     
     // cookie policy modal
     'cpm-sdi' => 'Show detailed information',
+    'cpm-php' => 'Maintains user states on all page requests.',
     'cpm-cc-status' => 'Saves the consent status of the user for cookies on the current domain.',
+    'cpm-current-locale' => 'Saves in which language the web page is displayed.',
     'cpm-type1' => 'Type 1 = Absolutely required cookie',
     'cpm-type2' => 'Type 2 = Function cookie',
     'cpm-type3' => 'Type 3 = Service cookie',
     'cpm-type4' => 'Type 4 = Third party cookie',
+    
+    // meta
+    'meta-title' => 'Gulp Skeleton - InsanityMeetsHH',
+    'meta-keywords' => '',
+    'meta-description' => '',
+    'meta-robots' => 'index,follow',
+    'meta-author' => 'InsanityMeetsHH',
+    'meta-fbAppId' => '',
+    'meta-fbAdmins' => '',
+    'meta-publisher' => '',
+    'meta-type' => 'website',
+    'meta-socialMediaImage' => 'img/general-ci.jpg',
+    'meta-siteName' => 'Gulp Skeleton',
+    'meta-twitterSite' => 'InsanityMeetsHH',
+    'meta-twitterUrl' => 'https://twitter.com/InsanityMeetsHH',
+    'meta-rssUrl' => '',
+    'meta-themeColor' => '#212121',
     
     // misc
     // decimal point

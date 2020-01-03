@@ -6,7 +6,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## 4.5.0
+## 5.0.0
+### Added
+- [`class.GulpSkeleton.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/php/class.GulpSkeleton.php)
+- path names in `routes.php`
+
+### Changed
+- [`footer.phtml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/partials/footer.phtml)
+- [`base.phtml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/layouts/base.phtml)
+- [`404.phtml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/404.phtml)
+- [`index.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/public/index.php)
+- [`routes.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/php/routes.php)
+- Font Awesome 5.11.2 to Font Awesome 5.12.0
+- Bootstrap 4.3 to Bootstrap 4.4
+- gulp-imagemin 6.1.1 to gulp-imagemin 6.2.0
+
+### Removed
+- `&t=XYZ` from `index.php`
+- meta information from `base.phtml` and shifted to locale files
+- `current_lang` cookie and replaced by `current_locale`
+- `src/lang/` and replaced by `src/locale/`
+
+## 4.5.0 - 2019-10-06
 ### Added
 - [`404.phtml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/404.phtml)
 - Social media image
