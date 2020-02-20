@@ -6,7 +6,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## 5.0.0
+## 5.1.0
+### Added
+- [`src/app/is-env.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/app/is-env.js)
+- [`gulp-if`](https://www.npmjs.com/package/gulp-if) module
+
+### Changed
+- [`.gitignore`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/.gitignore)
+- [`docker-compose.yml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/docker-compose.yml)
+- [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js)
+- Font Awesome 5.12.0 to Font Awesome 5.12.1
+- gulp-imagemin 6.2.0 to gulp-imagemin 7.1.0
+
+### Removed
+- gulpfile-config.dist.json and replaced with [`src/app/gulpfile.dist.json`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/app/gulpfile.dist.json)
+
+## 5.0.0 - 2020-01-03
 ### Added
 - [`class.GulpSkeleton.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/php/class.GulpSkeleton.php)
 - path names in `routes.php`
@@ -91,7 +106,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Font Awesome 5.6 to Font Awesome 5.7
 - Bootstrap 4.2 to Bootstrap 4.3
 - del 3.0 to del 4.0
-- gitignore
+- [`.gitignore`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/.gitignore)
 - h1 font size to mobile first
 - [`modal.phtml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/partials/modal.phtml)
 
@@ -114,7 +129,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Styling of cookie layer
 - Behavior of remove bottom margin from `.container` without remove `.cc-window`
 - Placeholder image url from http to https
-- `.gitignore`
+- [`.gitignore`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/.gitignore)
 - Gulp clean css dependency from v3 to v4
 - Package name from gulp-templating to gulp-skeleton
 

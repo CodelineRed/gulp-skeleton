@@ -1,17 +1,19 @@
-var browserSync = require('browser-sync').create();
-var del         = require('del');
-var gulp        = require('gulp');
-var prefixer    = require('gulp-autoprefixer');
-var minifyCss   = require('gulp-clean-css');
-var concat      = require('gulp-concat');
-var eslint      = require('gulp-eslint');
-var imagemin    = require('gulp-imagemin');
-var sass        = require('gulp-sass');
-var sassLint    = require('gulp-sass-lint');
-var sourcemaps  = require('gulp-sourcemaps');
-var uglify      = require('gulp-uglify');
+const browserSync = require('browser-sync').create();
+const del         = require('del');
+const gulp        = require('gulp');
+const prefixer    = require('gulp-autoprefixer');
+const minifyCss   = require('gulp-clean-css');
+const concat      = require('gulp-concat');
+const eslint      = require('gulp-eslint');
+const gulpif      = require('gulp-if');
+const imagemin    = require('gulp-imagemin');
+const sass        = require('gulp-sass');
+const sassLint    = require('gulp-sass-lint');
+const sourcemaps  = require('gulp-sourcemaps');
+const uglify      = require('gulp-uglify');
 
-var config      = require('./gulpfile-config.json');
+const config      = require('./src/app/gulpfile.json');
+const isEnv       = require('./src/app/is-env');
 
 // processing scss to css and minify result
 function scss() {
@@ -22,7 +24,7 @@ function scss() {
             overrideBrowserslist: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(minifyCss({compatibility: 'ie8'}))
+        .pipe(gulpif(isEnv(['test', 'prod'], config.env), minifyCss({compatibility: 'ie8'})))
         .pipe(sourcemaps.write('./'))
 //        .pipe(gulp.dest(config.systemPath + 'css/'))
         .pipe(gulp.dest(config.publicPath + 'css/'));
@@ -33,7 +35,7 @@ function scssLint() {
     return gulp.src([
             config.sourcePath + 'scss/**/*.scss'
         ])
-        .pipe(sassLint(require('./scss-lint.json')))
+        .pipe(sassLint(require('./src/app/scss-lint.json')))
         .pipe(sassLint.format())
         .pipe(sassLint.failOnError());
 }
@@ -55,7 +57,7 @@ function js() {
         ])
         .pipe(sourcemaps.init())
         .pipe(concat('scripts.js'))
-        .pipe(uglify())
+        .pipe(gulpif(isEnv(['test', 'prod'], config.env), uglify()))
         .pipe(sourcemaps.write('./'))
 //        .pipe(gulp.dest(config.systemPath + 'js/'))
         .pipe(gulp.dest(config.publicPath + 'js/'));
@@ -66,7 +68,7 @@ function jsLint() {
     return gulp.src([
             config.sourcePath + 'js/**/*.js'
         ])
-        .pipe(eslint(require('./js-lint.json')))
+        .pipe(eslint(require('./src/app/js-lint.json')))
         .pipe(eslint.format())
         .pipe(eslint.failAfterError());
 }
@@ -76,7 +78,7 @@ function img() {
     return gulp.src(config.sourcePath + 'img/**/*.{png,gif,jpg,jpeg,ico,xml,json,svg}')
         .pipe(imagemin([
             imagemin.gifsicle({interlaced: true}),
-            imagemin.jpegtran({progressive: true}),
+            imagemin.mozjpeg({progressive: true}),
             imagemin.optipng({optimizationLevel: 5}),
             imagemin.svgo({
                 plugins: [
@@ -142,6 +144,11 @@ function cleanUp() {
 function browserSyncInit(done) {
     // start browsersync
     browserSync.init({
+        port: 3000,
+        ui: {
+            port: 3001
+        },
+        // ui: false, // enable in production
         proxy: config.localServer
     });
     done();
@@ -169,16 +176,7 @@ function watch() {
 
 // watch files and reload browser on file change
 function watchAndReload() {
-    // watch scss files
-    gulp.watch(config.sourcePath + 'scss/**', gulp.series(scss, scssLint));
-    // watch js files
-    gulp.watch(config.sourcePath + 'js/**', gulp.series(js, jsLint));
-    // watch images
-    gulp.watch(config.sourcePath + 'img/**', img);
-    // watch fonts
-    gulp.watch(config.sourcePath + 'font/**', font);
-    // watch svg
-    gulp.watch(config.sourcePath + 'svg/**', svg);
+    watch();
     
     gulp.watch(config.publicPath + '**/*.{css,eot,ico,js,jpg,otf,png,svg,ttf,woff,woff2}', browserSyncReload);
     gulp.watch('templates/**/*.{php,html,phtml}', browserSyncReload);

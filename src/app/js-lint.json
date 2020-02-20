@@ -38,5 +38,5 @@
         "strict": 1
     },
     "globals": ["$", "jQuery"],
-    "envs": ["node", "browser"]
+    "envs": ["node", "browser", "es6"]
 }
