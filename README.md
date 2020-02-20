@@ -26,7 +26,7 @@ $ rm -rf .git
 $ npm i
 $ gulp build
 ```
-Change `localServer` in [`gulpfile-config.json`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile-config.dist.json) to your local server.
+Change [`gulpfile.json`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/app/gulpfile.dist.json) if necessary.
 
 Possible local servers (examples): http://imhh-gulp.localhost/ or http://localhost/imhh-gulp/public/.
 
@@ -46,16 +46,14 @@ Possible local servers (examples): http://imhh-gulp.localhost/ or http://localho
 | gulp watch    | watch scss, js, img, font and svg files                                                                         |
 
 ## Installation with [Docker](https://www.docker.com/)
-* Get this project via `$ git clone` or zip download
+* Get project via `$ git clone https://github.com/InsanityMeetsHH/gulp-skeleton.git` or [zip download](https://github.com/InsanityMeetsHH/gulp-skeleton/archive/master.zip)
 * Open a command prompt on your OS (if not already open) and navigate to the project folder
 * `$ npm i`
 * `$ gulp build`
 * `$ docker-compose up -d`
-* Open [localhost:8080](http://localhost:8080) for website
-* If you want to remove a container `$ docker rm [container-name] -f` e.g. `$ docker rm gulp-skeleton -f`
-* If you want to remove a volume `$ docker volume rm [volume-name]` e.g. `$ docker volume rm imhh-gulp_logs` (first remove matching container)
-* If you want to remove all container `$ docker rm $(docker ps -a -q) -f`
-* If you want to remove all volumes `$ docker volume prune` (first remove all container)
+* Open [localhost:3050](http://localhost:3050) for website
+* If you want to remove the container `$ docker rm gulp-skeleton -f`
+* If you want to remove the volume `$ docker volume rm DIRNAME_logs` (first remove matching container)
 
 ## Links
 * [ESLint Rules](https://eslint.org/docs/rules/)

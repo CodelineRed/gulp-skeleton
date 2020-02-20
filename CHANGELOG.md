@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - [`.gitignore`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/.gitignore)
+- [`README.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/README.md)
 - [`docker-compose.yml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/docker-compose.yml)
 - [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js)
 - Font Awesome 5.12.0 to Font Awesome 5.12.1
