@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 - gulpfile-config.dist.json and replaced with [`src/app/gulpfile.dist.json`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/app/gulpfile.dist.json)
+- gulp-uglify and replaced with gulp-uglify-es
 
 ## 5.0.0 - 2020-01-03
 ### Added

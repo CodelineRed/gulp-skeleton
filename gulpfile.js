@@ -10,7 +10,7 @@ const imagemin    = require('gulp-imagemin');
 const sass        = require('gulp-sass');
 const sassLint    = require('gulp-sass-lint');
 const sourcemaps  = require('gulp-sourcemaps');
-const uglify      = require('gulp-uglify');
+const uglify      = require('gulp-uglify-es').default;
 
 const config      = require('./src/app/gulpfile.json');
 const isEnv       = require('./src/app/is-env');
