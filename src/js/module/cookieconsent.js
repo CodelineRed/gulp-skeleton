@@ -33,8 +33,8 @@ function initCookieConsent() {
                 href: cookieLayer.href
             },
             onInitialise: function(status) {
-                let type = this.options.type;
-                let didConsent = this.hasConsented();
+                var type = this.options.type;
+                var didConsent = this.hasConsented();
 
                 if (type === 'opt-in' && didConsent) {
                     // enable cookies
@@ -56,8 +56,8 @@ function initCookieConsent() {
                 // do something
             },
             onStatusChange: function(status, chosenBefore) {
-                let type = this.options.type;
-                let didConsent = this.hasConsented();
+                var type = this.options.type;
+                var didConsent = this.hasConsented();
 
                 if (type === 'opt-in' && didConsent) {
                     // enable cookies
@@ -73,7 +73,7 @@ function initCookieConsent() {
                 }, 1000);
             },
             onRevokeChoice: function() {
-                let type = this.options.type;
+                var type = this.options.type;
 
                 if (type === 'opt-in') {
                     // disable cookies

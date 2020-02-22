@@ -8,7 +8,7 @@
  */
 function initImageLazyLoad() {
     (function($) {
-        let lazyLoad = new LazyLoad({
+        var lazyLoad = new LazyLoad({
             //elements_selector: '.lazyload' // eslint-disable-line camelcase
         });
     })(jQuery);
