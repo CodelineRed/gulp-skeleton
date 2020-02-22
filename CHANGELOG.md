@@ -13,11 +13,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - [`.gitignore`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/.gitignore)
+- [`npm-postinstall.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/php/npm-postinstall.php)
 - [`README.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/README.md)
 - [`docker-compose.yml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/docker-compose.yml)
 - [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js)
 - Font Awesome 5.12.0 to Font Awesome 5.12.1
 - gulp-imagemin 6.2.0 to gulp-imagemin 7.1.0
+- vanilla-lazyload 8.17.0 to vanilla-lazyload 12.4.0
 
 ### Removed
 - gulpfile-config.dist.json and replaced with [`src/app/gulpfile.dist.json`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/app/gulpfile.dist.json)

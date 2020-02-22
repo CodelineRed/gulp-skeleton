@@ -15,7 +15,7 @@
 * [Node.js](http://nodejs.org/en/download/)
 * [npm](http://www.npmjs.com/get-npm) `$ npm i npm@latest -g`
 * [gulp-cli](https://www.npmjs.com/package/gulp-cli) `$ npm i gulp-cli@latest -g`
-* PHP => 5.3
+* PHP >= 5.3
 * [Docker](https://www.docker.com/) ([for installation with Docker](https://github.com/InsanityMeetsHH/gulp-templating#installation-with-docker))
 
 ## Installation (Recommended)
