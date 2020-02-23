@@ -5,7 +5,7 @@ const prefixer    = require('gulp-autoprefixer');
 const minifyCss   = require('gulp-clean-css');
 const concat      = require('gulp-concat');
 const eslint      = require('gulp-eslint');
-const gulpif      = require('gulp-if');
+const gulpIf      = require('gulp-if');
 const imagemin    = require('gulp-imagemin');
 const sass        = require('gulp-sass');
 const sassLint    = require('gulp-sass-lint');
@@ -24,7 +24,7 @@ function scss() {
             overrideBrowserslist: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulpif(isEnv(['test', 'prod'], config.env), minifyCss({compatibility: 'ie8'})))
+        .pipe(gulpIf(isEnv(['test', 'prod'], config.env), minifyCss({compatibility: 'ie8'})))
         .pipe(sourcemaps.write('./'))
 //        .pipe(gulp.dest(config.systemPath + 'css/'))
         .pipe(gulp.dest(config.publicPath + 'css/'));
@@ -57,7 +57,7 @@ function js() {
         ])
         .pipe(sourcemaps.init())
         .pipe(concat('scripts.js'))
-        .pipe(gulpif(isEnv(['test', 'prod'], config.env), uglify()))
+        .pipe(gulpIf(isEnv(['test', 'prod'], config.env), uglify()))
         .pipe(sourcemaps.write('./'))
 //        .pipe(gulp.dest(config.systemPath + 'js/'))
         .pipe(gulp.dest(config.publicPath + 'js/'));
