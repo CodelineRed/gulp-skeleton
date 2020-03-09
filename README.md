@@ -31,19 +31,19 @@ Change [`gulpfile.json`](https://github.com/InsanityMeetsHH/gulp-templating/blob
 Possible local servers (examples): http://imhh-gulp.localhost/ or http://localhost/imhh-gulp/public/.
 
 ## Project Commands
-|               | Description                                                                                                     |
-|---------------|-----------------------------------------------------------------------------------------------------------------|
-| gulp          | watch files and start [BrowserSync](https://www.npmjs.com/package/browser-sync)                                 |
-| gulp build    | executes following tasks: cleanUp, scss, js, scssLint, jsLint, img, font, svg                                   |
-| gulp cleanUp  | clean up public folder                                                                                          |
-| gulp font     | copy font                                                                                                       |
-| gulp img      | compress/copy img                                                                                               |
-| gulp js       | uglify/minify/concat js                                                                                         |
-| gulp jsLint   | checks js follows [lint rules](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/js-lint.json)     |
-| gulp scss     | compile/minify/concat scss                                                                                      |
-| gulp scssLint | checks scss follows [lint rules](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/scss-lint.json) |
-| gulp svg      | compress/copy svg                                                                                               |
-| gulp watch    | watch scss, js, img, font and svg files                                                                         |
+|               | Description                                                                                                             |
+|---------------|-------------------------------------------------------------------------------------------------------------------------|
+| gulp          | watch files and start [BrowserSync](https://www.npmjs.com/package/browser-sync)                                         |
+| gulp build    | executes following tasks: cleanUp, scss, js, scssLint, jsLint, img, font, svg                                           |
+| gulp cleanUp  | clean up public folder                                                                                                  |
+| gulp font     | copy font files                                                                                                         |
+| gulp img      | copy and compress images                                                                                                |
+| gulp js       | uglify, minify and concat js files                                                                                      |
+| gulp jsLint   | checks js follows [lint rules](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/app/js-lint.json)     |
+| gulp scss     | compile, minify and concat scss files                                                                                   |
+| gulp scssLint | checks scss follows [lint rules](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/app/scss-lint.json) |
+| gulp svg      | copy and compress svg files                                                                                             |
+| gulp watch    | watch scss, js, img, font and svg files                                                                                 |
 
 ## Installation with [Docker](https://www.docker.com/)
 * Get project via `$ git clone https://github.com/InsanityMeetsHH/gulp-skeleton.git` or [zip download](https://github.com/InsanityMeetsHH/gulp-skeleton/archive/master.zip)

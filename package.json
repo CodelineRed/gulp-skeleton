@@ -56,7 +56,7 @@
         "cssuseragent": "^2.1.31",
         "jquery": "^3.4.1",
         "slick-carousel": "^1.8.1",
-        "vanilla-lazyload": "^12.4.0"
+        "vanilla-lazyload": "^13.0.1"
     },
     "scripts": {
         "postinstall": "php src/php/npm-postinstall.php",
