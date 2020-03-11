@@ -61,7 +61,7 @@ function js() {
 
 // lint js files
 function jsLint() {
-    return lint(gulp, eslint, [config.sourcePath + 'js/{lib,module,plugin}/*.js', config.sourcePath + 'js/scripts.js'], 'js');
+    return lint(gulp, eslint, [config.sourcePath + 'js/**/*.js'], 'js');
 }
 
 // compress images
