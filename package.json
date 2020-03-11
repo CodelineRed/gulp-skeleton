@@ -1,6 +1,6 @@
 {
     "name": "gulp-skeleton",
-    "version": "5.1.0",
+    "version": "5.2.0-dev",
     "description": "Gulp Skeleton",
     "keywords": [
         "gulp",
@@ -25,13 +25,13 @@
         "url": "https://www.insanitymeetshh.net"
     },
     "bugs": {
-        "url": "https://github.com/InsanityMeetsHH/gulp-templating/issues"
+        "url": "https://github.com/InsanityMeetsHH/gulp-skeleton/issues"
     },
     "license": "MIT",
     "homepage": "http://gulp.insanitymeetshh.net",
     "repository": {
         "type": "git",
-        "url": "git://github.com/InsanityMeetsHH/gulp-templating.git"
+        "url": "git://github.com/InsanityMeetsHH/gulp-skeleton.git"
     },
     "devDependencies": {
         "browser-sync": "^2.26.7",

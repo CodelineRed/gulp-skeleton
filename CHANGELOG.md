@@ -6,36 +6,46 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## 5.1.0
+## 5.2.0
 ### Added
-- [`src/app/is-env.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/app/is-env.js)
+- [`src/app/lint.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/app/lint.js)
+
+### Changed
+- [`src/app/js-lint.json`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/app/js-lint.json)
+- [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/gulpfile.js)
+- [`README.md`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/README.md)
+- `gulp-templating` to `gulp-skeleton`
+
+## 5.1.0 - 2020-03-09
+### Added
+- [`src/app/is-env.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/app/is-env.js)
 - [`gulp-if`](https://www.npmjs.com/package/gulp-if) module
 
 ### Changed
-- [`.gitignore`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/.gitignore)
-- [`npm-postinstall.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/php/npm-postinstall.php)
-- [`README.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/README.md)
-- [`docker-compose.yml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/docker-compose.yml)
-- [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js)
+- [`.gitignore`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/.gitignore)
+- [`npm-postinstall.php`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/php/npm-postinstall.php)
+- [`docker-compose.yml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/docker-compose.yml)
+- [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/gulpfile.js)
+- [`README.md`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/README.md)
 - Font Awesome 5.12.0 to 5.12.1
 - gulp-imagemin 6.2.0 to 7.1.0
 - vanilla-lazyload 8.17.0 to 13.0.1
 
 ### Removed
-- gulpfile-config.dist.json and replaced with [`src/app/gulpfile.dist.json`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/app/gulpfile.dist.json)
+- gulpfile-config.dist.json and replaced with [`src/app/gulpfile.dist.json`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/app/gulpfile.dist.json)
 - gulp-uglify and replaced with gulp-uglify-es
 
 ## 5.0.0 - 2020-01-03
 ### Added
-- [`class.GulpSkeleton.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/php/class.GulpSkeleton.php)
+- [`class.GulpSkeleton.php`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/php/class.GulpSkeleton.php)
 - path names in `routes.php`
 
 ### Changed
-- [`footer.phtml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/partials/footer.phtml)
-- [`base.phtml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/layouts/base.phtml)
-- [`404.phtml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/404.phtml)
-- [`index.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/public/index.php)
-- [`routes.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/php/routes.php)
+- [`footer.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/partials/footer.phtml)
+- [`base.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/layouts/base.phtml)
+- [`404.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/404.phtml)
+- [`index.php`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/public/index.php)
+- [`routes.php`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/php/routes.php)
 - Font Awesome 5.11.2 to 5.12.0
 - Bootstrap 4.3 to 4.4
 - gulp-imagemin 6.1.1 to 6.2.0
@@ -48,11 +58,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 4.5.0 - 2019-10-06
 ### Added
-- [`404.phtml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/404.phtml)
+- [`404.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/404.phtml)
 - Social media image
 
 ### Changed
-- [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js)
+- [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/gulpfile.js)
 - Font Awesome 5.9.0 to 5.11.2
 - del 4.1.1 to 5.1.0
 - gulp-autoprefixer 6.1.0 to 7.0.1
@@ -62,7 +72,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## 4.4.0 - 2019-06-13
 ### Added
 - `:not(.slick-initialized)` to `initSlider()`
-- [`cssua-monitor.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/js/module/cssua-monitor.js)
+- [`cssua-monitor.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/js/module/cssua-monitor.js)
 
 ### Changed
 - Font Awesome 5.8.1 to 5.9.0
@@ -74,12 +84,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 4.3.1 - 2019-05-02
 ### Added
-- `RewriteBase /` to [`.htaccess`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/public/.htaccess)
-- `is_writable` condition to [`npm-postinstall.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/php/npm-postinstall.php)
+- `RewriteBase /` to [`.htaccess`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/public/.htaccess)
+- `is_writable` condition to [`npm-postinstall.php`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/php/npm-postinstall.php)
 
 ### Changed
 - word `templating` to `skeleton` in some places
-- [`README.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/README.md)
+- [`README.md`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/README.md)
 - Font Awesome 5.7 to 5.8
 - browser-sync 2.26.3 to 2.26.5
 - del 4.0 to 4.1.1
@@ -93,26 +103,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## 4.3.0 - 2019-03-10
 ### Added
 - Wrap around cookie consent
-- [`slider.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/js/module/slider.js)
-- [`image-lazyLoad.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/js/module/image-lazyLoad.js)
+- [`slider.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/js/module/slider.js)
+- [`image-lazyLoad.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/js/module/image-lazyLoad.js)
 - sass-lint and eslint disable rules where it has to be
 - all Bootstrap utilities line by line
 - Website urls as comments in scss files
-- [`routes.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/php/routes.php)
-- [`gulpfile-config.dist.json`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile-config.dist.json)
-- `postinstall` script in [`npm-postinstall.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/php/npm-postinstall.php)
+- [`routes.php`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/php/routes.php)
+- [`gulpfile-config.dist.json`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/gulpfile-config.dist.json)
+- `postinstall` script in [`npm-postinstall.php`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/php/npm-postinstall.php)
 
 ### Changed
-- Insert `a` tag styling to [`page.scss`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/scss/module/page.scss)
-- [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js)
+- Insert `a` tag styling to [`page.scss`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/scss/module/page.scss)
+- [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/gulpfile.js)
 - `$paths` to `$routes`
-- [`README.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/README.md)
+- [`README.md`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/README.md)
 - Font Awesome 5.6 to 5.7
 - Bootstrap 4.2 to 4.3
 - del 3.0 to 4.0
-- [`.gitignore`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/.gitignore)
+- [`.gitignore`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/.gitignore)
 - h1 font size to mobile first
-- [`modal.phtml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/partials/modal.phtml)
+- [`modal.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/partials/modal.phtml)
 
 ## 4.2.0 - 2019-01-27
 ### Added
@@ -133,9 +143,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Styling of cookie layer
 - Behavior of remove bottom margin from `.container` without remove `.cc-window`
 - Placeholder image url from http to https
-- [`.gitignore`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/.gitignore)
+- [`.gitignore`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/.gitignore)
 - gulp-clean-css 3 to 4
-- Package name from gulp-templating to gulp-skeleton
+- Package name from gulp-skeleton to gulp-skeleton
 
 ### Removed
 - Styles in `_page.scss` replaced by Bootstrap variables
@@ -153,8 +163,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Bootstrap dependency to 4.2.1
-- [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js) inline comments
-- [`README.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/README.md)
+- [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/gulpfile.js) inline comments
+- [`README.md`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/README.md)
 
 ### Removed
 - `$ gulp prod` replaced by `$ gulp build`
@@ -181,20 +191,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [3.1.0] - 2018-10-06
 ### Added
-- [`CHANGELOG.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/CHANGELOG.md)
-- [`docker-compose.yml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/docker-compose.yml)
-- Slick Carousel [`ajax-loader.gif`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/img/slick/ajax-loader.gif)
-- [Docker installation documentation](https://github.com/InsanityMeetsHH/gulp-templating#installation-with-docker)
+- [`CHANGELOG.md`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/CHANGELOG.md)
+- [`docker-compose.yml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/docker-compose.yml)
+- Slick Carousel [`ajax-loader.gif`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/img/slick/ajax-loader.gif)
+- [Docker installation documentation](https://github.com/InsanityMeetsHH/gulp-skeleton#installation-with-docker)
 
 ### Changed
-- [`README.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/README.md)
-- [`$baseUrl`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/layouts/base.phtml#L11) logic with docker condition
+- [`README.md`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/README.md)
+- [`$baseUrl`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/layouts/base.phtml#L11) logic with docker condition
 
 ### Removed
 - Fontawesome SVG npm packages
 
 ### Fixed
-- SVG [gulp task](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js#L108)
+- SVG [gulp task](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/gulpfile.js#L108)
 
 ## [3.0.6] - 2018-09-15
 ### Added
@@ -204,23 +214,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - SCSS and JaveScript files after lint has some warnings
-- [License](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/package.json#L28)
+- [License](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/package.json#L28)
 
 ### Removed
-- `$baseUrl` from [`index.php`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/public/index.php) and added to layout meta
+- `$baseUrl` from [`index.php`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/public/index.php) and added to layout meta
 
 ## [3.0.5] - 2018-09-06
 ### Added
-- Dynamic [`baseUrl`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/layouts/base.phtml#L15)
+- Dynamic [`baseUrl`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/layouts/base.phtml#L15)
 
 ### Changed
-- [`.htaccess`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/public/.htaccess)
+- [`.htaccess`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/public/.htaccess)
 
 ## [3.0.4] - 2018-09-05
 ### Added
 - [Autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer)
-- Image compress settings in [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js)
-- [SVG extension](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js#L80) to img gulp task
+- Image compress settings in [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/gulpfile.js)
+- [SVG extension](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/gulpfile.js#L80) to img gulp task
 
 ### Changed
 - Disabled page reload on cookieconsent button click
@@ -231,31 +241,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [3.0.2] - 2018-08-17
 ### Added
-- Version number to JavaScript and CSS file in [`base.phtml`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/layouts/base.phtml)
+- Version number to JavaScript and CSS file in [`base.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/layouts/base.phtml)
 
 ### Changed
-- [`README.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/README.md)
-- [`.htaccess`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/public/.htaccess)
+- [`README.md`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/README.md)
+- [`.htaccess`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/public/.htaccess)
 
 
 ## [3.0.1] - 2018-07-29
 ### Changed
-- [`README.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/README.md)
-- Disabled FA 5 [webfont import](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js#L99)
+- [`README.md`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/README.md)
+- Disabled FA 5 [webfont import](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/gulpfile.js#L99)
 - From Fontawesome 5.1 to 5.2
 - From Bootstrap 4.1.1 to 4.1.3
 - From Cookieconsent 3.0.6 to 3.1
 - From LazyLoad 8.7 to 8.11
-- Fontawesome [font weights](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/scss/lib/fontawesome.scss#L3-L5)
-- Disabled [Fontawesome CSS](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/scss/styles.scss#L4) replaced by [Fontawesome JavaScript](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/gulpfile.js#L50)
+- Fontawesome [font weights](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/scss/lib/fontawesome.scss#L3-L5)
+- Disabled [Fontawesome CSS](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/scss/styles.scss#L4) replaced by [Fontawesome JavaScript](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/gulpfile.js#L50)
 
 ## [3.0.0] - 2018-07-23
 ### Added
-- [Fontawesome 5.1](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/package.json#L49) as default version
+- [Fontawesome 5.1](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/package.json#L49) as default version
 
 ### Changed
-- [`README.md`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/README.md)
-- [`baseUrl`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/templates/layouts/base.phtml#L15)
+- [`README.md`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/README.md)
+- [`baseUrl`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/layouts/base.phtml#L15)
 
 ### Removed
 - Fontawesome 5.0

@@ -16,17 +16,17 @@
 * [npm](http://www.npmjs.com/get-npm) `$ npm i npm@latest -g`
 * [gulp-cli](https://www.npmjs.com/package/gulp-cli) `$ npm i gulp-cli@latest -g`
 * PHP >= 5.3
-* [Docker](https://www.docker.com/) ([for installation with Docker](https://github.com/InsanityMeetsHH/gulp-templating#installation-with-docker))
+* [Docker](https://www.docker.com/) ([for installation with Docker](https://github.com/InsanityMeetsHH/gulp-skeleton#installation-with-docker))
 
 ## Installation (Recommended)
 ```bash
-$ git clone https://github.com/InsanityMeetsHH/gulp-templating.git [project-name]
-$ cd [project-name]
+$ git clone https://github.com/InsanityMeetsHH/gulp-skeleton.git [app-name]
+$ cd [app-name]
 $ rm -rf .git
 $ npm i
 $ gulp build
 ```
-Change [`gulpfile.json`](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/app/gulpfile.dist.json) if necessary.
+Change [`gulpfile.json`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/app/gulpfile.dist.json) if necessary.
 
 Possible local servers (examples): http://imhh-gulp.localhost/ or http://localhost/imhh-gulp/public/.
 
@@ -39,9 +39,9 @@ Possible local servers (examples): http://imhh-gulp.localhost/ or http://localho
 | gulp font     | copy font files                                                                                                         |
 | gulp img      | copy and compress images                                                                                                |
 | gulp js       | uglify, minify and concat js files                                                                                      |
-| gulp jsLint   | checks js follows [lint rules](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/app/js-lint.json)     |
+| gulp jsLint   | checks js follows [lint rules](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/app/js-lint.json)     |
 | gulp scss     | compile, minify and concat scss files                                                                                   |
-| gulp scssLint | checks scss follows [lint rules](https://github.com/InsanityMeetsHH/gulp-templating/blob/master/src/app/scss-lint.json) |
+| gulp scssLint | checks scss follows [lint rules](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/app/scss-lint.json) |
 | gulp svg      | copy and compress svg files                                                                                             |
 | gulp watch    | watch scss, js, img, font and svg files                                                                                 |
 
