@@ -1,7 +1,7 @@
 {
     "name": "gulp-skeleton",
-    "version": "5.2.0",
-    "description": "Gulp Skeleton",
+    "version": "5.3.0-dev",
+    "description": "Skeleton to create templates with Gulp",
     "keywords": [
         "gulp",
         "templating",
@@ -38,28 +38,29 @@
         "del": "^5.1.0",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^7.0.1",
-        "gulp-clean-css": "^4.2.0",
+        "gulp-clean-css": "^4.3.0",
         "gulp-concat": "^2.6.1",
         "gulp-eslint": "^6.0.0",
+        "gulp-favicons": "^2.4.0",
         "gulp-if": "^3.0.0",
         "gulp-imagemin": "^7.1.0",
-        "gulp-sass": "^4.0.2",
+        "gulp-sass": "^4.1.0",
         "gulp-sass-lint": "^1.4.0",
         "gulp-sourcemaps": "^2.6.5",
         "gulp-uglify-es": "^2.0.0"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "^5.12.1",
-        "bootstrap": "^4.4.1",
+        "@fortawesome/fontawesome-free": "^5.13.0",
+        "bootstrap": "^4.5.0",
         "cookieconsent": "^3.1.1",
         "cookieconsent-scss-less": "^3.0.6",
         "cssuseragent": "^2.1.31",
-        "jquery": "^3.4.1",
+        "jquery": "^3.5.1",
         "slick-carousel": "^1.8.1",
-        "vanilla-lazyload": "^13.0.1"
+        "vanilla-lazyload": "^16.1.0"
     },
     "scripts": {
-        "postinstall": "php src/php/npm-postinstall.php",
+        "postinstall": "node npm-postinstall.js",
         "build": "gulp build",
         "prod": "gulp browserSyncInit",
         "dev": "gulp"

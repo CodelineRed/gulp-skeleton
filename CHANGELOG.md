@@ -6,7 +6,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## 5.2.0
+## 5.3.0
+### Added
+- gulp-favicons 2.4.0
+- `favicon.png` watcher in [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/gulpfile.js)
+- favicon task in [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/gulpfile.js)
+- [`favicon.png`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/img/favicon.png)
+
+### Changed
+- `$info: $theme-color-1;` to `$blue: $theme-color-1;`
+- order of tasks in [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/gulpfile.js)
+- favicon html in [`index.html`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/public/index.html)
+- [`README.md`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/README.md)
+- gulp-clean-css 4.2.0 to 4.3.0
+- gulp-sass 4.0.2 to 4.1.0
+- fontawesome 5.12.1 to 5.13.0
+- bootstrap 4.4.1 to 4.5.0
+- jquery 3.4.1 to 3.5.1
+- vanilla-lazyload 13.0.1 to 16.1.0
+
+### Removed
+- `src/php/npm-postinstall.php`
+- `src/img/favicons` folder
+- browserSyncInit() config in [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/gulpfile.js) and moved in [`gulpfile.json`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/app/gulpfile.dist.json)
+
+## 5.2.0 - 2020-03-15
 ### Added
 - [`src/app/lint.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/app/lint.js)
 
