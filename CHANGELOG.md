@@ -6,7 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## 5.3.0
+## [5.3.1]
+### Changed
+- order in cleanUp task and how to remove files from js/css folder in [`gulpfile.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/gulpfile.js)
+
+## [5.3.0] - 2020-05-31
 ### Added
 - gulp-favicons 2.4.0
 - `favicon.png` watcher in [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/gulpfile.js)
@@ -30,7 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `src/img/favicons` folder
 - browserSyncInit() config in [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/gulpfile.js) and moved in [`gulpfile.json`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/app/gulpfile.dist.json)
 
-## 5.2.0 - 2020-03-15
+## [5.2.0] - 2020-03-15
 ### Added
 - [`src/app/lint.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/app/lint.js)
 
@@ -40,7 +44,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [`README.md`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/README.md)
 - `gulp-templating` to `gulp-skeleton`
 
-## 5.1.0 - 2020-03-09
+## [5.1.0] - 2020-03-09
 ### Added
 - [`src/app/is-env.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/app/is-env.js)
 - [`gulp-if`](https://www.npmjs.com/package/gulp-if) module
@@ -59,7 +63,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - gulpfile-config.dist.json and replaced with [`src/app/gulpfile.dist.json`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/app/gulpfile.dist.json)
 - gulp-uglify and replaced with gulp-uglify-es
 
-## 5.0.0 - 2020-01-03
+## [5.0.0] - 2020-01-03
 ### Added
 - [`class.GulpSkeleton.php`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/php/class.GulpSkeleton.php)
 - path names in `routes.php`
@@ -80,7 +84,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `current_lang` cookie and replaced by `current_locale`
 - `src/lang/` and replaced by `src/locale/`
 
-## 4.5.0 - 2019-10-06
+## [4.5.0] - 2019-10-06
 ### Added
 - [`404.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/404.phtml)
 - Social media image
@@ -93,7 +97,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - gulp-eslint 5.0.0 to 6.0.0
 - gulp-imagemin 6.0.0 to 6.1.1
 
-## 4.4.0 - 2019-06-13
+## [4.4.0] - 2019-06-13
 ### Added
 - `:not(.slick-initialized)` to `initSlider()`
 - [`cssua-monitor.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/js/module/cssua-monitor.js)
@@ -106,7 +110,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - gulp 4.0.1 to 4.0.2
 - browser-sync 2.26.5 to 2.26.7
 
-## 4.3.1 - 2019-05-02
+## [4.3.1] - 2019-05-02
 ### Added
 - `RewriteBase /` to [`.htaccess`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/public/.htaccess)
 - `is_writable` condition to [`npm-postinstall.php`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/php/npm-postinstall.php)
@@ -124,7 +128,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - override existing `gulpfile-config.json`
 
-## 4.3.0 - 2019-03-10
+## [4.3.0] - 2019-03-10
 ### Added
 - Wrap around cookie consent
 - [`slider.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/js/module/slider.js)
@@ -148,13 +152,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - h1 font size to mobile first
 - [`modal.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/partials/modal.phtml)
 
-## 4.2.0 - 2019-01-27
+## [4.2.0] - 2019-01-27
 ### Added
 - Speaking URL handling
 - Localization
 - Header and Footer partials
 
-## 4.1.0 - 2019-01-15
+## [4.1.0] - 2019-01-15
 ### Added
 - Privacy Policy Modal
 - Bootstrap variables to `_variables.scss`

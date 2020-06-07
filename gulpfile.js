@@ -32,18 +32,18 @@ function browserSyncReload(done) {
 // clean up folders
 function cleanUp() {
 //    del([
-//            config.systemPath + 'css/**/*',
-//            config.systemPath + 'js/**/*',
-//            config.systemPath + 'img/**/*',
+//            config.systemPath + 'css/styles.*',
 //            config.systemPath + 'font/**/*',
+//            config.systemPath + 'img/**/*',
+//            config.systemPath + 'js/scripts.*',
 //            config.systemPath + 'svg/**/*'
 //        ], {force: true});
-        
+
     return del([
-            config.publicPath + 'css/**/*',
-            config.publicPath + 'js/**/*',
-            config.publicPath + 'img/**/*',
+            config.publicPath + 'css/styles.*',
             config.publicPath + 'font/**/*',
+            config.publicPath + 'img/**/*',
+            config.publicPath + 'js/scripts.*',
             config.publicPath + 'svg/**/*'
         ]);
 }
@@ -189,7 +189,7 @@ function watch() {
 // watch files and reload browser on file change
 function watchAndReload() {
     watch();
-    
+
     gulp.watch(config.publicPath + '**/*.{css,eot,ico,js,jpg,otf,png,svg,ttf,woff,woff2}', browserSyncReload);
     gulp.watch('templates/**/*.{php,html,phtml}', browserSyncReload);
 }
