@@ -1,6 +1,7 @@
 {
     "name": "gulp-skeleton",
-    "version": "5.3.1-dev",
+    "version": "5.4.0",
+    "commitDate": "2020-10-17T20:00:00+02:00",
     "description": "Skeleton to create templates with Gulp",
     "keywords": [
         "gulp",
@@ -34,8 +35,13 @@
         "url": "git://github.com/InsanityMeetsHH/gulp-skeleton.git"
     },
     "devDependencies": {
-        "browser-sync": "^2.26.7",
-        "del": "^5.1.0",
+        "@fortawesome/fontawesome-free": "^5.15.1",
+        "bootstrap": "^4.5.3",
+        "browser-sync": "^2.26.12",
+        "cookieconsent": "^3.1.1",
+        "cookieconsent-scss-less": "^3.0.6",
+        "cssuseragent": "^2.1.31",
+        "del": "^6.0.0",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^7.0.1",
         "gulp-clean-css": "^4.3.0",
@@ -47,18 +53,12 @@
         "gulp-sass": "^4.1.0",
         "gulp-sass-lint": "^1.4.0",
         "gulp-sourcemaps": "^2.6.5",
-        "gulp-uglify-es": "^2.0.0"
-    },
-    "dependencies": {
-        "@fortawesome/fontawesome-free": "^5.13.0",
-        "bootstrap": "^4.5.0",
-        "cookieconsent": "^3.1.1",
-        "cookieconsent-scss-less": "^3.0.6",
-        "cssuseragent": "^2.1.31",
+        "gulp-uglify-es": "^2.0.0",
         "jquery": "^3.5.1",
         "slick-carousel": "^1.8.1",
-        "vanilla-lazyload": "^16.1.0"
+        "vanilla-lazyload": "^17.1.2"
     },
+    "dependencies": {},
     "scripts": {
         "postinstall": "node npm-postinstall.js",
         "build": "gulp build",

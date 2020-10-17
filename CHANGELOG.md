@@ -6,9 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [5.3.1]
+## [5.4.0]
 ### Changed
-- order in cleanUp task and how to remove files from js/css folder in [`gulpfile.js`](https://github.com/InsanityMeetsHH/vue-skeleton/blob/master/gulpfile.js)
+- order in cleanUp task and how to remove files from js/css folder in [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/gulpfile.js)
+- order of dependencies and devDependencies in [`package.json`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/package.json)
+- [`README.md`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/README.md)
+- @fortawesome/fontawesome-free 5.13.0 to 5.15.1
+- bootstrap 4.5.0 to 4.5.3
+- browser-sync 2.26.7 to 2.26.12
+- del 5.1.0 to 6.0.0
+- vanilla-lazyload 16.1.0 to 17.1.2
 
 ## [5.3.0] - 2020-05-31
 ### Added
