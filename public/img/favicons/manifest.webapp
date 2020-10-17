@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "name": "Gulp Skeleton",
+  "description": "Skeleton to create templates with Gulp",
+  "icons": {
+    "60": "img/favicons/firefox_app_60x60.png",
+    "128": "img/favicons/firefox_app_128x128.png",
+    "512": "img/favicons/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "InsanityMeetsHH",
+    "url": "https://insanitymeetshh.net/"
+  }
+}
