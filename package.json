@@ -1,7 +1,7 @@
 {
     "name": "gulp-skeleton",
-    "version": "5.4.0",
-    "commitDate": "2020-10-17T20:15:00+02:00",
+    "version": "5.5.0",
+    "commitDate": "2021-02-13T17:45:00+01:00",
     "description": "Skeleton to create templates with Gulp",
     "keywords": [
         "gulp",
@@ -35,9 +35,9 @@
         "url": "git://github.com/InsanityMeetsHH/gulp-skeleton.git"
     },
     "devDependencies": {
-        "@fortawesome/fontawesome-free": "^5.15.1",
-        "bootstrap": "^4.5.3",
-        "browser-sync": "^2.26.12",
+        "@fortawesome/fontawesome-free": "^5.15.2",
+        "bootstrap": "^4.6.0",
+        "browser-sync": "^2.26.14",
         "cookieconsent": "^3.1.1",
         "cookieconsent-scss-less": "^3.0.6",
         "cssuseragent": "^2.1.31",
@@ -47,16 +47,16 @@
         "gulp-clean-css": "^4.3.0",
         "gulp-concat": "^2.6.1",
         "gulp-eslint": "^6.0.0",
-        "gulp-favicons": "^2.4.0",
+        "gulp-favicons": "^3.0.0",
         "gulp-if": "^3.0.0",
         "gulp-imagemin": "^7.1.0",
         "gulp-sass": "^4.1.0",
         "gulp-sass-lint": "^1.4.0",
-        "gulp-sourcemaps": "^2.6.5",
+        "gulp-sourcemaps": "^3.0.0",
         "gulp-uglify-es": "^2.0.0",
         "jquery": "^3.5.1",
         "slick-carousel": "^1.8.1",
-        "vanilla-lazyload": "^17.1.2"
+        "vanilla-lazyload": "^17.3.1"
     },
     "dependencies": {},
     "scripts": {

@@ -6,7 +6,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [5.4.0]
+## [5.5.0]
+### Changed
+- [`public/.htaccess`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/public/.htaccess)
+- [`README.md`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/README.md)
+- [`.gitignore`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/.gitignore)
+- @fortawesome/fontawesome-free 5.15.1 to 5.15.2
+- bootstrap 4.5.3 to 4.6.0
+- browser-sync 2.26.12 to 2.26.14
+- gulp-favicons 2.4.0 to 3.0.0
+- gulp-sourcemaps 2.6.5 to 3.0.0
+- vanilla-lazyload 17.1.2 to 17.3.1
+
+### Fixed
+- port for Docker in [`base.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/layouts/base.phtml)
+
+## [5.4.0] - 2020-10-17
 ### Changed
 - order in cleanUp task and how to remove files from js/css folder in [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/gulpfile.js)
 - order of dependencies and devDependencies in [`package.json`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/package.json)
