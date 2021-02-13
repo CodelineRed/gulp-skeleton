@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [5.5.0]
 ### Changed
+- [`public/.htaccess`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/public/.htaccess)
 - [`README.md`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/README.md)
 - [`.gitignore`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/.gitignore)
 - @fortawesome/fontawesome-free 5.15.1 to 5.15.2
