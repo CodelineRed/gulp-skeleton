@@ -87,7 +87,7 @@ Open [localhost:3050](http://localhost:3050) for Website.
 ## [`gulpfile.json`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/app/gulpfile.dist.json)
 |                     | Description                                                                                                                      |
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| browserSyncConfig   | Required - Defines which config is used for [BrowserSync](https://www.npmjs.com/package/browser-sync) (default: browserSyncDev)  |
+| browserSyncConfig   | Required - Defines which config is used for [BrowserSync](https://www.npmjs.com/package/browser-sync) (default: browserSyncDocker) +|
 | sourcePath          | Required - Path to raw files (default: src/)                                                                                     |
 | publicPath          | Required - Path to transpiled files (default: public/)                                                                           |
 | systemPath          | Optional - Alternative Path to transpiled files on CMS, ECS, PHP Framework, ... (default: path/to/system/)                       |
