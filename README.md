@@ -39,7 +39,7 @@ If you need PHP, you have to go to [Install PHP](#install-php-optional).
 
 ## Install Master/ Develop Build
 ### Required
-- [Node.js](http://nodejs.org/en/download/)
+- [Node.js](http://nodejs.org/en/download/) >= 12.20
 - [npm](http://www.npmjs.com/get-npm) `$ npm i npm@latest -g`
 - [gulp-cli](https://www.npmjs.com/package/gulp-cli) `$ npm i gulp-cli@latest -g`
 

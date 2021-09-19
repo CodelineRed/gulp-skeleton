@@ -5,11 +5,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-- upgrade to gulp-sass 5
 - upgrade to bootstrap 5
 - upgrade to fontawesome 6 (if its released)
 
-## [5.6.0]
+## [5.7.0]
+### Added
+- `engines` to [`package.json`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/package.json)
+- sass 1.32.13
+
+### Changed
+- [`README.md`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/README.md)
+- [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/gulpfile.js)
+- @fortawesome/fontawesome-free 5.15.3 to 5.15.4
+- browser-sync 2.27.4 to 2.27.5
+- gulp-sass 4.1.1 to 5.0.0
+- gulp-uglify-es 2.0.0 to 3.0.0
+
+## [5.6.0] - 2021-07-09
 ### Changed
 - [`class.GulpSkeleton.php`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/php/class.GulpSkeleton.php)
 - @fortawesome/fontawesome-free 5.15.2 to 5.15.3
