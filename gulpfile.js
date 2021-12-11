@@ -58,7 +58,7 @@ function favicon() {
             developerName: 'InsanityMeetsHH',
             developerURL: 'https://insanitymeetshh.net/',
             background: '#212121',
-            path: 'img/favicons/',
+            path: '',
             url: 'https://gulp.insanitymeetshh.net/',
             display: 'standalone',
             orientation: 'portrait',
