@@ -8,7 +8,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - upgrade to bootstrap 5
 - upgrade to fontawesome 6 (if its released)
 
-## [5.7.0]
+## [5.8.0]
+### Changed
+- [`.gitignore`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/.gitignore)
+- link to documentation in [`lib/bootstrap.scss`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/scss/lib/bootstrap.scss)
+
+### Fixed
+- favicon path in [`gulpfile.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/gulpfile.js)
+
+### Removed
+- `package-lock.json`
+
+## [5.7.0] - 2021-11-19
 ### Added
 - `engines` to [`package.json`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/package.json)
 - sass 1.32.13

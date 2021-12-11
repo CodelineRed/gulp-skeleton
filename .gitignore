@@ -1,5 +1,7 @@
 gulpfile.json
 gulpfile-config.json
+.npmrc
+package-lock.json
 
 # Created by https://www.toptal.com/developers/gitignore/api/node,linux,macos,windows,netbeans,phpstorm
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,linux,macos,windows,netbeans,phpstorm
