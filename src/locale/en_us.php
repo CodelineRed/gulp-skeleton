@@ -1,8 +1,8 @@
 <?php
 return [
     'included' => 'included',
-    'bootstrap' => 'Bootstrap 4',
-    'fontawesome' => 'Font Awesome 5',
+    'bootstrap' => 'Bootstrap 5',
+    'fontawesome' => 'Font Awesome 6',
     'slick' => 'Slick Carousel',
     'lazyload' => 'LazyLoad Image',
     'cssua' => 'CSS User Agent',
@@ -18,6 +18,7 @@ return [
     'page-not-found' => 'Page not found',
     'back-to-hp' => 'Back to Homepage',
     'session' => 'Session',
+    'version' => 'Version',
     
     // cookie layer
     'cl-header' => 'Cookies used on the website!',

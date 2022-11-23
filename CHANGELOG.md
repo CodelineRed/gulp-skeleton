@@ -8,7 +8,45 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - upgrade to bootstrap 5
 - upgrade to fontawesome 6 (if its released)
 
-## [5.8.0]
+## [6.0.0]
+### Added
+- `getVersion()` in [`php/GulpSkeleton.php`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/php/GulpSkeleton.php)
+- `setVersion($version)` in [`php/GulpSkeleton.php`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/php/GulpSkeleton.php)
+- `setVersionFromPackage()` in [`php/GulpSkeleton.php`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/php/GulpSkeleton.php)
+- version in [`partial/footer.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/template/partial/footer.phtml)
+
+### Changed
+- import in [`lib/bootstrap.scss`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/scss/lib/bootstrap.scss)
+- import in [`lib/fontawesome.scss`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/scss/lib/fontawesome.scss)
+- data attributes for BS5 [`module/cookieconsent.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/js/module/cookieconsent.js)
+- [`js/scripts.js`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/js/scripts.js)
+- [`locale/de_de.php`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/locale/de_de.php)
+- [`locale/en_us.php`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/locale/en_us.php)
+- `php/class.GulpSkeleton.php` to [`php/GulpSkeleton.php`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/php/GulpSkeleton.php)
+- data attributes for BS5 [`partial/footer.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/template/partial/footer.phtml)
+- data attributes for BS5 [`partial/modal.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/template/partial/modal.phtml)
+- tooltip example for BS5 [`template/index.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/template/index.phtml)
+- Docker port from 3050 to 7701 in [`layout/base.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/template/layout/base.phtml)
+- Docker port from 3050 to 7701 in [`app/gulpfile.json`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/app/gulpfile.dist.json)
+- Docker port from 3050 to 7701 in [`docker-compose.yml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/docker-compose.yml)
+- `templates` to [`template`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/template)
+- `templates/partials` to [`template/partial`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/template/partial)
+- `templates/layouts` to [`template/layout`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/template/layout)
+- [`README.md`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/README.md)
+- [`.gitignore`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/.gitignore)
+- @fortawesome/fontawesome-free 5.15.4 to 6.2.1
+- bootstrap 4.6.0 to 5.2.3
+- browser-sync 2.27.5 to 2.27.10
+- del 6.0.0 to 6.1.1
+- gulp-sass 5.0.0 to 5.1.0
+- jquery 3.6.0 to 3.6.1
+- sass 1.32.13 to 1.56.1
+- vanilla-lazyload 17.4.0 to 17.8.3
+
+### Removed
+- unnecessary close button variables in [`scss/_variables.scss`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/scss/_variables.scss)
+
+## [5.8.0] - 2021-12-11
 ### Changed
 - [`.gitignore`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/.gitignore)
 - link to documentation in [`lib/bootstrap.scss`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/scss/lib/bootstrap.scss)
@@ -55,7 +93,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - vanilla-lazyload 17.1.2 to 17.3.1
 
 ### Fixed
-- port for Docker in [`base.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/layouts/base.phtml)
+- port for Docker in [`base.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/template/layout/base.phtml)
 
 ## [5.4.0] - 2020-10-17
 ### Changed
@@ -127,9 +165,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - path names in `routes.php`
 
 ### Changed
-- [`footer.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/partials/footer.phtml)
-- [`base.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/layouts/base.phtml)
-- [`404.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/404.phtml)
+- [`footer.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/template/partial/footer.phtml)
+- [`base.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/template/layout/base.phtml)
+- [`404.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/template/404.phtml)
 - [`index.php`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/public/index.php)
 - [`routes.php`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/php/routes.php)
 - Font Awesome 5.11.2 to 5.12.0
@@ -144,7 +182,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [4.5.0] - 2019-10-06
 ### Added
-- [`404.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/404.phtml)
+- [`404.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/template/404.phtml)
 - Social media image
 
 ### Changed
@@ -208,13 +246,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - del 3.0 to 4.0
 - [`.gitignore`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/.gitignore)
 - h1 font size to mobile first
-- [`modal.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/partials/modal.phtml)
+- [`modal.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/template/partial/modal.phtml)
 
 ## [4.2.0] - 2019-01-27
 ### Added
 - Speaking URL handling
 - Localization
-- Header and Footer partials
+- Header and Footer partial
 
 ## [4.1.0] - 2019-01-15
 ### Added
@@ -284,7 +322,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - [`README.md`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/README.md)
-- [`$baseUrl`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/layouts/base.phtml#L11) logic with docker condition
+- [`$baseUrl`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/template/layout/base.phtml#L11) logic with docker condition
 
 ### Removed
 - Fontawesome SVG npm packages
@@ -307,7 +345,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [3.0.5] - 2018-09-06
 ### Added
-- Dynamic [`baseUrl`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/layouts/base.phtml#L15)
+- Dynamic [`baseUrl`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/template/layout/base.phtml#L15)
 
 ### Changed
 - [`.htaccess`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/public/.htaccess)
@@ -327,7 +365,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [3.0.2] - 2018-08-17
 ### Added
-- Version number to JavaScript and CSS file in [`base.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/layouts/base.phtml)
+- Version number to JavaScript and CSS file in [`base.phtml`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/template/layout/base.phtml)
 
 ### Changed
 - [`README.md`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/README.md)
@@ -351,7 +389,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - [`README.md`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/README.md)
-- [`baseUrl`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/templates/layouts/base.phtml#L15)
+- [`baseUrl`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/template/layout/base.phtml#L15)
 
 ### Removed
 - Fontawesome 5.0

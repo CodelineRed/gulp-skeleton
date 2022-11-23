@@ -2,15 +2,16 @@
 
 class GulpSkeleton {
     
-    private $cookiesAllowed;
     private $baseUrl;
+    private $cookieLocale;
+    private $cookiesAllowed;
     private $currentUrl;
-    private $template;
     private $layout;
     private $locale;
     private $routeName;
     private $routes;
-    private $cookieLocale;
+    private $template;
+    private $version;
 
     /**
      * @param string $defaultLocale
@@ -26,6 +27,7 @@ class GulpSkeleton {
         $this->setLocale($routes['404-' . $this->getCookieLocale()]['locale']);
         $this->setRouteName('404');
         $this->setRoutes($routes);
+        $this->setVersionFromPackage();
     }
 
     /**
@@ -33,62 +35,6 @@ class GulpSkeleton {
      */
     public function getBaseUrl() {
         return $this->baseUrl;
-    }
-
-    /**
-     * @return bool
-     */
-    public function getCookiesAllowed() {
-        return $this->cookiesAllowed;
-    }
-
-    /**
-     * @return string
-     */
-    public function getCookieLocale() {
-        return $this->cookieLocale;
-    }
-
-    /**
-     * @return string
-     */
-    public function getCurrentUrl() {
-        return $this->currentUrl;
-    }
-
-    /**
-     * @return string
-     */
-    public function getLayout() {
-        return $this->layout;
-    }
-
-    /**
-     * @return string
-     */
-    public function getLocale() {
-        return $this->locale;
-    }
-
-    /**
-     * @return string
-     */
-    public function getTemplate() {
-        return $this->template;
-    }
-
-    /**
-     * @return string
-     */
-    public function getRouteName() {
-        return $this->routeName;
-    }
-
-    /**
-     * @return array
-     */
-    public function getRoutes() {
-        return $this->routes;
     }
 
     /**
@@ -102,13 +48,10 @@ class GulpSkeleton {
     }
 
     /**
-     * @param bool $cookiesAllowed
-     * @return $this
+     * @return string
      */
-    public function setCookiesAllowed($cookiesAllowed) {
-        $this->cookiesAllowed = $cookiesAllowed;
-        
-        return $this;
+    public function getCookieLocale() {
+        return $this->cookieLocale;
     }
 
     /**
@@ -122,6 +65,30 @@ class GulpSkeleton {
     }
 
     /**
+     * @return bool
+     */
+    public function getCookiesAllowed() {
+        return $this->cookiesAllowed;
+    }
+
+    /**
+     * @param bool $cookiesAllowed
+     * @return $this
+     */
+    public function setCookiesAllowed($cookiesAllowed) {
+        $this->cookiesAllowed = $cookiesAllowed;
+        
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCurrentUrl() {
+        return $this->currentUrl;
+    }
+
+    /**
      * @param string $currentUrl
      * @return $this
      */
@@ -129,6 +96,13 @@ class GulpSkeleton {
         $this->currentUrl = $currentUrl;
         
         return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getLayout() {
+        return $this->layout;
     }
 
     /**
@@ -142,6 +116,13 @@ class GulpSkeleton {
     }
 
     /**
+     * @return string
+     */
+    public function getLocale() {
+        return $this->locale;
+    }
+
+    /**
      * @param string $locale
      * @return $this
      */
@@ -152,13 +133,10 @@ class GulpSkeleton {
     }
 
     /**
-     * @param string $template
-     * @return $this
+     * @return string
      */
-    public function setTemplate($template) {
-        $this->template = $template;
-        
-        return $this;
+    public function getRouteName() {
+        return $this->routeName;
     }
 
     /**
@@ -172,6 +150,13 @@ class GulpSkeleton {
     }
 
     /**
+     * @return array
+     */
+    public function getRoutes() {
+        return $this->routes;
+    }
+
+    /**
      * @param array $routes
      * @return $this
      */
@@ -182,15 +167,64 @@ class GulpSkeleton {
     }
 
     /**
-    * By default echos path for given route name.
-    * 
-    * Usage: <a href="<?php $gs->getPathFor('index'); ?>">Home</a>
-    * 
-    * @param string $routeName
-    * @param string $locale optional (default: null)
-    * @param string $baseUrl optional (default: null)
-    * @param boolean $echo optional (default: true)
-    * @param boolean $relative optional (default: true)
+     * @return string
+     */
+    public function getTemplate() {
+        return $this->template;
+    }
+
+    /**
+     * @param string $template
+     * @return $this
+     */
+    public function setTemplate($template) {
+        $this->template = $template;
+        
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getVersion() {
+        return $this->version;
+    }
+
+    /**
+     * @param string $version
+     * @return $this
+     */
+    public function setVersion($version) {
+        $this->version = $version;
+        
+        return $this;
+    }
+
+    /**
+     * Sets version by version in package.json
+     * 
+     * @return $this
+     */
+    public function setVersionFromPackage() {
+        if (is_readable(__DIR__ . '/../../package.json')) {
+            $package = json_decode(file_get_contents(__DIR__ . '/../../package.json'), true);
+            $this->version = $package['version'];
+        }
+        
+        return $this;
+    }
+
+    /**
+     * By default echos path for given route name.
+     * 
+     * Usage: <a href="<?php $gs->getPathFor('index'); ?>">Home</a>
+     * 
+     * @param string $routeName
+     * @param string $locale optional (default: null)
+     * @param string $baseUrl optional (default: null)
+     * @param boolean $echo optional (default: true)
+     * @param boolean $relative optional (default: true)
+     * @return string|void
     */
     public function getPathFor($routeName, $locale = NULL, $baseUrl = NULL, $echo = TRUE, $relative = TRUE) {
         $locale = is_string($locale) ? $locale : $this->getLocale();

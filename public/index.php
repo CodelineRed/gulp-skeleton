@@ -6,7 +6,7 @@ session_start();
 
 // available routes
 $routes = require __DIR__ . '/../src/php/routes.php';
-require __DIR__ . '/../src/php/class.GulpSkeleton.php';
+require __DIR__ . '/../src/php/GulpSkeleton.php';
 $gs = new GulpSkeleton('en_us', $routes);
 
 http_response_code(404);
@@ -35,4 +35,4 @@ if (is_readable(__DIR__ . '/../src/locale/' . $gs->getLocale() . '.php')) {
     $lang = require __DIR__ . '/../src/locale/' . $gs->getLocale() . '.php';
 }
 
-include __DIR__ . '/../templates/layouts/' . $gs->getLayout() . '.phtml';
+include __DIR__ . '/../template/layout/' . $gs->getLayout() . '.phtml';

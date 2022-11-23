@@ -5,7 +5,7 @@ volumes:
         driver: local
 
 services:
-    # http://localhost:3050
+    # http://localhost:7701
     webserver:
         image: php:7-alpine
         container_name: gulp-skeleton
@@ -14,7 +14,7 @@ services:
         environment:
             docker: "true"
         ports:
-            - 3050:8080
+            - 7701:8080
         volumes:
             - .:/var/www
             - logs:/var/www/logs

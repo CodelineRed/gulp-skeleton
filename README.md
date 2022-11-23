@@ -15,8 +15,8 @@
 
 ## Included
 - [jQuery 3](http://jquery.com)
-- [Bootstrap 4](https://getbootstrap.com)
-- [Font Awesome 5](https://fontawesome.com)
+- [Bootstrap 5](https://getbootstrap.com)
+- [Font Awesome 6](https://fontawesome.com)
 - [Slick Carousel 1](http://kenwheeler.github.io/slick/)
 - [LazyLoad 17](https://www.andreaverlicchi.eu/vanilla-lazyload/)
 - [CSS User Agent 2](https://www.npmjs.com/package/cssuseragent)
@@ -65,7 +65,7 @@ $ (unix) systemctl docker start
 $ (windows) "c:\path\to\Docker Desktop.exe"
 $ docker-compose up -d
 ```
-Open [localhost:3050](http://localhost:3050) for Website.
+Open [localhost:7701](http://localhost:7701) for Website.
 
 ## Project Commands
 |               | Description                                                                                                                            |
