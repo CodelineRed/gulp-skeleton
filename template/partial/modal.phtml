@@ -3,13 +3,11 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title"><?php echo $lang['cookie-policy-title']; ?></h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <?php echo $lang['cl-message']; ?><br/>
-                <button class="btn btn-primary mt-2" type="button" data-toggle="collapse" data-target="#cookie-policy-collapse" aria-expanded="false" aria-controls="cookie-policy-collapse"><?php echo $lang['cpm-sdi']; ?></button>
+                <button class="btn btn-primary mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#cookie-policy-collapse" aria-expanded="false" aria-controls="cookie-policy-collapse"><?php echo $lang['cpm-sdi']; ?></button>
                 
                 <div class="collapse" id="cookie-policy-collapse">
                     <div class="table-responsive mt-3">
