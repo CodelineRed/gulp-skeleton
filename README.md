@@ -1,6 +1,6 @@
-# Gulp Skeleton - InsanityMeetsHH
+# Gulp Skeleton - CodelineRed
 
-[**Demo page**](http://gulp.insanitymeetshh.net)
+[**Demo page**](http://gulp.codelinered.net)
 
 ## Table of contents
 - [Included Third Party Code](#included)
@@ -26,10 +26,10 @@
 ### Required
 - PHP >= 5.3
 
-[Download zip](https://github.com/InsanityMeetsHH/gulp-skeleton/archive/production.zip) if you don't have git on your OS.
+[Download zip](https://github.com/CodelineRed/gulp-skeleton/archive/production.zip) if you don't have git on your OS.
 Open console on your OS and navigate to your project folder.
 ```bash
-$ git clone https://github.com/InsanityMeetsHH/gulp-skeleton.git
+$ git clone https://github.com/CodelineRed/gulp-skeleton.git
 $ cd gulp-skeleton
 $ git checkout production
 $ (optional on unix) rm -rf .git
@@ -43,10 +43,10 @@ If you need PHP, you have to go to [Install PHP](#install-php-optional).
 - [npm](http://www.npmjs.com/get-npm) `$ npm i npm@latest -g`
 - [gulp-cli](https://www.npmjs.com/package/gulp-cli) `$ npm i gulp-cli@latest -g`
 
-[Download zip](https://github.com/InsanityMeetsHH/gulp-skeleton/archive/master.zip) if you don't have git on your OS.
+[Download zip](https://github.com/CodelineRed/gulp-skeleton/archive/master.zip) if you don't have git on your OS.
 Open 2 consoles on your OS and navigate both to your project folder.
 ```bash
-$ git clone https://github.com/InsanityMeetsHH/gulp-skeleton.git
+$ git clone https://github.com/CodelineRed/gulp-skeleton.git
 $ cd gulp-skeleton
 $ (optional) git checkout develop
 $ (optional on unix) rm -rf .git
@@ -78,13 +78,13 @@ Open [localhost:7701](http://localhost:7701) for Website.
 | gulp font     | copy font files                                                                                                                        |
 | gulp img      | copy and compress images                                                                                                               |
 | gulp js       | uglify, minify and concat js files                                                                                                     |
-| gulp jsLint   | checks js follows [lint rules](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/app/js-lint.json)                      |
+| gulp jsLint   | checks js follows [lint rules](https://github.com/CodelineRed/gulp-skeleton/blob/master/src/app/js-lint.json)                      |
 | gulp scss     | compile, minify and concat scss files                                                                                                  |
-| gulp scssLint | checks scss follows [lint rules](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/app/scss-lint.json)                  |
+| gulp scssLint | checks scss follows [lint rules](https://github.com/CodelineRed/gulp-skeleton/blob/master/src/app/scss-lint.json)                  |
 | gulp svg      | copy and compress svg files                                                                                                            |
 | gulp watch    | watch favicon, font, img, js, scss and svg files                                                                                       |
 
-## [`gulpfile.json`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/app/gulpfile.dist.json)
+## [`gulpfile.json`](https://github.com/CodelineRed/gulp-skeleton/blob/master/src/app/gulpfile.dist.json)
 |                     | Description                                                                                                                      |
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | browserSyncConfig   | Required - Defines which config is used for [BrowserSync](https://www.npmjs.com/package/browser-sync) (default: browserSyncDocker) +|
@@ -94,7 +94,7 @@ Open [localhost:7701](http://localhost:7701) for Website.
 | env                 | Required - Environment dev, test or prod (default: dev)                                                                          |
 
 ## Localization
-- [`src/locale/`](https://github.com/InsanityMeetsHH/gulp-skeleton/blob/master/src/locale/)
+- [`src/locale/`](https://github.com/CodelineRed/gulp-skeleton/blob/master/src/locale/)
 
 ## Links
 - [ESLint Rules](https://eslint.org/docs/rules/)

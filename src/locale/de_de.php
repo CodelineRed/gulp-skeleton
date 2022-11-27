@@ -44,19 +44,19 @@ return [
     'cpm-type4' => 'Typ 4 = Cookie Dritter',
     
     // meta
-    'meta-title' => 'Gulp Skeleton - InsanityMeetsHH',
+    'meta-title' => 'Gulp Skeleton - CodelineRed',
     'meta-keywords' => '',
     'meta-description' => '',
     'meta-robots' => 'index,follow',
-    'meta-author' => 'InsanityMeetsHH',
+    'meta-author' => 'CodelineRed',
     'meta-fbAppId' => '',
     'meta-fbAdmins' => '',
     'meta-publisher' => '',
     'meta-type' => 'website',
     'meta-socialMediaImage' => 'img/general-ci.jpg',
     'meta-siteName' => 'Gulp Skeleton',
-    'meta-twitterSite' => 'InsanityMeetsHH',
-    'meta-twitterUrl' => 'https://twitter.com/InsanityMeetsHH',
+    'meta-twitterSite' => 'CodelineRed',
+    'meta-twitterUrl' => 'https://twitter.com/CodelineRed',
     'meta-rssUrl' => '',
     'meta-themeColor' => '#212121',
     

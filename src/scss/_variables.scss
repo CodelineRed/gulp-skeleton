@@ -1,13 +1,14 @@
-$theme-color-1: #2e97bf; // turquoise
+$theme-color-1: #ff2525; // red
 $theme-color-2: #212121; // dark grey
 $theme-color-3: lighten($theme-color-2, 50%); // light grey
 $theme-color-4: lighten($theme-color-2, 5%); // grey
+$white: #fff;
 
 // Font Awesome
 $fa-font-path: '../font';
 
 // Slick Carousel
-$slick-dot-color: #fff;
+$slick-dot-color: $white;
 $slick-font-path: '../font/';
 $slick-loader-path: '../img/slick/';
 
@@ -24,7 +25,16 @@ $headings-color: $theme-color-1;
 $blue: $theme-color-1;
 
 $link-color: $theme-color-1;
+$link-decoration: none;
 
 $modal-content-bg: $theme-color-4;
 $modal-header-border-color: $theme-color-3;
 $modal-md: 800px;
+
+$dropdown-bg: $theme-color-2;
+$dropdown-border-color: $theme-color-3;
+$dropdown-color: $white;
+$dropdown-divider-bg: $theme-color-4;
+$dropdown-link-color: $white;
+$dropdown-link-hover-color: $white;
+$dropdown-link-hover-bg: $theme-color-4;

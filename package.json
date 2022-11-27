@@ -1,7 +1,7 @@
 {
     "name": "gulp-skeleton",
-    "version": "6.0.0",
-    "commitDate": "2022-11-23T20:15:00+01:00",
+    "version": "6.0.1",
+    "commitDate": "2022-11-27T15:30:00+01:00",
     "description": "Skeleton to create templates with Gulp",
     "keywords": [
         "gulp",
@@ -21,18 +21,18 @@
         "jquery"
     ],
     "author": {
-        "name": "InsanityMeetsHH",
-        "email": "software@insanitymeetshh.net",
-        "url": "https://www.insanitymeetshh.net"
+        "name": "CodelineRed",
+        "email": "software@codelinered.net",
+        "url": "https://www.codelinered.net"
     },
     "bugs": {
-        "url": "https://github.com/InsanityMeetsHH/gulp-skeleton/issues"
+        "url": "https://github.com/CodelineRed/gulp-skeleton/issues"
     },
     "license": "MIT",
-    "homepage": "http://gulp.insanitymeetshh.net",
+    "homepage": "http://gulp.codelinered.net",
     "repository": {
         "type": "git",
-        "url": "git://github.com/InsanityMeetsHH/gulp-skeleton.git"
+        "url": "git://github.com/CodelineRed/gulp-skeleton.git"
     },
     "engines": {
         "node": ">=12.20.0"

@@ -7,7 +7,7 @@ volumes:
 services:
     # http://localhost:7701
     webserver:
-        image: php:7-alpine
+        image: php:8-alpine
         container_name: gulp-skeleton
         working_dir: /var/www
         command: php -S 0.0.0.0:8080 -t public
