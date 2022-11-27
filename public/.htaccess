@@ -7,7 +7,7 @@ RewriteEngine on
 #Require valid-user
 
 # For some web hosts the next line has to be activated 
-#RewriteBase /
+RewriteBase /
 
 # Redirect HTTP to HTTPS if host is codelinered.net
 RewriteCond %{HTTPS} off
