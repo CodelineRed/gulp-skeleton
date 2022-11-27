@@ -63,8 +63,8 @@
         &.cc-deny,
         &.cc-dismiss {
             &:hover {
-                background-color: transparent;
-                border-color: $white;
+                background-color: lighten($theme-color-1, 5%);
+                border-color: lighten($theme-color-1, 5%);
             }
         }
     }

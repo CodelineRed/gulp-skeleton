@@ -9,10 +9,10 @@ RewriteEngine on
 # For some web hosts the next line has to be activated 
 #RewriteBase /
 
-# Redirect HTTP to HTTPS if host is insanitymeetshh.net
+# Redirect HTTP to HTTPS if host is codelinered.net
 RewriteCond %{HTTPS} off
-RewriteCond %{HTTP_HOST} insanitymeetshh\.net
-RewriteRule ^(.*)$ https://gulp.insanitymeetshh.net/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} codelinered\.net
+RewriteRule ^(.*)$ https://gulp.codelinered.net/$1 [L,R=301]
 
 # Forwards all requests to index.php, except files and folders
 RewriteCond %{REQUEST_FILENAME} !-f
