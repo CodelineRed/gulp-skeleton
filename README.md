@@ -1,6 +1,6 @@
 # Gulp Skeleton - CodelineRed
 
-[**Demo page**](http://gulp.codelinered.net)
+[**Demo page**](https://gulp.codelinered.net)
 
 ## Table of contents
 - [Included Third Party Code](#included)
@@ -24,16 +24,32 @@
 
 ## Install Production Build (Recommended)
 ### Required
-- PHP >= 5.3
+- PHP >= 5.5
 
-[Download zip](https://github.com/CodelineRed/gulp-skeleton/archive/production.zip) if you don't have git on your OS.
 Open console on your OS and navigate to your project folder.
+[Download zip](https://github.com/CodelineRed/gulp-skeleton/archive/production.zip) if you don't have git on your OS.
 ```bash
++++++ ZIP VERSION +++++
+$ (unix) wget -O gs-prod.zip https://github.com/CodelineRed/gulp-skeleton/archive/production.zip
+$ (unix) unzip gs-prod.zip
+$ (win10) curl -L -o gs-prod.zip https://github.com/CodelineRed/gulp-skeleton/archive/production.zip
+$ (win10) tar -xf gs-prod.zip
+$ cd gulp-skeleton-production
+```
+
+```bash
++++++ GIT VERSION +++++
 $ git clone https://github.com/CodelineRed/gulp-skeleton.git
 $ cd gulp-skeleton
 $ git checkout production
 $ (optional on unix) rm -rf .git
-$ (optional on windows) rmdir .git /s
+$ (optional on win10) rmdir .git /s
+```
+
+```bash
++++++ COMPOSER VERSION +++++
+$ php composer create-project codelinered/gulp-skeleton gulp-skeleton "dev-production"
+$ cd gulp-skeleton
 ```
 If you need PHP, you have to go to [Install PHP](#install-php-optional).
 
@@ -43,17 +59,41 @@ If you need PHP, you have to go to [Install PHP](#install-php-optional).
 - [npm](http://www.npmjs.com/get-npm) `$ npm i npm@latest -g`
 - [gulp-cli](https://www.npmjs.com/package/gulp-cli) `$ npm i gulp-cli@latest -g`
 
+Open console on your OS and navigate to your project folder.
 [Download zip](https://github.com/CodelineRed/gulp-skeleton/archive/master.zip) if you don't have git on your OS.
-Open 2 consoles on your OS and navigate both to your project folder.
 ```bash
-$ git clone https://github.com/CodelineRed/gulp-skeleton.git
-$ cd gulp-skeleton
-$ (optional) git checkout develop
-$ (optional on unix) rm -rf .git
-$ (optional on windows) rmdir .git /s
++++++ ZIP VERSION +++++
+$ (unix) wget -O gs-mstr.zip https://github.com/CodelineRed/gulp-skeleton/archive/master.zip
+$ (unix) unzip gs-mstr.zip
+$ (win10) curl -L -o gs-mstr.zip https://github.com/CodelineRed/gulp-skeleton/archive/master.zip
+$ (win10) tar -xf gs-mstr.zip
+$ cd gulp-skeleton-master
 $ npm i
 $ gulp build
+$ gulp
 ```
+
+```bash
++++++ GIT VERSION +++++
+$ git clone https://github.com/CodelineRed/gulp-skeleton.git
+$ cd gulp-skeleton
+$ git checkout master
+$ (optional on unix) rm -rf .git
+$ (optional on win10) rmdir .git /s
+$ npm i
+$ gulp build
+$ gulp
+```
+
+```bash
++++++ COMPOSER VERSION +++++
+$ php composer create-project codelinered/gulp-skeleton
+$ cd gulp-skeleton
+$ npm i
+$ gulp build
+$ gulp
+```
+Open [localhost:3000](http://localhost:3000) for Website.
 
 ## Install PHP (optional)
 ### Required
@@ -68,30 +108,31 @@ $ docker-compose up -d
 Open [localhost:7701](http://localhost:7701) for Website.
 
 ## Project Commands
-|               | Description                                                                                                                            |
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| gulp          | watch files and start [BrowserSync](https://www.npmjs.com/package/browser-sync)                                                        |
-| gulp build    | executes following tasks: cleanUp, favicon, font, img, js, jsLint, scss, scssLint, svg                                                 |
-| gulp lintAll  | executes following tasks: jsLint, scssLint                                                                                             |
-| gulp cleanUp  | clean up public folder                                                                                                                 |
-| gulp favicon  | generate favicons                                                                                                                      |
-| gulp font     | copy font files                                                                                                                        |
-| gulp img      | copy and compress images                                                                                                               |
-| gulp js       | uglify, minify and concat js files                                                                                                     |
-| gulp jsLint   | checks js follows [lint rules](https://github.com/CodelineRed/gulp-skeleton/blob/master/src/app/js-lint.json)                      |
-| gulp scss     | compile, minify and concat scss files                                                                                                  |
-| gulp scssLint | checks scss follows [lint rules](https://github.com/CodelineRed/gulp-skeleton/blob/master/src/app/scss-lint.json)                  |
-| gulp svg      | copy and compress svg files                                                                                                            |
-| gulp watch    | watch favicon, font, img, js, scss and svg files                                                                                       |
+|               | Description                                                                                                                              |
+|---------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| gulp          | watch files and start [BrowserSync](https://www.npmjs.com/package/browser-sync)                                                          |
+| gulp build    | executes following tasks: cleanUp, favicon, font, img, js, jsLint, scss, scssLint, svg                                                   |
+| gulp lintAll  | executes following tasks: jsLint, scssLint                                                                                               |
+| gulp cleanUp  | clean up public folder                                                                                                                   |
+| gulp favicon  | generate favicons                                                                                                                        |
+| gulp font     | copy font files                                                                                                                          |
+| gulp img      | copy and compress images                                                                                                                 |
+| gulp js       | uglify, minify and concat js files                                                                                                       |
+| gulp jsLint   | checks js follows [lint rules](https://github.com/CodelineRed/gulp-skeleton/blob/master/src/app/js-lint.json)                            |
+| gulp scss     | compile, minify and concat scss files                                                                                                    |
+| gulp scssLint | checks scss follows [lint rules](https://github.com/CodelineRed/gulp-skeleton/blob/master/src/app/scss-lint.json)                        |
+| gulp thankYou | a small thank for you                                                                                                                    |
+| gulp svg      | copy and compress svg files                                                                                                              |
+| gulp watch    | watch favicon, font, img, js, scss and svg files                                                                                         |
 
 ## [`gulpfile.json`](https://github.com/CodelineRed/gulp-skeleton/blob/master/src/app/gulpfile.dist.json)
-|                     | Description                                                                                                                      |
-|---------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| browserSyncConfig   | Required - Defines which config is used for [BrowserSync](https://www.npmjs.com/package/browser-sync) (default: browserSyncDocker) +|
-| sourcePath          | Required - Path to raw files (default: src/)                                                                                     |
-| publicPath          | Required - Path to transpiled files (default: public/)                                                                           |
-| systemPath          | Optional - Alternative Path to transpiled files on CMS, ECS, PHP Framework, ... (default: path/to/system/)                       |
-| env                 | Required - Environment dev, test or prod (default: dev)                                                                          |
+|                     | Description                                                                                                                        |
+|---------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| browserSyncConfig   | Required - Defines which config is used for [BrowserSync](https://www.npmjs.com/package/browser-sync) (default: browserSyncDocker) |
+| sourcePath          | Required - Path to raw files (default: src/)                                                                                       |
+| publicPath          | Required - Path to transpiled files (default: public/)                                                                             |
+| systemPath          | Optional - Alternative Path to transpiled files on CMS, ECS, PHP Framework, ... (default: path/to/system/)                         |
+| env                 | Required - Environment dev, test or prod (default: dev)                                                                            |
 
 ## Localization
 - [`src/locale/`](https://github.com/CodelineRed/gulp-skeleton/blob/master/src/locale/)

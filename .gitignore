@@ -1,10 +1,19 @@
 gulpfile.json
 gulpfile-config.json
 .npmrc
-package-lock.json
+composer.lock
+# package-lock.json
 
-# Created by https://www.toptal.com/developers/gitignore/api/node,linux,macos,windows,netbeans,phpstorm
-# Edit at https://www.toptal.com/developers/gitignore?templates=node,linux,macos,windows,netbeans,phpstorm
+# Created by https://www.toptal.com/developers/gitignore/api/node,linux,macos,windows,netbeans,phpstorm,composer
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,linux,macos,windows,netbeans,phpstorm,composer
+
+### Composer ###
+composer.phar
+/vendor/
+
+# Commit your application's lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+# composer.lock
 
 ### Linux ###
 *~
@@ -29,6 +38,7 @@ package-lock.json
 
 # Icon must end with two \r
 Icon
+
 
 # Thumbnails
 ._*
@@ -342,4 +352,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/node,linux,macos,windows,netbeans,phpstorm
+# End of https://www.toptal.com/developers/gitignore/api/node,linux,macos,windows,netbeans,phpstorm,composer

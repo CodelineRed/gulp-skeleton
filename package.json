@@ -1,7 +1,7 @@
 {
     "name": "gulp-skeleton",
-    "version": "6.0.1",
-    "commitDate": "2022-11-27T15:30:00+01:00",
+    "version": "6.1.0",
+    "commitDate": "2022-12-20T08:30:00+01:00",
     "description": "Skeleton to create templates with Gulp",
     "keywords": [
         "gulp",
@@ -40,7 +40,8 @@
     "devDependencies": {
         "@fortawesome/fontawesome-free": "^6.2.1",
         "bootstrap": "^5.2.3",
-        "browser-sync": "^2.27.10",
+        "browser-sync": "^2.27.11",
+        "chalk": "^4.1.2",
         "cookieconsent": "^3.1.1",
         "cookieconsent-scss-less": "^3.0.6",
         "cssuseragent": "^2.1.31",
@@ -57,12 +58,11 @@
         "gulp-sass-lint": "^1.4.0",
         "gulp-sourcemaps": "^3.0.0",
         "gulp-uglify-es": "^3.0.0",
-        "jquery": "^3.6.1",
-        "sass": "^1.56.1",
+        "jquery": "^3.6.2",
+        "sass": "^1.57.0",
         "slick-carousel": "^1.8.1",
         "vanilla-lazyload": "^17.8.3"
     },
-    "dependencies": {},
     "scripts": {
         "postinstall": "node npm-postinstall.js",
         "build": "gulp build",

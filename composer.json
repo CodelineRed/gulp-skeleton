@@ -1,0 +1,20 @@
+{
+    "name": "codelinered/gulp-skeleton",
+    "description": "Skeleton to create templates with Gulp",
+    "version": "6.1.0",
+    "keywords": ["gulp", "templating", "skeleton", "boilerplate", "bootstrap", "fontawesome", "slick", "carousel", "lazyload", "css user agent", "cssua", "cookieconsent", "cookie", "docker", "jquery"],
+    "homepage": "https://gulp.codelinered.net",
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "CodelineRed",
+            "email": "software@codelinered.net",
+            "homepage": "https://www.codelinered.net"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.5.9"
+    }
+}
