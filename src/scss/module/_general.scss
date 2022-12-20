@@ -5,18 +5,6 @@
     outline: 0 !important; // sass-lint:disable-line no-important
 }
 
-.btn {
-    &.btn-primary {
-        color: $white;
-
-        &:active,
-        &:focus-visible,
-        &:hover {
-            color: $white;
-        }
-    }
-}
-
 .transition-all {
     @include transition(.5s ease)
 }

@@ -4,8 +4,10 @@ volumes:
     logs:
         driver: local
 
+# docker-compose up -d
 services:
     # http://localhost:7701
+    # docker exec -ti gulp-skeleton php --version
     webserver:
         image: php:8-alpine
         container_name: gulp-skeleton

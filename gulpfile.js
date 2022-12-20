@@ -1,4 +1,5 @@
 const browserSync = require('browser-sync').create();
+const chalk       = require('chalk');
 const del         = require('del');
 const gulp        = require('gulp');
 const prefixer    = require('gulp-autoprefixer');
@@ -170,6 +171,14 @@ function svg() {
         .pipe(gulp.dest(config.publicPath + 'svg/'));
 }
 
+// thank you
+function thankYou() {
+    return new Promise(function(resolve, reject) {
+        console.log(chalk.redBright(' ♥ ') + chalk.bold('Thank you for using Gulp Skeleton 6!') + chalk.redBright(' ♥ '));
+        resolve();
+    });
+}
+
 // watch files
 function watch() {
     // watch fonts
@@ -205,6 +214,7 @@ exports.jsLint = jsLint;
 exports.scss = scss;
 exports.scssLint = scssLint;
 exports.svg = svg;
+exports.thankYou = thankYou;
 exports.watch = watch;
 exports.watchAndReload = watchAndReload;
 
@@ -212,7 +222,7 @@ exports.watchAndReload = watchAndReload;
 gulp.task('lintAll', gulp.series(jsLint, scssLint));
 
 // build task
-gulp.task('build', gulp.series(cleanUp, favicon, font, img, js, jsLint, scss, scssLint, svg));
+gulp.task('build', gulp.series(thankYou, cleanUp, favicon, font, img, js, jsLint, scss, scssLint, svg));
 
 // default task if just called gulp
 gulp.task('default', gulp.parallel(watchAndReload, browserSyncInit));

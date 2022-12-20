@@ -6,7 +6,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [6.0.1]
+## [6.1.0]
+### Added
+- `thankYou()` in [`gulpfile.js`](https://github.com/CodelineRed/vue-skeleton/blob/master/gulpfile.js)
+- [`composer.json`](https://github.com/CodelineRed/vue-skeleton/blob/master/composer.json)
+- [`package-lock.json`](https://github.com/CodelineRed/vue-skeleton/blob/master/composer.json) back again
+- chalk 4.1.2
+
+### Changed
+- [`scss/_variables.scss`](https://github.com/CodelineRed/gulp-skeleton/blob/master/src/scss/_variables.scss)
+- nickname in [`partial/modal.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/master/template/partial/modal.phtml)
+- [`README.md`](https://github.com/CodelineRed/gulp-skeleton/blob/master/README.md)
+- browser-sync 2.27.10 to 2.27.11
+- jquery 3.6.1 to 3.6.2
+- sass 1.56.1 to 1.57.0
+
+### Removed
+- button hover style in [`module/_general.scss`](https://github.com/CodelineRed/gulp-skeleton/blob/master/src/scss/module/_general.scss)
+- active class in [`template/404.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/master/template/404.phtml)
+
+### Fixed
+- BrowserSync view (http://localhost:3000/)
+
+## [6.0.1] - 2022-11-27
 ### Changed
 - host in [`public/.htaccess`](https://github.com/CodelineRed/gulp-skeleton/blob/master/public/.htaccess)
 - nickname in [`locale/de_de.php`](https://github.com/CodelineRed/gulp-skeleton/blob/master/src/locale/de_de.php)
