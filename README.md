@@ -6,8 +6,8 @@
 - [Included Third Party Code](#included)
 - Install Guides
     - [Install Production Build (Recommended)](#install-production-build-recommended)
-    - [Install Master/ Develop Build](#install-master-develop-build)
-    - [Install PHP (optional)](#install-php-optional)
+    - [Install Main/ Develop Build](#install-main-develop-build)
+    - [Install with Docker (optional)](#install-with-docker-optional)
 - [Project Commands](#project-commands)
 - [`gulpfile.json`](#gulpfilejson)
 - [Localization](#localization)
@@ -26,15 +26,11 @@
 ### Required
 - PHP >= 5.5
 
-Open console on your OS and navigate to your project folder.
-[Download zip](https://github.com/CodelineRed/gulp-skeleton/archive/production.zip) if you don't have git on your OS.
+Open console on your OS and navigate to the place where you want to install the project.
 ```bash
-+++++ ZIP VERSION +++++
-$ (unix) wget -O gs-prod.zip https://github.com/CodelineRed/gulp-skeleton/archive/production.zip
-$ (unix) unzip gs-prod.zip
-$ (win10) curl -L -o gs-prod.zip https://github.com/CodelineRed/gulp-skeleton/archive/production.zip
-$ (win10) tar -xf gs-prod.zip
-$ cd gulp-skeleton-production
++++++ COMPOSER VERSION +++++
+$ php composer create-project --ignore-platform-reqs --no-dev codelinered/gulp-skeleton gulp-skeleton "dev-production"
+$ cd gulp-skeleton
 ```
 
 ```bash
@@ -47,27 +43,29 @@ $ (optional on win10) rmdir .git /s
 ```
 
 ```bash
-+++++ COMPOSER VERSION +++++
-$ php composer create-project codelinered/gulp-skeleton gulp-skeleton "dev-production"
-$ cd gulp-skeleton
++++++ ZIP VERSION +++++
+$ ---- Unix ----
+$ wget -O gs-prod.zip https://github.com/CodelineRed/gulp-skeleton/archive/production.zip
+$ unzip gs-prod.zip
+$ ---- Windows 10+ ----
+$ curl -L -o gs-prod.zip https://github.com/CodelineRed/gulp-skeleton/archive/production.zip
+$ tar -xf gs-prod.zip
+$ --- All OS ----
+$ cd gulp-skeleton-production
 ```
-If you need PHP, you have to go to [Install PHP](#install-php-optional).
+If you need PHP, you have to go to [Install with Docker](#install-with-docker-optional).
 
-## Install Master/ Develop Build
+## Install Main/ Develop Build
 ### Required
 - [Node.js](http://nodejs.org/en/download/) >= 12.20
 - [npm](http://www.npmjs.com/get-npm) `$ npm i npm@latest -g`
 - [gulp-cli](https://www.npmjs.com/package/gulp-cli) `$ npm i gulp-cli@latest -g`
 
-Open console on your OS and navigate to your project folder.
-[Download zip](https://github.com/CodelineRed/gulp-skeleton/archive/master.zip) if you don't have git on your OS.
+Open console on your OS and navigate to the place where you want to install the project.
 ```bash
-+++++ ZIP VERSION +++++
-$ (unix) wget -O gs-mstr.zip https://github.com/CodelineRed/gulp-skeleton/archive/master.zip
-$ (unix) unzip gs-mstr.zip
-$ (win10) curl -L -o gs-mstr.zip https://github.com/CodelineRed/gulp-skeleton/archive/master.zip
-$ (win10) tar -xf gs-mstr.zip
-$ cd gulp-skeleton-master
++++++ COMPOSER VERSION +++++
+$ php composer create-project --ignore-platform-reqs codelinered/gulp-skeleton
+$ cd gulp-skeleton
 $ npm i
 $ gulp build
 $ gulp
@@ -77,7 +75,7 @@ $ gulp
 +++++ GIT VERSION +++++
 $ git clone https://github.com/CodelineRed/gulp-skeleton.git
 $ cd gulp-skeleton
-$ git checkout master
+$ git checkout main
 $ (optional on unix) rm -rf .git
 $ (optional on win10) rmdir .git /s
 $ npm i
@@ -86,23 +84,35 @@ $ gulp
 ```
 
 ```bash
-+++++ COMPOSER VERSION +++++
-$ php composer create-project codelinered/gulp-skeleton
-$ cd gulp-skeleton
++++++ ZIP VERSION +++++
+$ ---- Unix ----
+$ wget -O gs-main.zip https://github.com/CodelineRed/gulp-skeleton/archive/main.zip
+$ unzip gs-main.zip
+$ ---- Windows 10+ ----
+$ curl -L -o gs-main.zip https://github.com/CodelineRed/gulp-skeleton/archive/main.zip
+$ tar -xf gs-main.zip
+$ --- All OS ----
+$ cd gulp-skeleton-main
 $ npm i
 $ gulp build
 $ gulp
 ```
 Open [localhost:3000](http://localhost:3000) for Website.
 
-## Install PHP (optional)
+## Install with Docker (optional)
 ### Required
 - [Docker](https://www.docker.com/)
 
-Open console on your OS and navigate to the unziped/ cloned app folder.
+Open console on your OS and navigate to the place where you want to install the project.
 ```bash
-$ (unix) systemctl docker start
-$ (windows) "c:\path\to\Docker Desktop.exe"
+$ ---- Unix ----
+$ systemctl docker start
+$ docker run --rm --interactive --tty --volume $PWD:/app composer create-project --ignore-platform-reqs --no-dev codelinered/gulp-skeleton gulp-skeleton "dev-production"
+$ ---- Windows CMD ----
+$ "c:\path\to\Docker Desktop.exe"
+$ docker run --rm --interactive --tty --volume %cd%:/app composer create-project --ignore-platform-reqs --no-dev codelinered/gulp-skeleton gulp-skeleton "dev-production"
+$ --- All OS ----
+$ cd gulp-skeleton
 $ docker-compose up -d
 ```
 Open [localhost:7701](http://localhost:7701) for Website.
@@ -118,14 +128,14 @@ Open [localhost:7701](http://localhost:7701) for Website.
 | gulp font     | copy font files                                                                                                                          |
 | gulp img      | copy and compress images                                                                                                                 |
 | gulp js       | uglify, minify and concat js files                                                                                                       |
-| gulp jsLint   | checks js follows [lint rules](https://github.com/CodelineRed/gulp-skeleton/blob/master/src/app/js-lint.json)                            |
+| gulp jsLint   | checks js follows [lint rules](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/app/js-lint.json)                              |
 | gulp scss     | compile, minify and concat scss files                                                                                                    |
-| gulp scssLint | checks scss follows [lint rules](https://github.com/CodelineRed/gulp-skeleton/blob/master/src/app/scss-lint.json)                        |
+| gulp scssLint | checks scss follows [lint rules](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/app/scss-lint.json)                          |
 | gulp thankYou | a small thank for you                                                                                                                    |
 | gulp svg      | copy and compress svg files                                                                                                              |
 | gulp watch    | watch favicon, font, img, js, scss and svg files                                                                                         |
 
-## [`gulpfile.json`](https://github.com/CodelineRed/gulp-skeleton/blob/master/src/app/gulpfile.dist.json)
+## [`gulpfile.json`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/app/gulpfile.dist.json)
 |                     | Description                                                                                                                        |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | browserSyncConfig   | Required - Defines which config is used for [BrowserSync](https://www.npmjs.com/package/browser-sync) (default: browserSyncDocker) |
@@ -135,7 +145,7 @@ Open [localhost:7701](http://localhost:7701) for Website.
 | env                 | Required - Environment dev, test or prod (default: dev)                                                                            |
 
 ## Localization
-- [`src/locale/`](https://github.com/CodelineRed/gulp-skeleton/blob/master/src/locale/)
+- [`src/locale/`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/locale/)
 
 ## Links
 - [ESLint Rules](https://eslint.org/docs/rules/)

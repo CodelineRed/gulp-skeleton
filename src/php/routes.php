@@ -6,6 +6,12 @@ return [
         'template' => 'index',
         'locale' => 'en_us',
     ],
+    'about-en_us' => [
+        'path' => '/about/',
+        'layout' => 'base',
+        'template' => 'about',
+        'locale' => 'en_us',
+    ],
     '404-en_us' => [
         'path' => '/404/',
         'layout' => 'base',
@@ -17,6 +23,12 @@ return [
         'path' => '/de/',
         'layout' => 'base',
         'template' => 'index',
+        'locale' => 'de_de',
+    ],
+    'about-de_de' => [
+        'path' => '/de/ueber-uns/',
+        'layout' => 'base',
+        'template' => 'about',
         'locale' => 'de_de',
     ],
     '404-de_de' => [
