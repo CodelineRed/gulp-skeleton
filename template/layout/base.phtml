@@ -13,40 +13,40 @@ if (isset($_SERVER['HTTP_ACCEPT_ENCODING']) && $_SERVER['HTTP_ACCEPT_ENCODING'] 
 ?>
 
 <!DOCTYPE html>
-<html lang="<?php echo $lang['lang']; ?>" class="no-js">
+<html lang="<?= $lang['lang']; ?>" class="no-js" data-bs-theme="dark">
     <head>
         <script>
             function setCookie(e,t,n){var o=new Date;o.setTime(o.getTime()+24*n*60*60*1e3);var i="expires="+o.toUTCString();document.cookie=e+"="+t+";"+i+";path=/"}function getCookie(e){for(var t=e+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(t))return i.substring(t.length,i.length)}return""}
             var cookiesAllowed = getCookie('cookieconsent_status') !== 'deny';
         </script>
         
-        <title><?php echo $lang['meta-title']; ?></title>
-        <base href="<?php echo $gs->getBaseUrl(); ?>">
+        <title><?= $lang['meta-title']; ?></title>
+        <base href="<?= $gs->getBaseUrl(); ?>">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <meta name="keywords" content="<?php echo $lang['meta-keywords']; ?>"/>
-        <meta name="description" content="<?php echo $lang['meta-description']; ?>">
-        <meta name='robots' content="<?php echo $lang['meta-robots']; ?>">
-        <meta name="author" content="<?php echo $lang['meta-author']; ?>">
-        <meta property="fb:admins" content="<?php echo $lang['meta-fbAdmins']; ?>"/>
-        <meta property="fb:app_id" content="<?php echo $lang['meta-fbAppId']; ?>"/>
-        <meta property="og:type" content="<?php echo $lang['meta-type']; ?>"/>
-        <meta property="og:title" content="<?php echo $lang['meta-title']; ?>"/>
-        <meta property="og:description" content="<?php echo $lang['meta-description']; ?>"/>
-        <meta property="og:image" content="<?php echo $lang['meta-socialMediaImage']; ?>"/>
-        <meta property="og:site_name" content="<?php echo $lang['meta-siteName']; ?>"/>
-        <meta property="og:url" content="<?php echo $gs->getCurrentUrl(); ?>"/>
-        <meta property="og:locale" content="<?php echo $lang['locale']; ?>"/>
-        <meta property="article:publisher" content="<?php echo $lang['meta-publisher']; ?>"/>
+        <meta name="keywords" content="<?= $lang['meta-keywords']; ?>"/>
+        <meta name="description" content="<?= $lang['meta-description']; ?>">
+        <meta name='robots' content="<?= $lang['meta-robots']; ?>">
+        <meta name="author" content="<?= $lang['meta-author']; ?>">
+        <meta property="fb:admins" content="<?= $lang['meta-fbAdmins']; ?>"/>
+        <meta property="fb:app_id" content="<?= $lang['meta-fbAppId']; ?>"/>
+        <meta property="og:type" content="<?= $lang['meta-type']; ?>"/>
+        <meta property="og:title" content="<?= $lang['meta-title']; ?>"/>
+        <meta property="og:description" content="<?= $lang['meta-description']; ?>"/>
+        <meta property="og:image" content="<?= $lang['meta-socialMediaImage']; ?>"/>
+        <meta property="og:site_name" content="<?= $lang['meta-siteName']; ?>"/>
+        <meta property="og:url" content="<?= $gs->getCurrentUrl(); ?>"/>
+        <meta property="og:locale" content="<?= $lang['locale']; ?>"/>
+        <meta property="article:publisher" content="<?= $lang['meta-publisher']; ?>"/>
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="<?php echo $lang['meta-twitterSite']; ?>">
-        <meta name="twitter:title" content="<?php echo $lang['meta-title']; ?>">
-        <meta name="twitter:description" content="<?php echo $lang['meta-description']; ?>">
-        <meta name="twitter:image" content="<?php echo $gs->getBaseUrl() . $lang['meta-socialMediaImage']; ?>">
-        <link rel="me" href="<?php echo $lang['meta-twitterUrl']; ?>">
-        <link rel="canonical" href="<?php echo $gs->getCurrentUrl(); ?>"/>
-        <link rel="alternate" hreflang="x-default" href="<?php echo $gs->getCurrentUrl(); ?>"/>
-        <!--<link rel="alternate" type="application/rss+xml" title="" href="<?php echo $lang['meta-rssUrl']; ?>"/>-->
+        <meta name="twitter:site" content="<?= $lang['meta-twitterSite']; ?>">
+        <meta name="twitter:title" content="<?= $lang['meta-title']; ?>">
+        <meta name="twitter:description" content="<?= $lang['meta-description']; ?>">
+        <meta name="twitter:image" content="<?= $gs->getBaseUrl() . $lang['meta-socialMediaImage']; ?>">
+        <link rel="me" href="<?= $lang['meta-twitterUrl']; ?>">
+        <link rel="canonical" href="<?= $gs->getCurrentUrl(); ?>"/>
+        <link rel="alternate" hreflang="x-default" href="<?= $gs->getCurrentUrl(); ?>"/>
+        <!--<link rel="alternate" type="application/rss+xml" title="" href="<?= $lang['meta-rssUrl']; ?>"/>-->
         <link rel="shortcut icon" href="img/favicons/favicon.ico">
         <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
@@ -97,7 +97,7 @@ if (isset($_SERVER['HTTP_ACCEPT_ENCODING']) && $_SERVER['HTTP_ACCEPT_ENCODING'] 
         <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
         <link rel="yandex-tableau-widget" href="img/favicons/yandex-browser-manifest.json">
         
-        <link rel="stylesheet" href="css/styles.css?v=6.1.0">
+        <link rel="stylesheet" href="css/styles.css?v=6.2.0">
         <script type="application/javascript">
             // if cookies allowed - load tracking code
             if (cookiesAllowed) {
@@ -116,17 +116,17 @@ if (isset($_SERVER['HTTP_ACCEPT_ENCODING']) && $_SERVER['HTTP_ACCEPT_ENCODING'] 
             }
             
             var cookieLayer = {
-                header: '<?php echo $lang['cl-header']; ?>',
-                message: '<?php echo $lang['cl-message']; ?>',
-                allow: '<?php echo $lang['cl-allow']; ?>',
-                dismiss: '<?php echo $lang['cl-dismiss']; ?>',
-                deny: '<?php echo $lang['cl-deny']; ?>',
-                link: '<?php echo $lang['cl-link']; ?>',
-                messageLink: '<?php echo $lang['cl-message-link']; ?>',
-                dismissLink: '<?php echo $lang['cl-dismiss-link']; ?>',
-                allowLink: '<?php echo $lang['cl-allow-link']; ?>',
-                policy: '<?php echo $lang['cl-policy']; ?>',
-                href: '<?php echo $lang['cl-href']; ?>'
+                header: '<?= $lang['cl-header']; ?>',
+                message: '<?= $lang['cl-message']; ?>',
+                allow: '<?= $lang['cl-allow']; ?>',
+                dismiss: '<?= $lang['cl-dismiss']; ?>',
+                deny: '<?= $lang['cl-deny']; ?>',
+                link: '<?= $lang['cl-link']; ?>',
+                messageLink: '<?= $lang['cl-message-link']; ?>',
+                dismissLink: '<?= $lang['cl-dismiss-link']; ?>',
+                allowLink: '<?= $lang['cl-allow-link']; ?>',
+                policy: '<?= $lang['cl-policy']; ?>',
+                href: '<?= $lang['cl-href']; ?>'
             };
         </script>
     </head>
@@ -147,6 +147,6 @@ if (isset($_SERVER['HTTP_ACCEPT_ENCODING']) && $_SERVER['HTTP_ACCEPT_ENCODING'] 
             </div>
         </footer>
         <?php include __DIR__ . '/../partial/modal.phtml'; ?>
-        <script src="js/scripts.js?v=6.1.0"></script>
+        <script src="js/scripts.js?v=6.2.0"></script>
     </body>
 </html>

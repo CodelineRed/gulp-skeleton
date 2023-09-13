@@ -43,28 +43,22 @@
     }
     
     .cc-btn {
-        border-width: 1px;
-        padding: .4em;
-        white-space: normal;
-        
-        &.cc-dismiss {
-            background-color: $theme-color-1;
-            border-color: $theme-color-1;
-            color: $white;
+        @extend .btn;
+        @extend .btn-primary;
+    }
+
+    .cc-opt-in {
+        .cc-btn {
+            &.cc-dismiss {
+                @extend .btn-secondary;
+            }
         }
-        
-        &.cc-allow,
-        &.cc-deny {
-            border-color: $theme-color-1;
-            color: $white;
-        }
-        
-        &.cc-allow,
-        &.cc-deny,
-        &.cc-dismiss {
-            &:hover {
-                background-color: lighten($theme-color-1, 5%);
-                border-color: lighten($theme-color-1, 5%);
+    }
+
+    .cc-opt-out {
+        .cc-btn {
+            &.cc-deny {
+                @extend .btn-secondary;
             }
         }
     }

@@ -12,28 +12,11 @@ $slick-dot-color: $white;
 $slick-font-path: '../font/';
 $slick-loader-path: '../img/slick/';
 
+$slider-brand-item-color: #7f7f7f;
+
 // Bootstrap
-$body-bg: $theme-color-2;
-$body-color: $theme-color-3;
+$tooltip-color: $white;
+$tooltip-bg: #000;
 
-$font-size-base: 1rem;
-
-$h1-font-size: $font-size-base * 2;
-
-$headings-color: $theme-color-1;
-
-$red: $theme-color-1;
-
-$link-color: $theme-color-1;
 $link-decoration: none;
-
-$modal-content-bg: $theme-color-4;
-$modal-header-border-color: $theme-color-3;
 $modal-md: 800px;
-
-$dropdown-bg: $theme-color-2;
-$dropdown-border-color: $theme-color-3;
-$dropdown-divider-bg: $theme-color-4;
-$dropdown-link-color: $white;
-$dropdown-link-hover-color: $white;
-$dropdown-link-hover-bg: $theme-color-4;

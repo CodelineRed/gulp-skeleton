@@ -16,9 +16,9 @@ function initCookieConsent() {
                         + '<a aria-label="' + cookieLayer.messageLink + '" tabindex="0" class="cc-link" href="{{href}}" data-bs-toggle="modal" data-bs-target="#cookie-policy">{{link}}</a></span></div>'
             },
             compliance: {
-                info: '<div class="cc-compliance col-12 col-sm-6 col-lg-4">{{dismiss}}</div>',
-                'opt-in':'<div class="cc-compliance col-12 col-sm-6 col-lg-4">{{dismiss}}{{allow}}</div>',
-                'opt-out': '<div class="cc-compliance col-12 col-sm-6 col-lg-4">{{deny}}{{dismiss}}</div>'
+                info: '<div class="cc-compliance cc-info col-12 col-sm-6 col-lg-4">{{dismiss}}</div>',
+                'opt-in':'<div class="cc-compliance cc-opt-in col-12 col-sm-6 col-lg-4">{{dismiss}}{{allow}}</div>',
+                'opt-out': '<div class="cc-compliance cc-opt-out col-12 col-sm-6 col-lg-4">{{deny}}{{dismiss}}</div>'
             },
             theme: 'classic',
             type: 'info',

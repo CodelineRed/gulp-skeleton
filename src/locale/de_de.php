@@ -19,6 +19,11 @@ return [
     'back-to-hp' => 'Zurück zur Startseite',
     'session' => 'Session',
     'version' => 'Version',
+
+    // Links
+    'link-home' => 'Startseite',
+    'link-about' => 'Über uns',
+    'link-error' => 'Fehlerseite',
     
     // cookie layer
     'cl-header' => 'Cookies auf der Website verwendet!',
