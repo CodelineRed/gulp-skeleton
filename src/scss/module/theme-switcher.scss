@@ -1,0 +1,83 @@
+.theme-switcher {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 5px;
+    position: relative;
+
+    &::before {
+        @extend .transition-all;
+        background-color: $gray-700;
+        border-radius: 25px;
+        content: ' ';
+        height: 25px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 25px;
+        z-index: 2;
+    }
+
+    &::after {
+        background-color: $gray-600;
+        border-radius: 25px;
+        content: ' ';
+        height: 25px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    &.dark {
+        &::before {
+            left: 25px;
+        }
+    }
+
+    &.light {
+        &::before {
+            left: 0;
+        }
+    }
+
+    i,
+    svg {
+        color: $white;
+        position: relative;
+        z-index: 5;
+    }
+}
+
+html {
+    &[data-bs-theme='light'] {
+        .fa-inverse {
+            color: $black;
+        }
+
+        .slick-dots {
+            li {
+                &.slick-active {   
+                    button {
+                        &::before {
+                            color: $black;
+                        }
+                    }
+                }
+
+                button {
+                    &::before {
+                        color: $black;
+                    }
+                }
+            }
+        }
+        
+        .slick-next,
+        .slick-prev {
+            &::before {
+                color: $black;
+            }
+        }
+    }
+}

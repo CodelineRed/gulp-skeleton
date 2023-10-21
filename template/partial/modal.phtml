@@ -3,7 +3,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title"><?= $lang['cookie-policy-title']; ?></h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <?= $lang['cl-message']; ?><br/>
@@ -11,7 +11,7 @@
                 
                 <div class="collapse" id="cookie-policy-collapse">
                     <div class="table-responsive mt-3">
-                        <table class="table table-striped table-dark">
+                        <table class="table table-striped">
                             <thead>
                                 <tr>
                                     <th scope="col"><span class="text-nowrap"><?= $lang['name']; ?></span></th>
@@ -40,6 +40,13 @@
                                     <td>current_locale</td>
                                     <td>gulp.codelinered.net</td>
                                     <td><?= $lang['cpm-current-locale']; ?></td>
+                                    <td><span class="text-nowrap"><?= vsprintf($lang['year'], ['1']); ?></span></td>
+                                    <td><span class="text-nowrap"><?= vsprintf($lang['type'], ['2']); ?></span></td>
+                                </tr>
+                                <tr>
+                                    <td>theme</td>
+                                    <td>gulp.codelinered.net</td>
+                                    <td><?= $lang['cpm-theme']; ?></td>
                                     <td><span class="text-nowrap"><?= vsprintf($lang['year'], ['1']); ?></span></td>
                                     <td><span class="text-nowrap"><?= vsprintf($lang['type'], ['2']); ?></span></td>
                                 </tr>

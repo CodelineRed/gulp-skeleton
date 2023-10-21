@@ -1,4 +1,4 @@
-/*global cookieLayer*/
+/*global getTranslation*/
 'use strict';
 
 /**
@@ -8,6 +8,12 @@
  */
 function initCookieConsent() {
     (function($) {
+        let cookieLayer = getTranslation('cookieLayer');
+
+        if (cookieLayer === null) {
+            return;
+        }
+
         window.cookieconsent.initialise({
             window: '<div role="dialog" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window w-100 {{classes}}">'
                     + '<div class="container"><div class="row align-items-center">{{children}}</div></div></div>',
