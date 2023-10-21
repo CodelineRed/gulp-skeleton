@@ -30,11 +30,11 @@
         margin-bottom: 200px;
         
         @include media-breakpoint-up('sm') {
-            margin-bottom: 160px;
+            margin-bottom: 200px;
         }
         
         @include media-breakpoint-up('md') {
-            margin-bottom: 120px;
+            margin-bottom: 150px;
         }
         
         @include media-breakpoint-up('lg') {

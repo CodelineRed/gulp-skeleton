@@ -21,6 +21,7 @@
 - [LazyLoad 17](https://www.andreaverlicchi.eu/vanilla-lazyload/)
 - [CSS User Agent 2](https://www.npmjs.com/package/cssuseragent)
 - [Cookieconsent 3](https://github.com/insites/cookieconsent)
+- [Fancyapps 5](https://fancyapps.com/)
 
 ## Install Production Build (Recommended)
 ### Required
@@ -68,7 +69,7 @@ $ php composer create-project --ignore-platform-reqs codelinered/gulp-skeleton
 $ cd gulp-skeleton
 $ npm i
 $ gulp build
-$ gulp
+$ gulp watch
 ```
 
 ```bash
@@ -80,7 +81,7 @@ $ (optional on unix) rm -rf .git
 $ (optional on win10) rmdir .git /s
 $ npm i
 $ gulp build
-$ gulp
+$ gulp watch
 ```
 
 ```bash
@@ -95,7 +96,7 @@ $ --- All OS ----
 $ cd gulp-skeleton-main
 $ npm i
 $ gulp build
-$ gulp
+$ gulp watch
 ```
 Open [localhost:3000](http://localhost:3000) for Website.
 
@@ -120,7 +121,7 @@ Open [localhost:7701](http://localhost:7701) for Website.
 ## Project Commands
 |               | Description                                                                                                                              |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| gulp          | watch files and start [BrowserSync](https://www.npmjs.com/package/browser-sync)                                                          |
+| gulp          | watch files and start [BrowserSync](https://www.npmjs.com/package/browser-sync) (only available with Docker)                             |
 | gulp build    | executes following tasks: cleanUp, favicon, font, img, js, jsLint, scss, scssLint, svg                                                   |
 | gulp lintAll  | executes following tasks: jsLint, scssLint                                                                                               |
 | gulp cleanUp  | clean up public folder                                                                                                                   |

@@ -10,12 +10,17 @@ if (isset($_SERVER['HTTP_ACCEPT_ENCODING']) && $_SERVER['HTTP_ACCEPT_ENCODING'] 
     /** @var GulpSkeleton $gs **/
     $gs->setBaseUrl('http://localhost:3000/');
 }
+
+$imagePlaceholder = "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 %w %h'%3e%3c/svg%3e";
+$theme = isset($_COOKIE['theme']) && in_array($_COOKIE['theme'], ['dark', 'light']) ? $_COOKIE['theme'] : 'dark';
 ?>
 
 <!DOCTYPE html>
-<html lang="<?= $lang['lang']; ?>" class="no-js" data-bs-theme="dark">
+<html lang="<?= $lang['lang']; ?>" class="no-js" data-bs-theme="<?= $theme; ?>">
     <head>
         <script>
+            // setCookie('name', 'value', exdays);
+            // getCookie('name');
             function setCookie(e,t,n){var o=new Date;o.setTime(o.getTime()+24*n*60*60*1e3);var i="expires="+o.toUTCString();document.cookie=e+"="+t+";"+i+";path=/"}function getCookie(e){for(var t=e+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(t))return i.substring(t.length,i.length)}return""}
             var cookiesAllowed = getCookie('cookieconsent_status') !== 'deny';
         </script>
@@ -79,7 +84,7 @@ if (isset($_SERVER['HTTP_ACCEPT_ENCODING']) && $_SERVER['HTTP_ACCEPT_ENCODING'] 
         <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"   href="img/favicons/apple-touch-startup-image-1668x2224.png">
         <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"   href="img/favicons/apple-touch-startup-image-1668x2388.png">
         <link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"  href="img/favicons/apple-touch-startup-image-2048x2732.png">
-        <link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"  href="img/favicons/apple-touch-startup-image-1620x2160.png">
+        <link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"   href="img/favicons/apple-touch-startup-image-1620x2160.png">
         <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"   href="img/favicons/apple-touch-startup-image-1136x640.png">
         <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"   href="img/favicons/apple-touch-startup-image-1334x750.png">
         <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"   href="img/favicons/apple-touch-startup-image-1792x828.png">
@@ -92,12 +97,12 @@ if (isset($_SERVER['HTTP_ACCEPT_ENCODING']) && $_SERVER['HTTP_ACCEPT_ENCODING'] 
         <link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="img/favicons/apple-touch-startup-image-2732x2048.png">
         <link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"  href="img/favicons/apple-touch-startup-image-2160x1620.png">
         <link rel="icon" type="image/png" sizes="228x228" href="img/favicons/coast-228x228.png">
-        <meta name="msapplication-TileColor" content="#212121">
+        <meta name="msapplication-TileColor" content="#000">
         <meta name="msapplication-TileImage" content="img/favicons/mstile-144x144.png">
         <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
         <link rel="yandex-tableau-widget" href="img/favicons/yandex-browser-manifest.json">
         
-        <link rel="stylesheet" href="css/styles.css?v=6.2.0">
+        <link rel="stylesheet" href="css/styles.css?v=6.3.0">
         <script type="application/javascript">
             // if cookies allowed - load tracking code
             if (cookiesAllowed) {
@@ -114,20 +119,6 @@ if (isset($_SERVER['HTTP_ACCEPT_ENCODING']) && $_SERVER['HTTP_ACCEPT_ENCODING'] 
 //                gtag('js', new Date());
 //                gtag('config', 'UA-NUMBER-X', {'anonymize_ip': true});
             }
-            
-            var cookieLayer = {
-                header: '<?= $lang['cl-header']; ?>',
-                message: '<?= $lang['cl-message']; ?>',
-                allow: '<?= $lang['cl-allow']; ?>',
-                dismiss: '<?= $lang['cl-dismiss']; ?>',
-                deny: '<?= $lang['cl-deny']; ?>',
-                link: '<?= $lang['cl-link']; ?>',
-                messageLink: '<?= $lang['cl-message-link']; ?>',
-                dismissLink: '<?= $lang['cl-dismiss-link']; ?>',
-                allowLink: '<?= $lang['cl-allow-link']; ?>',
-                policy: '<?= $lang['cl-policy']; ?>',
-                href: '<?= $lang['cl-href']; ?>'
-            };
         </script>
     </head>
     <body>
@@ -147,6 +138,6 @@ if (isset($_SERVER['HTTP_ACCEPT_ENCODING']) && $_SERVER['HTTP_ACCEPT_ENCODING'] 
             </div>
         </footer>
         <?php include __DIR__ . '/../partial/modal.phtml'; ?>
-        <script src="js/scripts.js?v=6.2.0"></script>
+        <script src="js/scripts.js?v=6.3.0"></script>
     </body>
 </html>

@@ -6,7 +6,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [6.2.0]
+## [6.3.0]
+### Added
+- [`module/_locale_.js`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/js/module/_locale_.js)
+- [`module/fancyapps.js`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/js/module/fancyapps.js)
+- [`plugin/fancyapps.scss`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/scss/plugin/fancyapps.scss)
+- [`module/theme-switcher.js`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/js/module/theme-switcher.js)
+- [`module/theme-switcher.scss`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/scss/module/theme-switcher.scss)
+- imports for Font Awesome PRO in [`lib/fontawesome.scss`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/scss/lib/fontawesome.scss)
+- @fancyapps/ui 5.0.24
+
+### Changed
+- [`js/scripts.js`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/js/scripts.js)
+- [`locale/de_de.php`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/locale/de_de.php)
+- [`locale/en_us.php`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/locale/en_us.php)
+- [`layout/base.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/layout/base.phtml)
+- [`partial/header.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/partial/header.phtml)
+- [`partial/modal.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/partial/modal.phtml)
+- [`template/index.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/index.phtml)
+- [`gulpfile.js`](https://github.com/CodelineRed/vue-skeleton/blob/main/gulpfile.js)
+- [`README.md`](https://github.com/CodelineRed/gulp-skeleton/blob/main/README.md)
+- bootstrap 5.3.1 to 5.3.2
+- vanilla-lazyload 17.8.4 to 17.8.5
+
+### Removed
+- underscore `_` from all [`module/_*.scss`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/scss/module/)
+- [`module/modal.scss`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/scss/module/modal.scss)
+
+## [6.2.0] - 2023-09-13
 ### Added
 - [`template/about.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/about.phtml)
 
@@ -28,6 +55,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [`docker-compose.yml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/docker-compose.yml)
 - [`gulpfile.js`](https://github.com/CodelineRed/vue-skeleton/blob/main/gulpfile.js)
 - [`README.md`](https://github.com/CodelineRed/gulp-skeleton/blob/main/README.md)
+- @fortawesome/fontawesome-free 6.2.1 to 6.4.2
+- bootstrap 5.2.3 to 5.3.1
+- browser-sync 2.27.11 to 2.29.3
+- jquery 3.6.2 to 3.7.1
+- sass 1.57.0 to 1.64.2
+- vanilla-lazyload 17.8.3 to 17.8.4
 
 ## [6.1.0] - 2022-12-20
 ### Added

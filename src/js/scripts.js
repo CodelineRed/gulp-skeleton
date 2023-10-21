@@ -1,9 +1,9 @@
-/*global cssua bootstrap initCookieConsent initSlider initImageLazyLoad initCssuaMonitor*/
+/*global cssua bootstrap getCookie initCookieConsent initCssuaMonitor initFancyapps initImageLazyLoad initSlider initThemeSwitcher setCookie*/
 'use strict';
 
 // jQuery.noConflict();
 (function($) {
-    $(document).ready(function() {
+    $(function() {
         $('html').removeClass('no-js');
         // initialize all tooltips
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]')); // eslint-disable-line array-bracket-newline
@@ -11,9 +11,11 @@
             return new bootstrap.Tooltip(tooltipTriggerEl);
         });
 
-        initCssuaMonitor();
         initCookieConsent();
+        initCssuaMonitor();
+        initFancyapps();
         initImageLazyLoad();
         initSlider();
+        initThemeSwitcher();
     });
 })(jQuery);
