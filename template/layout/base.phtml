@@ -25,7 +25,7 @@ $theme = isset($_COOKIE['theme']) && in_array($_COOKIE['theme'], ['dark', 'light
             var cookiesAllowed = getCookie('cookieconsent_status') !== 'deny';
         </script>
         
-        <title><?= $lang['meta-title']; ?></title>
+        <title><?= $gs->getPageTitle(); ?></title>
         <base href="<?= $gs->getBaseUrl(); ?>">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -33,21 +33,23 @@ $theme = isset($_COOKIE['theme']) && in_array($_COOKIE['theme'], ['dark', 'light
         <meta name="description" content="<?= $lang['meta-description']; ?>">
         <meta name='robots' content="<?= $lang['meta-robots']; ?>">
         <meta name="author" content="<?= $lang['meta-author']; ?>">
+        <!-- Facebook, LinkedIn -->
         <meta property="fb:admins" content="<?= $lang['meta-fbAdmins']; ?>"/>
         <meta property="fb:app_id" content="<?= $lang['meta-fbAppId']; ?>"/>
         <meta property="og:type" content="<?= $lang['meta-type']; ?>"/>
         <meta property="og:title" content="<?= $lang['meta-title']; ?>"/>
         <meta property="og:description" content="<?= $lang['meta-description']; ?>"/>
-        <meta property="og:image" content="<?= $lang['meta-socialMediaImage']; ?>"/>
+        <meta property="og:image" content="<?= $gs->getBaseUrl() . $lang['meta-socialMediaImage']; ?>"/>
         <meta property="og:site_name" content="<?= $lang['meta-siteName']; ?>"/>
         <meta property="og:url" content="<?= $gs->getCurrentUrl(); ?>"/>
         <meta property="og:locale" content="<?= $lang['locale']; ?>"/>
         <meta property="article:publisher" content="<?= $lang['meta-publisher']; ?>"/>
+        <!-- Twitter -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="<?= $lang['meta-twitterSite']; ?>">
         <meta name="twitter:title" content="<?= $lang['meta-title']; ?>">
         <meta name="twitter:description" content="<?= $lang['meta-description']; ?>">
-        <meta name="twitter:image" content="<?= $gs->getBaseUrl() . $lang['meta-socialMediaImage']; ?>">
+        <meta property="twitter:image" content="<?= $gs->getBaseUrl() . $lang['meta-socialMediaImage']; ?>">
         <link rel="me" href="<?= $lang['meta-twitterUrl']; ?>">
         <link rel="canonical" href="<?= $gs->getCurrentUrl(); ?>"/>
         <link rel="alternate" hreflang="x-default" href="<?= $gs->getCurrentUrl(); ?>"/>
@@ -58,7 +60,7 @@ $theme = isset($_COOKIE['theme']) && in_array($_COOKIE['theme'], ['dark', 'light
         <link rel="icon" type="image/png" sizes="48x48" href="img/favicons/favicon-48x48.png">
         <link rel="manifest" href="img/favicons/manifest.json">
         <meta name="mobile-web-app-capable" content="yes">
-        <meta name="theme-color" content="#fff">
+        <meta name="theme-color" content="#000">
         <meta name="application-name" content="Gulp Skeleton">
         <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
@@ -102,7 +104,7 @@ $theme = isset($_COOKIE['theme']) && in_array($_COOKIE['theme'], ['dark', 'light
         <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
         <link rel="yandex-tableau-widget" href="img/favicons/yandex-browser-manifest.json">
         
-        <link rel="stylesheet" href="css/styles.css?v=6.3.0">
+        <link rel="stylesheet" href="css/styles.css?v=6.4.0">
         <script type="application/javascript">
             // if cookies allowed - load tracking code
             if (cookiesAllowed) {
@@ -138,6 +140,6 @@ $theme = isset($_COOKIE['theme']) && in_array($_COOKIE['theme'], ['dark', 'light
             </div>
         </footer>
         <?php include __DIR__ . '/../partial/modal.phtml'; ?>
-        <script src="js/scripts.js?v=6.3.0"></script>
+        <script src="js/scripts.js?v=6.4.0"></script>
     </body>
 </html>
