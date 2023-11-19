@@ -6,7 +6,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [6.3.0]
+
+## [6.4.0] - 2023-11-19
+### Added
+- [`social-media.jpg`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/img/social-media.jpg)
+- `mb-3` to "included" in [`template/index.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/index.phtml)
+- `getPageTitle()` in [`php/GulpSkeleton.php`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/php/GulpSkeleton.php)
+
+### Changed
+- [`locale/de_de.php`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/locale/de_de.php)
+- [`locale/en_us.php`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/locale/en_us.php)
+- [`layout/base.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/layout/base.phtml)
+- [`partial/footer.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/partial/footer.phtml)
+- [`partial/header.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/partial/header.phtml)
+- Bootstrap icon in [`template/index.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/index.phtml)
+- dummy image URL in [`template/index.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/index.phtml)
+- @fancyapps/ui 5.0.24 to 5.0.28
+
+### Removed
+- `img/general-ci.jpg`
+
+### Fixed
+- spacing between globe and chevron in [`template/index.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/index.phtml)
+- footer margin bottom in [`module/cookieconsent.scss`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/scss/module/cookieconsent.scss)
+
+## [6.3.0] - 2023-10-21
 ### Added
 - [`module/_locale_.js`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/js/module/_locale_.js)
 - [`module/fancyapps.js`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/js/module/fancyapps.js)
@@ -31,7 +55,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 - underscore `_` from all [`module/_*.scss`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/scss/module/)
-- [`module/modal.scss`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/scss/module/modal.scss)
+- `module/modal.scss`
 
 ## [6.2.0] - 2023-09-13
 ### Added

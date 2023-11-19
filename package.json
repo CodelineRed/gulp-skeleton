@@ -1,7 +1,7 @@
 {
     "name": "gulp-skeleton",
-    "version": "6.3.0",
-    "commitDate": "2023-10-21T12:15:00+02:00",
+    "version": "6.4.0-dev",
+    "commitDate": "2023-11-19T10:45:00+01:00",
     "description": "Skeleton to create templates with Gulp",
     "keywords": [
         "gulp",
@@ -29,7 +29,7 @@
         "url": "https://github.com/CodelineRed/gulp-skeleton/issues"
     },
     "license": "MIT",
-    "homepage": "http://gulp.codelinered.net",
+    "homepage": "https://gulp.codelinered.net",
     "repository": {
         "type": "git",
         "url": "git://github.com/CodelineRed/gulp-skeleton.git"
@@ -38,7 +38,7 @@
         "node": ">=12.20.0"
     },
     "devDependencies": {
-        "@fancyapps/ui": "^5.0.24",
+        "@fancyapps/ui": "^5.0.28",
         "@fortawesome/fontawesome-free": "^6.4.2",
         "bootstrap": "^5.3.2",
         "browser-sync": "^2.29.3",

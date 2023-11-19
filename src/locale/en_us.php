@@ -14,7 +14,8 @@ return [
     'gallery-caption-2' => 'of Life,',
     'gallery-caption-3' => 'the Universe,',
     'gallery-caption-4' => 'and Everything',
-    'gallery-caption-5' => 'is 42',
+    'gallery-caption-5' => '42',
+    'image' => 'Image',
     'cssua-monitor' => 'CSS User Agent Monitor',
     'name' => 'Name',
     'provider' => 'Provider',
@@ -28,10 +29,10 @@ return [
     'version' => 'Version',
 
     // Links
-    'link-home' => 'Homepage',
+    'link-index' => 'Home',
     'link-about' => 'About us',
-    'link-error' => 'Error page',
-    
+    'link-404' => 'Error page',
+
     // cookie layer
     'cl-header' => 'Cookies used on the website!',
     'cl-message' => 'This website uses cookies to ensure you get the best experience on our website.',
@@ -44,7 +45,7 @@ return [
     'cl-allow-link' => 'Allow cookies',
     'cl-policy' => 'Cookie Policy',
     'cl-href' => '#cookie-policy',
-    
+
     // cookie policy modal
     'cpm-sdi' => 'Show detailed information',
     'cpm-php' => 'Maintains user states on all page requests.',
@@ -55,7 +56,7 @@ return [
     'cpm-type2' => 'Type 2 = Function cookie',
     'cpm-type3' => 'Type 3 = Service cookie',
     'cpm-type4' => 'Type 4 = Third party cookie',
-    
+
     // meta
     'meta-title' => 'Gulp Skeleton - CodelineRed',
     'meta-keywords' => '',
@@ -66,13 +67,13 @@ return [
     'meta-fbAdmins' => '',
     'meta-publisher' => '',
     'meta-type' => 'website',
-    'meta-socialMediaImage' => 'img/general-ci.jpg',
+    'meta-socialMediaImage' => 'img/social-media.jpg',
     'meta-siteName' => 'Gulp Skeleton',
     'meta-twitterSite' => 'CodelineRed',
     'meta-twitterUrl' => 'https://twitter.com/CodelineRed',
     'meta-rssUrl' => '',
-    'meta-themeColor' => '#212121',
-    
+    'meta-themeColor' => '#000',
+
     // misc
     // decimal point
     'dp' => '.',
@@ -82,12 +83,12 @@ return [
     'time' => 'g:ia',
     'datetime' => 'Y-m-d g:ia',
     'timezone' => 'America/New_York',
-    
+
     'month' => '%1$s month',
     'months' => '%1$s months',
     'year' => '%1$s year',
     'years' => '%1$s years',
-    
+
     'lang' => 'en',
     'locale' => 'en_US',
 ];

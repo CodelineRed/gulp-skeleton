@@ -14,7 +14,8 @@ return [
     'gallery-caption-2' => 'nach dem Leben,',
     'gallery-caption-3' => 'dem Universum',
     'gallery-caption-4' => 'und dem ganzen Rest',
-    'gallery-caption-5' => 'ist 42',
+    'gallery-caption-5' => '42',
+    'image' => 'Bild',
     'cssua-monitor' => 'CSS User Agent Überwacher',
     'name' => 'Name',
     'provider' => 'Anbieter',
@@ -28,10 +29,10 @@ return [
     'version' => 'Version',
 
     // Links
-    'link-home' => 'Startseite',
+    'link-index' => 'Startseite',
     'link-about' => 'Über uns',
-    'link-error' => 'Fehlerseite',
-    
+    'link-404' => 'Fehlerseite',
+
     // cookie layer
     'cl-header' => 'Cookies auf der Website verwendet!',
     'cl-message' => 'Diese Website verwendet Cookies, um sicherzustellen, dass Sie die beste Erfahrung auf unserer Website erhalten.',
@@ -44,7 +45,7 @@ return [
     'cl-allow-link' => 'Cookies zulassen',
     'cl-policy' => 'Cookie-Richtlinie',
     'cl-href' => '#datenschutz',
-    
+
     // cookie policy modal
     'cpm-sdi' => 'Detaillierte Informationen anzeigen',
     'cpm-php' => 'Behält die Zustände des Benutzers bei allen Seitenanfragen bei.',
@@ -55,24 +56,24 @@ return [
     'cpm-type2' => 'Typ 2 = Funktions-Cookie',
     'cpm-type3' => 'Typ 3 = Leistungs-Cookie',
     'cpm-type4' => 'Typ 4 = Cookie Dritter',
-    
+
     // meta
     'meta-title' => 'Gulp Skeleton - CodelineRed',
-    'meta-keywords' => '',
-    'meta-description' => '',
+    'meta-keywords' => 'gulp, templating, bootstrap, fontawesome, jquery',
+    'meta-description' => 'Skeleton to create templates with Gulp',
     'meta-robots' => 'index,follow',
     'meta-author' => 'CodelineRed',
     'meta-fbAppId' => '',
     'meta-fbAdmins' => '',
     'meta-publisher' => '',
     'meta-type' => 'website',
-    'meta-socialMediaImage' => 'img/general-ci.jpg',
+    'meta-socialMediaImage' => 'img/social-media.jpg',
     'meta-siteName' => 'Gulp Skeleton',
     'meta-twitterSite' => 'CodelineRed',
     'meta-twitterUrl' => 'https://twitter.com/CodelineRed',
     'meta-rssUrl' => '',
-    'meta-themeColor' => '#212121',
-    
+    'meta-themeColor' => '#000',
+
     // misc
     // decimal point
     'dp' => ',',
@@ -82,12 +83,12 @@ return [
     'time' => 'H:i \U\h\r',
     'datetime' => 'd.m.Y H:i \U\h\r',
     'timezone' => 'Europe/Berlin',
-    
+
     'month' => '%1$s Monat',
     'months' => '%1$s Monate',
     'year' => '%1$s Jahr',
     'years' => '%1$s Jahre',
-    
+
     'lang' => 'de',
     'locale' => 'de_DE',
 ];

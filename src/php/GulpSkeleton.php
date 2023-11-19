@@ -1,7 +1,7 @@
 <?php
 
 class GulpSkeleton {
-    
+
     private $baseUrl;
     private $cookieLocale;
     private $cookiesAllowed;
@@ -43,7 +43,7 @@ class GulpSkeleton {
      */
     public function setBaseUrl($baseUrl) {
         $this->baseUrl = $baseUrl;
-        
+
         return $this;
     }
 
@@ -60,7 +60,7 @@ class GulpSkeleton {
      */
     public function setCookieLocale($cookieLocale) {
         $this->cookieLocale = $cookieLocale;
-        
+
         return $this;
     }
 
@@ -77,7 +77,7 @@ class GulpSkeleton {
      */
     public function setCookiesAllowed($cookiesAllowed) {
         $this->cookiesAllowed = $cookiesAllowed;
-        
+
         return $this;
     }
 
@@ -94,7 +94,7 @@ class GulpSkeleton {
      */
     public function setCurrentUrl($currentUrl) {
         $this->currentUrl = $currentUrl;
-        
+
         return $this;
     }
 
@@ -111,7 +111,7 @@ class GulpSkeleton {
      */
     public function setLayout($layout) {
         $this->layout = $layout;
-        
+
         return $this;
     }
 
@@ -128,7 +128,7 @@ class GulpSkeleton {
      */
     public function setLocale($locale) {
         $this->locale = $locale;
-        
+
         return $this;
     }
 
@@ -145,7 +145,7 @@ class GulpSkeleton {
      */
     public function setRouteName($routeName) {
         $this->routeName = substr($routeName, 0, strrpos($routeName, '-'));
-        
+
         return $this;
     }
 
@@ -162,7 +162,7 @@ class GulpSkeleton {
      */
     public function setRoutes($routes) {
         $this->routes = $routes;
-        
+
         return $this;
     }
 
@@ -179,7 +179,7 @@ class GulpSkeleton {
      */
     public function setTemplate($template) {
         $this->template = $template;
-        
+
         return $this;
     }
 
@@ -196,22 +196,19 @@ class GulpSkeleton {
      */
     public function setVersion($version) {
         $this->version = $version;
-        
+
         return $this;
     }
 
     /**
-     * Sets version by version in package.json
+     * Returns the page title
      * 
-     * @return $this
+     * @return string
      */
-    public function setVersionFromPackage() {
-        if (is_readable(__DIR__ . '/../../package.json')) {
-            $package = json_decode(file_get_contents(__DIR__ . '/../../package.json'), true);
-            $this->version = $package['version'];
-        }
-        
-        return $this;
+    public function getPageTitle() {
+        $lang = include(__DIR__ . '/../locale/' . $this->getLocale() . '.php');
+
+        return $lang['link-' . $this->getTemplate()] . ' - ' . $lang['meta-siteName'];
     }
 
     /**
@@ -231,15 +228,29 @@ class GulpSkeleton {
         $baseUrl = is_string($baseUrl) ? $baseUrl : $this->getBaseUrl();
         $routes = $this->getRoutes();
         $uri = isset($routes[$routeName . '-' . $locale]) ? rtrim($baseUrl, '/') . $routes[$routeName . '-' . $locale]['path'] : '';
-        
+
         if ($relative) {
             $uri = str_replace($baseUrl, '', $uri);
         }
-        
+
         if ($echo) {
             echo $uri;
         } else {
             return $uri;
         }
+    }
+
+    /**
+     * Sets version by version in package.json
+     * 
+     * @return $this
+     */
+    public function setVersionFromPackage() {
+        if (is_readable(__DIR__ . '/../../package.json')) {
+            $package = json_decode(file_get_contents(__DIR__ . '/../../package.json'), true);
+            $this->version = $package['version'];
+        }
+
+        return $this;
     }
 }
