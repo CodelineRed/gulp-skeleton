@@ -1,3 +1,6 @@
+import jsLint from './js-lint.js';
+import scssLint from './scss-lint.js';
+
 /**
  * Lint given files
  *
@@ -8,10 +11,18 @@
  * @return gulp signal
  */
 function lint(gulp, module, paths, file) {
+    let lintConfig = {};
+
+    if (file === 'js') {
+        lintConfig = jsLint;
+    } else if (file === 'scss') {
+        lintConfig = scssLint;
+    }
+
     return gulp.src(paths)
-        .pipe(module(require('./' + file + '-lint.json')))
+        .pipe(module(lintConfig))
         .pipe(module.format())
         .pipe(module.failOnError());
 }
 
-module.exports = lint;
+export default lint;

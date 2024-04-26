@@ -1,3 +1,4 @@
+export default
 {
     "browserSyncDocker": {
         "port": 3000,
