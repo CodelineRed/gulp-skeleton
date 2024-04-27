@@ -1,5 +1,6 @@
-import {deleteAsync} from 'del';
+import browserSync from 'browser-sync';
 import chalk from 'chalk';
+import {deleteAsync} from 'del';
 import gulp from 'gulp';
 import prefixer from 'gulp-autoprefixer';
 import minifyCss from 'gulp-clean-css';
@@ -16,8 +17,22 @@ import uglify from 'gulp-uglify-es';
 
 import config from './src/app/gulpfile-config.js';
 import isEnv from './src/app/is-env.js';
-import lint from './src/app/lint.js';
+import lintFunc from './src/app/lint.js';
+
 const sass = gulpSass(dartSass);
+const browserSyncInstance = browserSync.create();
+
+// initialize BrowserSync
+export function browserSyncInit(done) {
+    browserSyncInstance.init(config[config.browserSyncConfig]);
+    done();
+}
+
+// reload browser
+function browserSyncReload(done) {
+    browserSyncInstance.reload();
+    done();
+}
 
 // clean up folders
 export function cleanUp() {
@@ -48,6 +63,8 @@ export function favicon() {
         developerName: 'CodelineRed',
         developerURL: 'https://www.codelinered.net/',
         background: '#000',
+        theme_color: '#000',
+        lang: "en-US",
         path: '/img/favicons/',
         url: 'https://gulp.codelinered.net/',
         display: 'standalone',
@@ -133,7 +150,7 @@ export function js() {
 
 // lint js files
 export function jsLint() {
-    return lint(gulp, eslint, [config.sourcePath + 'js/**/*.js'], 'js');
+    return lintFunc(gulp, eslint, [config.sourcePath + 'js/**/*.js'], 'js');
 }
 
 // processing scss to css and minify result
@@ -153,7 +170,7 @@ export function scss() {
 
 // lint scss files
 export function scssLint() {
-    return lint(gulp, sassLint, [config.sourcePath + 'scss/**/*.scss'], 'scss');
+    return lintFunc(gulp, sassLint, [config.sourcePath + 'scss/**/*.scss'], 'scss');
 }
 
 // compress and copy svg files
@@ -189,6 +206,35 @@ export function thankYou() {
     });
 }
 
-const build = gulp.series(thankYou, cleanUp, favicon, font, img, js, jsLint, scss, scssLint, svg);
+// watch files
+export function watch() {
+    // watch fonts
+    gulp.watch(config.sourcePath + 'font/**', font);
+    // watch images
+    gulp.watch(config.sourcePath + 'img/**', img);
+    // watch favicon
+    gulp.watch(config.sourcePath + 'img/favicon.png', favicon);
+    // watch js files
+    gulp.watch(config.sourcePath + 'js/**', gulp.series(js, jsLint));
+    // watch scss files
+    gulp.watch(config.sourcePath + 'scss/**', gulp.series(scss, scssLint));
+    // watch svg
+    gulp.watch(config.sourcePath + 'svg/**', svg);
+}
 
-export default build;
+// watch files and reload browser on file change
+function watchAndReload() {
+    watch();
+
+    gulp.watch(config.publicPath + '**/*.{css,eot,ico,js,jpg,otf,png,svg,ttf,woff,woff2}', browserSyncReload);
+    gulp.watch('template/**/*.{php,html,phtml}', browserSyncReload);
+}
+
+// gulp
+export default gulp.parallel(watchAndReload, browserSyncInit);
+
+// gulp build
+export const build = gulp.series(thankYou, cleanUp, favicon, font, img, js, jsLint, scss, scssLint, svg);
+
+// gulp lint
+export const lint = gulp.series(jsLint, scssLint);

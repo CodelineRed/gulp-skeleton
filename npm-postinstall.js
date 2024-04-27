@@ -1,4 +1,5 @@
-const fs = require('fs');
+import fs from 'fs';
+
 const sources = [
     "./src/app/gulpfile-config.dist.js"
 ];
