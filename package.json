@@ -36,7 +36,7 @@
         "url": "git://github.com/CodelineRed/gulp-skeleton.git"
     },
     "engines": {
-        "node": ">= 14"
+        "node": ">= 18.17"
     },
     "devDependencies": {
         "@fancyapps/ui": "^5.0.36",
