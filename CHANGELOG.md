@@ -7,9 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [6.5.0] - 2024-05-26
+### Added
+- new scripts in [`package.json`](https://github.com/CodelineRed/gulp-skeleton/blob/main/package-lock.json)
+
+### Changed
+- [`layout/base.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/layout/base.phtml)
+- [`template/404.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/404.phtml)
+- [`gulpfile.js`](https://github.com/CodelineRed/gulp-skeleton/blob/main/gulpfile.js)
+- [`README.md`](https://github.com/CodelineRed/gulp-skeleton/blob/main/README.md)
+- @fancyapps/ui 5.0.28 to 5.0.36
+- @fortawesome/fontawesome-free 6.4.2 to 6.5.2
+- bootstrap 5.3.2 to 5.3.3
+- browser-sync 2.29.3 to 3.0.2
+- sass 1.64 to 1.77.2
+- vanilla-lazyload 17.8.5 to 19.1.3
+
+### Fixed
+- watchAndReload in [`gulpfile.js`](https://github.com/CodelineRed/gulp-skeleton/blob/main/gulpfile.js)
+
 ## [6.4.0] - 2023-11-19
 ### Added
-- [`social-media.jpg`](https://github.com/CodelineRed/vue-skeleton/blob/main/src/img/social-media.jpg)
+- [`social-media.jpg`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/img/social-media.jpg)
 - `mb-3` to "included" in [`template/index.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/index.phtml)
 - `getPageTitle()` in [`php/GulpSkeleton.php`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/php/GulpSkeleton.php)
 
@@ -48,7 +67,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [`partial/header.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/partial/header.phtml)
 - [`partial/modal.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/partial/modal.phtml)
 - [`template/index.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/index.phtml)
-- [`gulpfile.js`](https://github.com/CodelineRed/vue-skeleton/blob/main/gulpfile.js)
+- [`gulpfile.js`](https://github.com/CodelineRed/gulp-skeleton/blob/main/gulpfile.js)
 - [`README.md`](https://github.com/CodelineRed/gulp-skeleton/blob/main/README.md)
 - bootstrap 5.3.1 to 5.3.2
 - vanilla-lazyload 17.8.4 to 17.8.5
@@ -77,7 +96,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - [`template/404.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/404.phtml)
 - [`template/index.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/index.phtml)
 - [`docker-compose.yml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/docker-compose.yml)
-- [`gulpfile.js`](https://github.com/CodelineRed/vue-skeleton/blob/main/gulpfile.js)
+- [`gulpfile.js`](https://github.com/CodelineRed/gulp-skeleton/blob/main/gulpfile.js)
 - [`README.md`](https://github.com/CodelineRed/gulp-skeleton/blob/main/README.md)
 - @fortawesome/fontawesome-free 6.2.1 to 6.4.2
 - bootstrap 5.2.3 to 5.3.1
@@ -88,9 +107,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [6.1.0] - 2022-12-20
 ### Added
-- `thankYou()` in [`gulpfile.js`](https://github.com/CodelineRed/vue-skeleton/blob/main/gulpfile.js)
-- [`composer.json`](https://github.com/CodelineRed/vue-skeleton/blob/main/composer.json)
-- [`package-lock.json`](https://github.com/CodelineRed/vue-skeleton/blob/main/composer.json) back again
+- `thankYou()` in [`gulpfile.js`](https://github.com/CodelineRed/gulp-skeleton/blob/main/gulpfile.js)
+- [`composer.json`](https://github.com/CodelineRed/gulp-skeleton/blob/main/composer.json)
+- [`package-lock.json`](https://github.com/CodelineRed/gulp-skeleton/blob/main/package-lock.json) back again
 - chalk 4.1.2
 
 ### Changed

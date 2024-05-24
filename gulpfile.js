@@ -111,7 +111,7 @@ function js() {
             'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
             'node_modules/@fortawesome/fontawesome-free/js/all.js',
             config.sourcePath + 'js/lib/**/*.js',
-            'node_modules/slick-carousel/slick/slick.js',
+            'node_modules/slick-carousel/slick/slick.min.js',
             'node_modules/cssuseragent/cssua.js',
             'node_modules/vanilla-lazyload/dist/lazyload.js',
             'node_modules/cookieconsent/src/cookieconsent.js',
@@ -203,7 +203,7 @@ function watchAndReload() {
     watch();
 
     gulp.watch(config.publicPath + '**/*.{css,eot,ico,js,jpg,otf,png,svg,ttf,woff,woff2}', browserSyncReload);
-    gulp.watch('templates/**/*.{php,html,phtml}', browserSyncReload);
+    gulp.watch('template/**/*.{php,html,phtml}', browserSyncReload);
 }
 
 exports.browserSyncInit = browserSyncInit;
