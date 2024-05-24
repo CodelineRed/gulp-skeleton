@@ -26,7 +26,8 @@ $theme = isset($_COOKIE['theme']) && in_array($_COOKIE['theme'], ['dark', 'light
         </script>
         
         <title><?= $gs->getPageTitle(); ?></title>
-        <base href="<?= $gs->getBaseUrl(); ?>">
+        <!-- <base href="<?= $gs->getBaseUrl(); ?>"> -->
+        <base href="/">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta name="keywords" content="<?= $lang['meta-keywords']; ?>"/>
@@ -104,7 +105,7 @@ $theme = isset($_COOKIE['theme']) && in_array($_COOKIE['theme'], ['dark', 'light
         <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
         <link rel="yandex-tableau-widget" href="img/favicons/yandex-browser-manifest.json">
         
-        <link rel="stylesheet" href="css/styles.css?v=6.4.0">
+        <link rel="stylesheet" href="css/styles.css?v=6.5.0-dev">
         <script type="application/javascript">
             // if cookies allowed - load tracking code
             if (cookiesAllowed) {
@@ -140,6 +141,6 @@ $theme = isset($_COOKIE['theme']) && in_array($_COOKIE['theme'], ['dark', 'light
             </div>
         </footer>
         <?php include __DIR__ . '/../partial/modal.phtml'; ?>
-        <script src="js/scripts.js?v=6.4.0"></script>
+        <script src="js/scripts.js?v=6.5.0-dev"></script>
     </body>
 </html>

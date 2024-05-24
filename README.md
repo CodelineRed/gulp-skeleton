@@ -18,7 +18,7 @@
 - [Bootstrap 5](https://getbootstrap.com)
 - [Font Awesome 6](https://fontawesome.com)
 - [Slick Carousel 1](http://kenwheeler.github.io/slick/)
-- [LazyLoad 17](https://www.andreaverlicchi.eu/vanilla-lazyload/)
+- [LazyLoad 19](https://www.andreaverlicchi.eu/vanilla-lazyload/)
 - [CSS User Agent 2](https://www.npmjs.com/package/cssuseragent)
 - [Cookieconsent 3](https://github.com/insites/cookieconsent)
 - [Fancyapps 5](https://fancyapps.com/)
@@ -28,76 +28,95 @@
 - PHP >= 5.5
 
 Open console on your OS and navigate to the place where you want to install the project.
-```bash
-+++++ COMPOSER VERSION +++++
-$ php composer create-project --ignore-platform-reqs --no-dev codelinered/gulp-skeleton gulp-skeleton "dev-production"
-$ cd gulp-skeleton
-```
 
-```bash
-+++++ GIT VERSION +++++
-$ git clone https://github.com/CodelineRed/gulp-skeleton.git
-$ cd gulp-skeleton
-$ git checkout production
-$ (optional on unix) rm -rf .git
-$ (optional on win10) rmdir .git /s
-```
+### With Composer
+````shell
+php composer create-project --ignore-platform-reqs --no-dev codelinered/gulp-skeleton gulp-skeleton "dev-production"
+cd gulp-skeleton
+`````
 
-```bash
-+++++ ZIP VERSION +++++
-$ ---- Unix ----
-$ wget -O gs-prod.zip https://github.com/CodelineRed/gulp-skeleton/archive/production.zip
-$ unzip gs-prod.zip
-$ ---- Windows 10+ ----
-$ curl -L -o gs-prod.zip https://github.com/CodelineRed/gulp-skeleton/archive/production.zip
-$ tar -xf gs-prod.zip
-$ --- All OS ----
-$ cd gulp-skeleton-production
-```
+### With GIT
+````shell
+git clone https://github.com/CodelineRed/gulp-skeleton.git
+cd gulp-skeleton
+git checkout production
+`````
+
+### With ZIP
+
+Unix
+
+````shell
+wget -O gs-prod.zip https://github.com/CodelineRed/gulp-skeleton/archive/production.zip
+unzip gs-prod.zip
+`````
+
+Windows 10+
+
+````shell
+curl -L -o gs-prod.zip https://github.com/CodelineRed/gulp-skeleton/archive/production.zip
+tar -xf gs-prod.zip
+`````
+
+All OS
+
+````shell
+cd gulp-skeleton-production
+`````
+
 If you need PHP, you have to go to [Install with Docker](#install-with-docker-optional).
 
 ## Install Main/ Develop Build
 ### Required
-- [Node.js](http://nodejs.org/en/download/) >= 12.20
-- [npm](http://www.npmjs.com/get-npm) `$ npm i npm@latest -g`
-- [gulp-cli](https://www.npmjs.com/package/gulp-cli) `$ npm i gulp-cli@latest -g`
+- [Node.js](http://nodejs.org/en/download/) >= 14
+- [npm](http://www.npmjs.com/get-npm) `npm i npm@latest -g`
+- [gulp-cli](https://www.npmjs.com/package/gulp-cli) `npm i gulp-cli@latest -g`
 
 Open console on your OS and navigate to the place where you want to install the project.
-```bash
-+++++ COMPOSER VERSION +++++
-$ php composer create-project --ignore-platform-reqs codelinered/gulp-skeleton
-$ cd gulp-skeleton
-$ npm i
-$ gulp build
-$ gulp watch
-```
 
-```bash
-+++++ GIT VERSION +++++
-$ git clone https://github.com/CodelineRed/gulp-skeleton.git
-$ cd gulp-skeleton
-$ git checkout main
-$ (optional on unix) rm -rf .git
-$ (optional on win10) rmdir .git /s
-$ npm i
-$ gulp build
-$ gulp watch
-```
+### With Composer
+````shell
+php composer create-project --ignore-platform-reqs codelinered/gulp-skeleton
+cd gulp-skeleton
+npm i
+gulp build
+gulp watch
+````
 
-```bash
-+++++ ZIP VERSION +++++
-$ ---- Unix ----
-$ wget -O gs-main.zip https://github.com/CodelineRed/gulp-skeleton/archive/main.zip
-$ unzip gs-main.zip
-$ ---- Windows 10+ ----
-$ curl -L -o gs-main.zip https://github.com/CodelineRed/gulp-skeleton/archive/main.zip
-$ tar -xf gs-main.zip
-$ --- All OS ----
-$ cd gulp-skeleton-main
-$ npm i
-$ gulp build
-$ gulp watch
-```
+### With GIT
+````shell
+git clone https://github.com/CodelineRed/gulp-skeleton.git
+cd gulp-skeleton
+git checkout main
+npm i
+gulp build
+gulp watch
+````
+
+### With ZIP
+
+Unix
+
+````shell
+wget -O gs-main.zip https://github.com/CodelineRed/gulp-skeleton/archive/main.zip
+unzip gs-main.zip
+````
+
+Windows 10+
+
+````shell
+curl -L -o gs-main.zip https://github.com/CodelineRed/gulp-skeleton/archive/main.zip
+tar -xf gs-main.zip
+````
+
+All OS
+
+````shell
+cd gulp-skeleton-main
+npm i
+gulp build
+gulp watch
+````
 Open [localhost:3000](http://localhost:3000) for Website.
 
 ## Install with Docker (optional)
@@ -105,17 +124,27 @@ Open [localhost:3000](http://localhost:3000) for Website.
 - [Docker](https://www.docker.com/)
 
 Open console on your OS and navigate to the place where you want to install the project.
-```bash
-$ ---- Unix ----
-$ systemctl docker start
-$ docker run --rm --interactive --tty --volume $PWD:/app composer create-project --ignore-platform-reqs --no-dev codelinered/gulp-skeleton gulp-skeleton "dev-production"
-$ ---- Windows CMD ----
-$ "c:\path\to\Docker Desktop.exe"
-$ docker run --rm --interactive --tty --volume %cd%:/app composer create-project --ignore-platform-reqs --no-dev codelinered/gulp-skeleton gulp-skeleton "dev-production"
-$ --- All OS ----
-$ cd gulp-skeleton
-$ docker-compose up -d
-```
+
+Unix
+
+````shell
+systemctl docker start
+docker run --rm --interactive --tty --volume $PWD:/app composer create-project --ignore-platform-reqs --no-dev codelinered/gulp-skeleton gulp-skeleton "dev-production"
+````
+
+Windows 10+
+
+````shell
+"c:\path\to\Docker Desktop.exe"
+docker run --rm --interactive --tty --volume %cd%:/app composer create-project --ignore-platform-reqs --no-dev codelinered/gulp-skeleton gulp-skeleton "dev-production"
+````
+
+All OS
+
+````shell
+cd gulp-skeleton
+docker-compose up -d
+````
 Open [localhost:7701](http://localhost:7701) for Website.
 
 ## Project Commands
