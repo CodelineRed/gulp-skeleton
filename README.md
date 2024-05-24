@@ -69,8 +69,8 @@ If you need PHP, you have to go to [Install with Docker](#install-with-docker-op
 ## Install Main/ Develop Build
 ### Required
 - [Node.js](http://nodejs.org/en/download/) >= 18.17
-- [npm](http://www.npmjs.com/get-npm) `$ npm i npm@latest -g`
-- [gulp-cli](https://www.npmjs.com/package/gulp-cli) `$ npm i gulp-cli@latest -g`
+- [npm](http://www.npmjs.com/get-npm) `npm i npm@latest -g`
+- [gulp-cli](https://www.npmjs.com/package/gulp-cli) `npm i gulp-cli@latest -g`
 
 Open console on your OS and navigate to the place where you want to install the project.
 
