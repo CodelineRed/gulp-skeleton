@@ -1,3 +1,4 @@
+export default
 {
     "rules": {
         "empty-line-between-blocks": {

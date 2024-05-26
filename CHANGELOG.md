@@ -6,10 +6,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-
-## [6.5.0] - 2024-05-26
+## [7.0.0] - 2024-05-26
 ### Added
-- new scripts in [`package.json`](https://github.com/CodelineRed/gulp-skeleton/blob/main/package-lock.json)
+- type = module in [`package.json`](https://github.com/CodelineRed/gulp-skeleton/blob/main/package.json)
+
+### Changed
+- [`layout/base.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/layout/base.phtml)
+- [`src/app/is-env.js`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/app/is-env.js)
+- [`src/app/lint.js`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/app/lint.js)
+- [`php/GulpSkeleton.php`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/php/GulpSkeleton.php)
+- [`.gitignore`](https://github.com/CodelineRed/gulp-skeleton/blob/main/.gitignore)
+- `lintAll` to `lint` in [`gulpfile.mjs`](https://github.com/CodelineRed/gulp-skeleton/blob/main/gulpfile.mjs)
+- [`README.md`](https://github.com/CodelineRed/gulp-skeleton/blob/main/README.md)
+- chalk 4.1.2 to 5.3.0
+- del 6.1.1 to 7.1.0
+- gulp-autoprefixer 8.0.0 to 9.0.0
+- gulp-favicons 3.0.0 to 4.0.1
+- gulp-imagemin 7.1.0 to 9.1.0
+- node 14 to 18.17
+
+### Removed
+- gulpfile.dist.json and replaced with [`gulpfile-config.dist.js`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/app/gulpfile-config.dist.js)
+- js-lint.json and replaced with [`src/app/js-lint.js`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/app/js-lint.js)
+- scss-lint.json and replaced with [`src/app/scss-lint.js`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/app/scss-lint.js)
+- gulpfile.js and replaced with [`gulpfile.mjs`](https://github.com/CodelineRed/gulp-skeleton/blob/main/gulpfile.mjs)
+
+## [6.5.0] - 2024-05-24
+### Added
+- new scripts in [`package.json`](https://github.com/CodelineRed/gulp-skeleton/blob/main/package.json)
 
 ### Changed
 - [`layout/base.phtml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/template/layout/base.phtml)

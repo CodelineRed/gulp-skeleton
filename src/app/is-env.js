@@ -34,4 +34,4 @@ function isEnv(env, currentEnv) {
 	return false;
 }
 
-module.exports = isEnv;
+export default isEnv;
