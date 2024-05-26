@@ -9,7 +9,7 @@
     - [Install Main/ Develop Build](#install-main-develop-build)
     - [Install with Docker (optional)](#install-with-docker-optional)
 - [Project Commands](#project-commands)
-- [`gulpfile.json`](#gulpfilejson)
+- [`gulpfile-config.js`](#gulpfile-configjs)
 - [Localization](#localization)
 - [Links](#links)
 
@@ -158,21 +158,21 @@ Open [localhost:7701](http://localhost:7701) for Website.
 | gulp font     | copy font files                                                                                                                          |
 | gulp img      | copy and compress images                                                                                                                 |
 | gulp js       | uglify, minify and concat js files                                                                                                       |
-| gulp jsLint   | checks js follows [lint rules](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/app/js-lint.json)                              |
+| gulp jsLint   | checks js follows [lint rules](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/app/js-lint.js)                                |
 | gulp scss     | compile, minify and concat scss files                                                                                                    |
-| gulp scssLint | checks scss follows [lint rules](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/app/scss-lint.json)                          |
+| gulp scssLint | checks scss follows [lint rules](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/app/scss-lint.js)                            |
 | gulp thankYou | a small thank for you                                                                                                                    |
 | gulp svg      | copy and compress svg files                                                                                                              |
 | gulp watch    | watch favicon, font, img, js, scss and svg files                                                                                         |
 
-## [`gulpfile.json`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/app/gulpfile.dist.json)
+## [`gulpfile-config.js`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/app/gulpfile-config.dist.js)
 |                     | Description                                                                                                                        |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | browserSyncConfig   | Required - Defines which config is used for [BrowserSync](https://www.npmjs.com/package/browser-sync) (default: browserSyncDocker) |
 | sourcePath          | Required - Path to raw files (default: src/)                                                                                       |
 | publicPath          | Required - Path to transpiled files (default: public/)                                                                             |
 | systemPath          | Optional - Alternative Path to transpiled files on CMS, ECS, PHP Framework, ... (default: path/to/system/)                         |
-| env                 | Required - Environment dev, test or prod (default: dev)                                                                            |
+| env                 | Required - Environment dev, test or prod (default: prod)                                                                            |
 
 ## Localization
 - [`src/locale/`](https://github.com/CodelineRed/gulp-skeleton/blob/main/src/locale/)
