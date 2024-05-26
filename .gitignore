@@ -1,5 +1,6 @@
 gulpfile.json
 gulpfile-config.json
+gulpfile-config.js
 .npmrc
 composer.lock
 # package-lock.json

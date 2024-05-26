@@ -248,7 +248,11 @@ class GulpSkeleton {
     public function setVersionFromPackage() {
         if (is_readable(__DIR__ . '/../../package.json')) {
             $package = json_decode(file_get_contents(__DIR__ . '/../../package.json'), true);
-            $this->version = $package['version'];
+            $this->version = '-';
+
+            if (is_array($package) && isset($package['version'])) {
+                $this->version = $package['version'];
+            }
         }
 
         return $this;

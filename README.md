@@ -68,7 +68,7 @@ If you need PHP, you have to go to [Install with Docker](#install-with-docker-op
 
 ## Install Main/ Develop Build
 ### Required
-- [Node.js](http://nodejs.org/en/download/) >= 14
+- [Node.js](http://nodejs.org/en/download/) >= 18.17
 - [npm](http://www.npmjs.com/get-npm) `npm i npm@latest -g`
 - [gulp-cli](https://www.npmjs.com/package/gulp-cli) `npm i gulp-cli@latest -g`
 
@@ -152,7 +152,7 @@ Open [localhost:7701](http://localhost:7701) for Website.
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | gulp          | watch files and start [BrowserSync](https://www.npmjs.com/package/browser-sync) (only available with Docker)                             |
 | gulp build    | executes following tasks: cleanUp, favicon, font, img, js, jsLint, scss, scssLint, svg                                                   |
-| gulp lintAll  | executes following tasks: jsLint, scssLint                                                                                               |
+| gulp lint     | executes following tasks: jsLint, scssLint                                                                                               |
 | gulp cleanUp  | clean up public folder                                                                                                                   |
 | gulp favicon  | generate favicons                                                                                                                        |
 | gulp font     | copy font files                                                                                                                          |

@@ -1,8 +1,9 @@
 {
     "name": "gulp-skeleton",
-    "version": "6.5.0",
-    "commitDate": "2024-05-24T20:00:00+02:00",
+    "version": "7.0.0",
+    "commitDate": "2024-05-26T12:00:00+02:00",
     "description": "Skeleton to create templates with Gulp",
+    "type": "module",
     "keywords": [
         "gulp",
         "templating",
@@ -35,26 +36,26 @@
         "url": "git://github.com/CodelineRed/gulp-skeleton.git"
     },
     "engines": {
-        "node": ">= 14"
+        "node": ">= 18.17"
     },
     "devDependencies": {
         "@fancyapps/ui": "^5.0.36",
         "@fortawesome/fontawesome-free": "^6.5.2",
         "bootstrap": "^5.3.3",
         "browser-sync": "^3.0.2",
-        "chalk": "^4.1.2",
+        "chalk": "^5.3.0",
         "cookieconsent": "^3.1.1",
         "cookieconsent-scss-less": "^3.0.6",
         "cssuseragent": "^2.1.31",
-        "del": "^6.1.1",
+        "del": "^7.1.0",
         "gulp": "^4.0.2",
-        "gulp-autoprefixer": "^8.0.0",
+        "gulp-autoprefixer": "^9.0.0",
         "gulp-clean-css": "^4.3.0",
         "gulp-concat": "^2.6.1",
         "gulp-eslint": "^6.0.0",
-        "gulp-favicons": "^3.0.0",
+        "gulp-favicons": "^4.0.1",
         "gulp-if": "^3.0.0",
-        "gulp-imagemin": "^7.1.0",
+        "gulp-imagemin": "^9.1.0",
         "gulp-sass": "^5.1.0",
         "gulp-sass-lint": "^1.4.0",
         "gulp-sourcemaps": "^3.0.0",
@@ -69,7 +70,7 @@
         "docker": "docker-compose up -d",
         "docker-website": "docker-compose up -d && gulp browserSyncInit",
         "docker-website-reload": "docker-compose up -d && gulp",
-        "lint": "gulp lintAll",
+        "lint": "gulp lint",
         "postinstall": "node npm-postinstall.js",
         "start": "gulp",
         "watch": "gulp watch",

@@ -1,9 +1,10 @@
-const fs = require('fs');
+import fs from 'fs';
+
 const sources = [
-    "./src/app/gulpfile.dist.json"
+    "./src/app/gulpfile-config.dist.js"
 ];
 const targets = [
-    "./src/app/gulpfile.json"
+    "./src/app/gulpfile-config.js"
 ];
 
 for (let i = 0; i < sources.length; i++) {
