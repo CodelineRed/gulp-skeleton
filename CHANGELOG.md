@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [7.1.0] - 2024-10-05
+### Changed
+- [`docker-compose.yml`](https://github.com/CodelineRed/gulp-skeleton/blob/main/docker-compose.yml)
+- [`npm-postinstall.js`](https://github.com/CodelineRed/gulp-skeleton/blob/main/npm-postinstall.js)
+- `slick.js` to `slick.min.js` in [`gulpfile.mjs`](https://github.com/CodelineRed/gulp-skeleton/blob/main/gulpfile.mjs)
+- [`README.md`](https://github.com/CodelineRed/gulp-skeleton/blob/main/README.md)
+- @fortawesome/fontawesome-free 6.5.2 to 6.6.0
+- browser-sync 3.0.2 to 3.0.3
+- sass 1.77.2 to 1.77.6
+
 ## [7.0.0] - 2024-05-26
 ### Added
 - type = module in [`package.json`](https://github.com/CodelineRed/gulp-skeleton/blob/main/package.json)
