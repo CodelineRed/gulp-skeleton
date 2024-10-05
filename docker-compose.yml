@@ -1,20 +1,18 @@
 # ---- Unix ----
 # systemctl docker start
-# docker run --rm --interactive --tty --volume #PWD:/app composer create-project --ignore-platform-reqs --no-dev codelinered/gulp-skeleton gulp-skeleton "dev-production"
+# docker run --rm --interactive --tty --volume #PWD:/app composer create-project --ignore-platform-reqs --no-dev codelinered/gulp-skeleton gulp-skeleton "dev-production" && cd gulp-skeleton && docker-compose up -d && xdg-open http://localhost:7701
+
 # ---- Windows CMD ----
 # "c:\path\to\Docker Desktop.exe"
-# docker run --rm --interactive --tty --volume %cd%:/app composer create-project --ignore-platform-reqs --no-dev codelinered/gulp-skeleton gulp-skeleton "dev-production"
-# --- All OS ----
-# cd gulp-skeleton
-# docker-compose up -d
-
-version: '3'
+# docker run --rm --interactive --tty --volume %cd%:/app composer create-project --ignore-platform-reqs --no-dev codelinered/gulp-skeleton gulp-skeleton "dev-production" && cd gulp-skeleton && docker-compose up -d && start http://localhost:7701
 
 volumes:
     logs:
         driver: local
-
-# docker-compose up -d
+# ---- Unix ----
+# docker-compose up -d && xdg-open http://localhost:7701
+# ---- Windows CMD ----
+# docker-compose up -d && start http://localhost:7701
 services:
     # http://localhost:7701
     # docker exec -ti gulp-skeleton php --version

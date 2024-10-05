@@ -30,39 +30,26 @@
 Open console on your OS and navigate to the place where you want to install the project.
 
 ### With Composer
-````shell
-php composer create-project --ignore-platform-reqs --no-dev codelinered/gulp-skeleton gulp-skeleton "dev-production"
-cd gulp-skeleton
-`````
+```shell
+php composer create-project --ignore-platform-reqs --no-dev codelinered/gulp-skeleton gulp-skeleton "dev-production" && cd gulp-skeleton
+```
 
 ### With GIT
-````shell
-git clone https://github.com/CodelineRed/gulp-skeleton.git
-cd gulp-skeleton
-git checkout production
-`````
+```shell
+git clone https://github.com/CodelineRed/gulp-skeleton.git && cd gulp-skeleton && git checkout production
+```
 
 ### With ZIP
 
 Unix
-
-````shell
-wget -O gs-prod.zip https://github.com/CodelineRed/gulp-skeleton/archive/production.zip
-unzip gs-prod.zip
-`````
+```shell
+wget -O gs-prod.zip https://github.com/CodelineRed/gulp-skeleton/archive/production.zip && unzip gs-prod.zip && cd gulp-skeleton-production
+```
 
 Windows 10+
-
-````shell
-curl -L -o gs-prod.zip https://github.com/CodelineRed/gulp-skeleton/archive/production.zip
-tar -xf gs-prod.zip
-`````
-
-All OS
-
-````shell
-cd gulp-skeleton-production
-`````
+```shell
+curl -L -o gs-prod.zip https://github.com/CodelineRed/gulp-skeleton/archive/production.zip && tar -xf gs-prod.zip && cd gulp-skeleton-production
+```
 
 If you need PHP, you have to go to [Install with Docker](#install-with-docker-optional).
 
@@ -75,48 +62,27 @@ If you need PHP, you have to go to [Install with Docker](#install-with-docker-op
 Open console on your OS and navigate to the place where you want to install the project.
 
 ### With Composer
-````shell
-php composer create-project --ignore-platform-reqs codelinered/gulp-skeleton
-cd gulp-skeleton
-npm i
-gulp build
-gulp watch
-````
+```shell
+php composer create-project --ignore-platform-reqs codelinered/gulp-skeleton && cd gulp-skeleton && npm i && gulp build && gulp watch
+```
 
 ### With GIT
-````shell
-git clone https://github.com/CodelineRed/gulp-skeleton.git
-cd gulp-skeleton
-git checkout main
-npm i
-gulp build
-gulp watch
-````
+```shell
+git clone https://github.com/CodelineRed/gulp-skeleton.git && cd gulp-skeleton && git checkout main && npm i && gulp build && gulp watch
+```
 
 ### With ZIP
 
 Unix
-
-````shell
-wget -O gs-main.zip https://github.com/CodelineRed/gulp-skeleton/archive/main.zip
-unzip gs-main.zip
-````
+```shell
+wget -O gs-main.zip https://github.com/CodelineRed/gulp-skeleton/archive/main.zip && unzip gs-main.zip && cd gulp-skeleton-main && npm i && gulp build && gulp watch
+```
 
 Windows 10+
+```shell
+curl -L -o gs-main.zip https://github.com/CodelineRed/gulp-skeleton/archive/main.zip && tar -xf gs-main.zip && cd gulp-skeleton-main && npm i && gulp build && gulp watch
+```
 
-````shell
-curl -L -o gs-main.zip https://github.com/CodelineRed/gulp-skeleton/archive/main.zip
-tar -xf gs-main.zip
-````
-
-All OS
-
-````shell
-cd gulp-skeleton-main
-npm i
-gulp build
-gulp watch
-````
 Open [localhost:3000](http://localhost:3000) for Website.
 
 ## Install with Docker (optional)
@@ -126,25 +92,19 @@ Open [localhost:3000](http://localhost:3000) for Website.
 Open console on your OS and navigate to the place where you want to install the project.
 
 Unix
-
-````shell
-systemctl docker start
-docker run --rm --interactive --tty --volume $PWD:/app composer create-project --ignore-platform-reqs --no-dev codelinered/gulp-skeleton gulp-skeleton "dev-production"
-````
+- Start Docker `systemctl docker start`
+- Copy and run commands below
+```shell
+docker run --rm --interactive --tty --volume $PWD:/app composer create-project --ignore-platform-reqs --no-dev codelinered/gulp-skeleton gulp-skeleton "dev-production" && cd gulp-skeleton && docker-compose up -d && xdg-open http://localhost:7701
+```
 
 Windows 10+
+- Start Docker Desktop `"C:\Program Files\Docker\Docker Desktop.exe"`
+- Copy and run commands below
+```shell
+docker run --rm --interactive --tty --volume %cd%:/app composer create-project --ignore-platform-reqs --no-dev codelinered/gulp-skeleton gulp-skeleton "dev-production" && cd gulp-skeleton && docker-compose up -d && start http://localhost:7701
+```
 
-````shell
-"c:\path\to\Docker Desktop.exe"
-docker run --rm --interactive --tty --volume %cd%:/app composer create-project --ignore-platform-reqs --no-dev codelinered/gulp-skeleton gulp-skeleton "dev-production"
-````
-
-All OS
-
-````shell
-cd gulp-skeleton
-docker-compose up -d
-````
 Open [localhost:7701](http://localhost:7701) for Website.
 
 ## Project Commands
