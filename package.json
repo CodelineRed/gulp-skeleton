@@ -1,7 +1,7 @@
 {
     "name": "gulp-skeleton",
-    "version": "7.1.0-dev",
-    "commitDate": "2024-05-26T12:00:00+02:00",
+    "version": "7.1.0",
+    "commitDate": "2024-10-05T11:00:00+02:00",
     "description": "Skeleton to create templates with Gulp",
     "type": "module",
     "keywords": [
